@@ -1,0 +1,37 @@
+{
+  "name": "cardano",
+  "version": "1.0.0",
+  "description": "working with matrix and bitergia",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-coman/matrix-bitergia.git"
+  },
+  "keywords": [
+    "matrix",
+    "bitergia"
+  ],
+  "author": "Bogdan Coman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-coman/matrix-bitergia/issues"
+  },
+  "homepage": "https://github.com/b-coman/matrix-bitergia#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.10.0",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.8",
+    "matrix-js-sdk": "^31.6.1",
+    "openai": "^4.33.0",
+    "path": "^0.12.7",
+    "winston": "^3.13.0"
+  }
+}
