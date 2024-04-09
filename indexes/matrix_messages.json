@@ -1,26 +1,28 @@
 {
-    "mappings": {
-      "_source": {
-        "enabled": true
-      },
-      "properties": {
-        "roomId": {
-          "type": "keyword"
-        },
-        "anonymizedUserId": {
-          "type": "keyword"
-        },
-        "messageBody": {
-          "type": "text"
-        },
-        "timestamp": {
-          "type": "date"
-        }
-      }
+  "mappings": {
+    "_source": {
+      "enabled": true
     },
-    "settings": {
-      "number_of_shards": 1,
-      "number_of_replicas": 1
+    "properties": {
+      "roomId": {
+        "type": "keyword"
+      },
+      "roomAlias": {
+        "type": "keyword"
+      },
+      "anonymizedUserId": {
+        "type": "keyword"
+      },
+      "messageBody": {
+        "type": "text"
+      },
+      "timestamp": {
+        "type": "date"
+      }
     }
+  },
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
   }
-  
+}

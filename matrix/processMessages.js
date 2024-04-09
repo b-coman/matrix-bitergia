@@ -5,7 +5,9 @@ require('dotenv').config();
 const crypto = require('crypto'); // Import crypto module for hashing
 
 const { fetchMessages } = require('./getMessages');
-const llmUtils = require('../src/llmUtils'); // Assuming this contains functions for LLM analysis
+const llmUtils = require('../src/llmUtils'); 
+const roomMappings = require('../config/roomMappings');
+
 
 
 // Simple hashing function for anonymizing user IDs
@@ -61,10 +63,14 @@ exports.processMessages = async (targetDate = null, roomID) => {
         }
 
         const cleanedBody = cleanMessageBody(message.content.body);
+        // retrieve the room name from the roomMappings config object
+        const roomAlias = roomMappings[message.room_id] || 'Unknown Room'; 
+
 
         // Construct the message object with timestamp conversion
         const messageObject = {
             roomId: message.room_id,
+            roomAlias: roomAlias, 
             messageId: message.event_id,
             anonymizedUserId: anonymizeUserId(message.sender),
             messageBody: cleanedBody,

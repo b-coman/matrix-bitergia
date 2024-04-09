@@ -8,11 +8,20 @@ const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
 
 const extractJsonFromString = (inputString) => {
-    // Simple extraction example. Adapt as necessary for your use case.
-    const jsonPattern = /{[\s\S]*}/;
-    const match = inputString.match(jsonPattern);
-    return match ? match[0] : null;
+    const jsonPattern = /{[\s\S]*}/; // Pattern to match JSON structure
+    const match = inputString.match(jsonPattern); // Attempt to find JSON structure in string
+    if (match) {
+        try {
+            return JSON.parse(match[0]); // Parse matched JSON string into an object
+        } catch (error) {
+            console.error('Error parsing JSON from string:', error);
+            return null; // Return null or handle error as appropriate
+        }
+    } else {
+        return null; // No JSON-like structure found in inputString
+    }
 };
+
 
 const validateLlmResponse = (response) => {
     const validate = ajv.compile(responseSchema);

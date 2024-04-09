@@ -8,7 +8,7 @@ const axios = require('axios');
 const fetchMessages = async (targetDate = null, roomID) => {
     //const roomID = encodeURIComponent(roomID);
     const baseURL = `https://matrix.org/_matrix/client/r0/rooms/${encodeURIComponent(roomID)}/messages`;
-    const params = { dir: "b", limit: 1000 };
+    const params = { dir: "b", limit: 2000 };
     const headers = { Authorization: `Bearer ${process.env.MATRIX_ACCESS_TOKEN}` };
 
     const messages = await fetchAllMessages(baseURL, params, headers);

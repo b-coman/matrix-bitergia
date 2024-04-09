@@ -22,7 +22,7 @@ exports.analyzeTextWithLlm = async (messageText) => {
       // Assuming the response structure is consistent with OpenAI's API documentation
       // Adjust the path to the text content as needed based on actual response structure
       const completionText = response.choices[0].message.content;
-      console.log(completionText);
+      //console.log(completionText);
   
       return completionText; // Return the text content of the LLM's response
     } catch (error) {

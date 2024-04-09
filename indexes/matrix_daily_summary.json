@@ -1,0 +1,15 @@
+{
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "date": { "type": "date" },
+        "roomId": { "type": "keyword" },
+        "roomAlias": { "type": "keyword" },
+        "generalSentiment": { "type": "keyword" },
+        "emergingTopics": { "type": "keyword" }
+      }
+    }
+  }

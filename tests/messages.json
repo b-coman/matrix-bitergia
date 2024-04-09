@@ -1,1852 +1,597 @@
 [
   {
-    "_id": "$0YbdnH-6GXsILflQ4h_qPQDigpkhbfaivhAKaPAH6rg",
-    "messageBody": "G1 - (By Q4,2024), all Cardano projects will have a clear path for their future, according to a general Lifecycle framework. Based on that there will be decisions about their progress, future sustainability, risk mitigations, and possible post-mortem actions. 1) Establish the project lifecycle framework 2) evaluate projects according lifecycle framework 3) implement project support items in association with framework and escalations for project health identified by assessment",
-    "timestamp": "2024-03-28T13:39:27.560Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$4XvSRrylVXmA9tRp344GpL5gzbFLtfVhAHH-FIOgXJ4",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "ideally via an issue in",
+    "timestamp": "2024-04-05T20:36:50.752Z"
   },
   {
-    "_id": "$qq_9rtpsUg_19iHqGFL_i_wnx-KZmwM6ti3Ry0J6ZSo",
-    "messageBody": "G2 - By (Q4, 2024), aim for 70% of intersect projects across both core and non-core Cardano projects to be made through transparent processes, documented in an open forum. For core projects, governance decisions will align closely with TSC’s recommendations and technical expertise. Actions: Stabilize the governance policy Work with projects to help them implement the governance policy Monitor implementation progress",
-    "timestamp": "2024-03-28T13:35:57.922Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$ecPpwnb-TojyAz99ahDvWTWGeLTgTW5TvpMRbXq4CDA",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "* it would help a lot if you provided us with a minimal reproducible example",
+    "timestamp": "2024-04-05T20:36:29.700Z"
   },
   {
-    "_id": "$faZLuUMZdr5VvmQqMUuH-rtwGrY5yyGU513llLIL2mc",
-    "messageBody": "\"By [quarter/year], all Cardano projects will have a clear path for their future, according to a general Lifecycle framework. Based on that there will be decisions about their progress, future sustainability, risk mitigations, and possible post-mortem actions.\" what do you say Michael Peyton Jones ?",
-    "timestamp": "2024-03-28T13:30:31.155Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$60-odYLe-CfPJMPyA8pYSd0pVLEMoaX7zj5MC9yPXTg",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "it would help a lot if you provided us with an minimal reproducible example",
+    "timestamp": "2024-04-05T20:36:24.875Z"
   },
   {
-    "_id": "$gYQcyphD8YuvzmCHymfGC4SkLkX7MTyWHZrJp57FcBI",
-    "messageBody": "ok ill add it, G2 - By (Q4, 2024), aim for 70% of Intersect projects will be using open communications channels for discussion and meetings Actions: Stabilize the governance policy Work with projects to help them implement the governance policy Monitor implementation progress",
-    "timestamp": "2024-03-28T13:40:38.147Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$fNQw-t9XM_bLMfhMkaUR6EsPeOhqNwn2OUor2zl4Ny8",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "are you sure it returns the same result?",
+    "timestamp": "2024-04-05T20:35:12.474Z"
   },
   {
-    "_id": "$Lbq3OiBFkAeJrbzIpyWTfpXmaJ5A_-yu06XUX-EiGhU",
-    "messageBody": "Why the extra stuff? :) \"By <time>, all Cardano projects should have a plan for their sustainable development and maintenance.\"?",
-    "timestamp": "2024-03-28T13:33:50.907Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$BHA7wbN5QjJlk_D700lbJTMXkNZU9gyLe4F_oplqVXQ",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "``` {-# INLINE lookupToken' #-} lookupToken' :: BuiltinByteString -> BI.BuiltinList (BI.BuiltinPair BI.BuiltinData BI.BuiltinData) -> Integer lookupToken' tn_b l = matchList l 0 (\\h t -> if BI.unsafeDataAsB (BI.fst h) == tn_b then -- return token value BI.unsafeDataAsI $ BI.snd h else lookupToken' tn_b t ) ````",
+    "timestamp": "2024-04-05T20:34:15.317Z"
   },
   {
-    "_id": "$c9lH7x_9QXJSL2QAJfUnaI6bMcsXP-bf71InDr6cv5I",
-    "messageBody": "\"By <time, 70% of Intersect projects will be using open communications channels for discussion and meetings.\"?",
-    "timestamp": "2024-03-28T13:36:52.139Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$OJwS-fh3iedCFaHi5zs-zJyPqOVZOPVaapRQbCxAJc0",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "* I'm certain benchmarked it many times. Maybe it has something to do with strictness.",
+    "timestamp": "2024-04-05T20:33:57.110Z"
   },
   {
-    "_id": "$woRMjhQyMil3IOgmcL7Necm3qHfM2Xej5HKAe2-ghWg",
-    "messageBody": "I don't know why we keep adding extra sentences beyond the one that states the goal :)",
-    "timestamp": "2024-03-28T13:37:49.228Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$PVR2wQE8d53-TkTQkkKE--9HjwS8FRHqikPl0uYSVYo",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "I'm certain benchmarked it many times.",
+    "timestamp": "2024-04-05T20:33:34.179Z"
   },
   {
-    "_id": "$jEMkiZ_h7LPuu97m0xVCDK2Q-k_UMasvRpB5EX477CU",
-    "messageBody": "at elast 80% adoption then 20% outliers to wrangle later",
-    "timestamp": "2024-03-28T13:29:05.579Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$32zpmoWaEZbjQ4c9MeExVC6f90I3jjPop6JZlq6O1n0",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "are you sure it's less efficient? I find it extremely hard to believe that. Not sure what `lookupToken'` is though",
+    "timestamp": "2024-04-05T20:08:52.710Z"
   },
   {
-    "_id": "$0kScdG3GRihoc9ln3YFStAZu0HpYRrMjpUyzx-Z04kQ",
-    "messageBody": "lets go woth 50 then",
-    "timestamp": "2024-03-28T13:29:35.323Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$29-fZkusKWxtyzaCyVKysGQ_wtap6Bw1_zTtMou98vg",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "* Somehow: ```builtinLovelaceValueOf builtinLovelaceValueOf b_v = BI.unsafeDataAsI $ BI.snd $ BI.head $ BI.unsafeDataAsMap $ BI.snd $ BI.head (BI.unsafeDataAsMap b_v) ``` is 5\\_000\\_000 mem less efficient than: ``` {-# INLINE builtinValueOf' #-} builtinValueOf' :: BuiltinCurrencySymbol -> TokenName -> BuiltinValue -> Integer builtinValueOf' b_cs (TokenName tn_b) b = outer_go $ BI.unsafeDataAsMap b where outer_go :: BI.BuiltinList (BI.BuiltinPair BI.BuiltinData BI.BuiltinData) -> Integer outer_go l = matchList l 0 (\\h t -> if BI.fst h == b_cs then lookupToken' tn_b $ BI.unsafeDataAsMap $ BI.snd h else outer_go t ) ``` when used like so: ``` builtinValueOf' CC.builtinAdaSymbol' adaToken r_v ``` This makes no sense to me. Also is there some config we can pass the plutustx compiler to make everything strict and allow us to insert delays / forces ourselves. Also is there an equivalent of seq for plutustx.",
+    "timestamp": "2024-04-05T18:58:39.804Z"
   },
   {
-    "_id": "$BQzO0uSoG0IIO_m2K4DpmF21fpd2dhX3XBBi7LIx_dI",
-    "messageBody": "Michael Peyton Jones: my understanding was that we first need to assess the projects according to the lifecycle framework, that would empower this sustainability, and understanding how they evolve ... if everyone agrees, I'll rephrase according to Michael Peyton Jones 's proposal --> question: are the actions good as they are?",
-    "timestamp": "2024-03-28T13:10:47.673Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$DOPVz8ltFMDZdZZXBxOVWmRtSubwoFZqTNAsPfBRnX4",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "* Somehow: ```builtinLovelaceValueOf builtinLovelaceValueOf b_v = BI.unsafeDataAsI $ BI.snd $ BI.head $ BI.unsafeDataAsMap $ BI.snd $ BI.head (BI.unsafeDataAsMap b_v) ``` is 5\\_000\\_000 mem less efficient than: ``` {-# INLINE builtinValueOf' #-} builtinValueOf' :: BuiltinCurrencySymbol -> TokenName -> BuiltinValue -> Integer builtinValueOf' b_cs (TokenName tn_b) b = outer_go $ BI.unsafeDataAsMap b where outer_go :: BI.BuiltinList (BI.BuiltinPair BI.BuiltinData BI.BuiltinData) -> Integer outer_go l = matchList l 0 (\\h t -> if BI.fst h == b_cs then lookupToken' tn_b $ BI.unsafeDataAsMap $ BI.snd h else outer_go t ) ``` when used like so: ``` builtinValueOf' CC.builtinAdaSymbol' adaToken r_v ``` This makes no sense to me.",
+    "timestamp": "2024-04-05T18:13:29.660Z"
   },
   {
-    "_id": "$2MGabqHi00sEBDVXk-pY1CSWI4Ztd5Hk8NWxPGYwUeI",
-    "messageBody": "> <user_id_removed> why is this sentence here? This is stating something about the content of the decisions, whereas this goal is about the transparency the sentence is there because it was proposed in one of our discussions in Miro",
-    "timestamp": "2024-03-28T13:14:11.772Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$eEyIhw3PtOWQckkMwHUSfWEF-P-GvwFilr2aAhzLzN8",
+    "anonymizedUserId": "eeed3bab9011780cca25cab718642afdc15f41804bcf005396df04d4e31bd976",
+    "messageBody": "Somehow: ```builtinLovelaceValueOf :: BuiltinValue -> Integer builtinLovelaceValueOf b_v = BI.unsafeDataAsI $ BI.snd $ BI.head $ BI.unsafeDataAsMap $ BI.snd $ BI.head (BI.unsafeDataAsMap b_v) ``` is 5_000_000 mem less efficient than: ``` {-# INLINE builtinValueOf' #-} builtinValueOf' :: BuiltinCurrencySymbol -> TokenName -> BuiltinValue -> Integer builtinValueOf' b_cs (TokenName tn_b) b = outer_go $ BI.unsafeDataAsMap b where outer_go :: BI.BuiltinList (BI.BuiltinPair BI.BuiltinData BI.BuiltinData) -> Integer outer_go l = matchList l 0 (\\h t -> if BI.fst h == b_cs then lookupToken' tn_b $ BI.unsafeDataAsMap $ BI.snd h else outer_go t ) ``` when used like so: ``` builtinValueOf' CC.builtinAdaSymbol' adaToken r_v ```",
+    "timestamp": "2024-04-05T18:13:18.352Z"
   },
   {
-    "_id": "$tOWWmD7WdWI5O12RNy2uMyqTVtX37vBAeJY59_3K-kc",
-    "messageBody": "the lifecycle framework is a means to an end, the end here is having some kind of sustainability plan. so yes, I think it should be part of the actions, see my comment above",
-    "timestamp": "2024-03-28T13:20:15.660Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$1IEm_E28WlNgvHL2EDZJdPb-uNjfx3_dpWcscrIv9Ak",
+    "anonymizedUserId": "1770569b1a38d39c1c44e35e9d49e1d5f226525f7ee52d69d82dbe5f6e3b6818",
+    "messageBody": "Okey, everything is clear now - please forgive my outdated/invalid report. I used older version of PlutusTx and the issue is not present in the newer version any more. @Kenneth MacKenzie confirmed what you suggested Michael Peyton Jones that these builtins will be available in PV3.",
+    "timestamp": "2024-04-05T15:53:22.935Z"
   },
   {
-    "_id": "$meEqY5lMye10Ryrvrmh3gP_pCmjXwNptGZdKaHOOGiE",
-    "messageBody": "gues sts what you decide to call it but it cover both ends of spectrum and elaborates the starting pint and process for each stage of it",
-    "timestamp": "2024-03-28T10:37:51.926Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$ye2_o3ndKvWNekd9YWWiauE5wqxyJBOULsDSYvxrVHw",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "that's what I'd expect from such codes generally",
+    "timestamp": "2024-04-05T14:37:23.360Z"
   },
   {
-    "_id": "$VtfMreA0a59qA8z4gNLoAaA3mpB-Uvv92OINMfUn0zQ",
-    "messageBody": "im fine with this and we include the incubation under the lifecycle framework",
-    "timestamp": "2024-03-28T13:21:12.772Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$ieJ0tY7L-iE4fo7LJI3c_YkVWjP_SsCj7YzQKdf1DDo",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "yes",
+    "timestamp": "2024-04-05T14:37:15.511Z"
   },
   {
-    "_id": "$Hqe-S6alzdMNX8GCJig8XOdi0KgwLSLBSb_Ca_BTJLE",
-    "messageBody": "also silona worte hyperledger's so we have the author to assist with this",
-    "timestamp": "2024-03-28T10:38:43.277Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$iex6OKpEpVbG290BFBvit8RE3snqfSpAuxFEgSwKB_U",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "For starters this (remove but don't recycle) looks like an adequate policy, wdyt?",
+    "timestamp": "2024-04-05T14:37:09.923Z"
   },
   {
-    "_id": "$cMe1qtHxEiY9F9Wy_bLLIuiVyYKaP-QY4CPKdSI6cP0",
-    "messageBody": "Just a remidner the OSc call is today at 8-9 am PST",
-    "timestamp": "2024-03-28T12:51:29.677Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$S62pwss-kl0URE4dNMwEu0TtvIy2efB1AAuEvD8vzYg",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "I did remove the unused code PT4, but didn't dare to reuse it, as I am not sure about the impact on users.",
+    "timestamp": "2024-04-05T14:36:22.624Z"
   },
   {
-    "_id": "$kY0VzirxHhiOyWz1ecoUbunQrNLOPBqrrjgfPxoHZvw",
-    "messageBody": "but does it make sense to you? :)",
-    "timestamp": "2024-03-28T13:17:55.657Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$GNpTJNTJx4N1Qm1V0Yn7JjsNq488XllzeiAzG_QSLeE",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "",
+    "timestamp": "2024-04-05T14:34:38.608Z"
   },
   {
-    "_id": "$sb6SI7a-f7Yav5rOG4DL9Wa3GmKi2qINxcCdl0yXOrQ",
-    "messageBody": "I agree with number of proejcts",
-    "timestamp": "2024-03-28T13:28:26.011Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$c49pqyxu28dcEXGnOw0aAlQDILnwsvBrzjvz_FWlIRQ",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "so what do you think we should do?",
+    "timestamp": "2024-04-05T13:08:42.847Z"
   },
   {
-    "_id": "$1EL41r4LkgjcIeWfctHo4b7MK-_Nqr_46T2QrIVQBmo",
-    "messageBody": "this goal seems quite different to what we were discussing in the meeting? I thought we agreed that we were specifically looking at _sustainability_. So I was thinking something like \"By <time> all Intersect projects will either have a Sustainability Plan laying out how the project expects to sustain its development, or will be explicitly noted as 'in danger' in the project lifecycle framework\"",
-    "timestamp": "2024-03-28T10:25:37.935Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$kAa5vvB5toAfHv031oxpSGZY7WugltZ9kMPD6pYliI8",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "I think you can assume that if the policy isn't written down then there isn't one",
+    "timestamp": "2024-04-05T13:08:37.438Z"
   },
   {
-    "_id": "$1w3afM9OH52w-_ZSMS101ipq5uGbZ98LN6F8ju7Uh_0",
-    "messageBody": "> The best option it seems is email lists, ala linux kernel FWIW this was my initial thought as well, but I surveyed people and nobody wanted to use them, so we shelved them for now",
-    "timestamp": "2024-03-28T10:27:32.694Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$RRq0BmPg6Lj2QHCczzoXE4dLGDF_xAXNDotj5oGC1JU",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "not in many cases? If you do `insert`/`delete`/`lookup`, you don't want to flatten the whole map and return it as an iterated application, because none of this operations is supposed to process the whole map, it's kinda the whole point of having a map",
+    "timestamp": "2024-04-05T12:20:58.074Z"
   },
   {
-    "_id": "$zi4ybHtV_psvxP2qZ7dK1epxfzSfpN9RAjmCJt_oJHM",
-    "messageBody": "yes the project lifecycle is just a subcomponent of project incubation, see the Hyperledger example, it denotes not only healthy, dying, dead, but sandbox, mature, graduated",
-    "timestamp": "2024-03-28T10:27:48.891Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$pa19ewz_qwVmER_DNlUsJ5nvBEZjutF0a6SJJvB91Is",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* this error code isn't used anywhere **in the plutus repository**. Should I remove it and if \"yes\" then next question is \"Is it ok to reassign newly released code PT4 then?\"",
+    "timestamp": "2024-04-05T12:05:23.239Z"
   },
   {
-    "_id": "$g2qFL1EHAhDM0nnzyXm04eUXkMw1cRnLVRFOjPX5Lb8",
-    "messageBody": "I think they can be similar to our other policy goal: 1. Write it/stabilize it 2. Help people implement it 3. Monitor progress",
-    "timestamp": "2024-03-28T10:18:19.556Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$rVyS5j8oriEyn14NzarJmxMtGp9O5EkBXs5-42np14E",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* this error code isn't used anywhere **in our codebase**. Should I remove it and if \"yes\" then next question is \"Is it ok to reassign newly released code PT4 then?\"",
+    "timestamp": "2024-04-05T12:05:02.405Z"
   },
   {
-    "_id": "$N6TDNX1N4VQWjiAcuKWdhQm6i9JW_L_M0Nf-eucYNXI",
-    "messageBody": "\"how do I know whether I trust this signing key\" is one of the oldest problems in cryptography :)",
-    "timestamp": "2024-03-28T10:26:58.656Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$H6WlpK7HPcwt37hfxWoRUwuKMXacpq3yq1Pvaf7igf8",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Are these error codes reserved for internal use?",
+    "timestamp": "2024-04-05T12:04:46.693Z"
   },
   {
-    "_id": "$xOl41DdwNlEAvkOmRyhjvShaxaCRT_Xv5aRsweANGv8",
-    "messageBody": "I think you mean the other way around? incubation is a subcomponent of lifectyle?",
-    "timestamp": "2024-03-28T10:32:43.092Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$lP9QPPwWzf4VjqWiiubnm3aAKA8AaLv2n_V-0_YuwRI",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "this error code isn't used anywhere. Should I remove it and if \"yes\" then next question is \"Is it ok to reassign newly released code PT4 then?\"",
+    "timestamp": "2024-04-05T12:03:44.900Z"
   },
   {
-    "_id": "$GUc6Q0nlxPL9p_WrysW4uaAm5NM60MIqlQLgd-3njro",
-    "messageBody": "actions: 1. Write the framework 2. Talk to all the projects and work out the plans 3. That's it?",
-    "timestamp": "2024-03-28T10:26:03.187Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$3An9jRuq7PHA0FqMcX8mvKDGNACQgEtkL25DNo5AiPM",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "well, it's still a lot of saved work to do the decision about what the output looks like in Haskell: you call one builtin, instead of N to deconstruct the value and decide in PLC. Same complexity, probably",
+    "timestamp": "2024-04-05T11:24:54.758Z"
   },
   {
-    "_id": "$pjlnmrivB2B0XWKoE5xPCIgbuGUw90ozIBdPtvpJKPU",
-    "messageBody": "yes but more, it also elaborates a proejct support path for healthy proejcts",
-    "timestamp": "2024-03-28T10:24:32.644Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$iZw5tiHuDhs6xjzrKI28wKQYRLmQAZoUEAr9sHAkVe0",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "probably something like that indeed, with maps the spine of the result depends on the result of the passed function and so there isn't much that we can actually optimize by having a builtin unless we do our old cek->builtins->cek->builtins->... thing where we could directly call the CEK machine from within a builtin",
+    "timestamp": "2024-04-05T11:20:02.593Z"
   },
   {
-    "_id": "$N3OuJefD3hPtChR1p0m77PlRP_MXxgq-NbIkoyIXljs",
-    "messageBody": "Christian Taylor: to be clear, \"project incubation policy\" is really \"project lifecycle policy\", right?",
-    "timestamp": "2024-03-28T10:19:34.939Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$lG-nkKoh37UnncF8v_hevy_ubmGAp60gXhNN3DXhsO4",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "interesting to think about what kinds of functions we can do this way: is it something like \"applicative\" functions, i.e. ones where we don't need to know the result of running a function in order to work out the structure of the computation?",
+    "timestamp": "2024-04-05T11:17:20.858Z"
   },
   {
-    "_id": "$Qo0EHgvAJTLKcZWXCC6upJ672UJzo89DIzAbMIw1o_I",
-    "messageBody": "> However, I think that adherence to these security policies would be a \"mandate\" if you will for all Intersect-maintained repositories and so the measurement should always be 100%? But realistically, we might not be able to get there, or not to 100% adherence",
-    "timestamp": "2024-03-28T10:17:05.731Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$ROBVQQpK7t8QkC01DLnzm34O043q388at4RFLybVRrM",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "good question though",
+    "timestamp": "2024-04-05T11:16:24.162Z"
   },
   {
-    "_id": "$JkT7tpwIaz68KcXshMaER_7NWE4FP9vj0rYYi75IDW0",
-    "messageBody": "> We’ll prioritize contracted maintainers from other organizations to ensure project diversity and sustained contribution. We’ll utilize and promote existing tooling and internal resources to support their involvement. I'm not sure these sentences add anything",
-    "timestamp": "2024-03-28T10:15:49.625Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$j0jcl1zztnmrDLnc62kVkSm3Os70bk6H3hQzHKOxnik",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "sorry, I think we're agreeing, just in circles :) I agree that your approach lets us do some HO builtins, possibly including stuff like the Map example > is it really different from just implementing maps in Plutus Tx? well, we can say the same about pattern-matching builtins, no? a bunch of the work happens in the main evaluator after the builtin is finished. So wherre is the improvement? It has to be that the bit where we \"decide what evaluation to do\" is faster. the same could be true of something like `mapList`: you don't have to do N builtin calls to get all the elements of the list in order to know that you need to map each element and cons them all together; that part gets done in Haskell",
+    "timestamp": "2024-04-05T11:16:21.253Z"
   },
   {
-    "_id": "$Qmd3smPoptf3Mx3z3ZzW-O9vD_zHtwsRRbPMIKBkS7U",
-    "messageBody": "> For core projects, governance decisions will align closely with TSC’s recommendations and technical expertise. why is this sentence here? This is stating something about the content of the decisions, whereas this goal is about the transparency",
-    "timestamp": "2024-03-28T10:13:25.616Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$Uf2CkGp4IadDk0dTYcm2E0dncz_kGxLuCjMZvoXix5A",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "> well, we can't implement it today with our current builtins, right? because a builtin that takes an ordering function as an argument is a HO builtin, no? Sure, but there's a PR making that possible... Oh yeah, stupid me, those functions aren't gonna be evaluated within the definition of the builtin, we'd pass them back to the CEK machine instead and at that point is it really different from just implementing maps in Plutus Tx?",
+    "timestamp": "2024-04-05T11:10:35.150Z"
   },
   {
-    "_id": "$nlvUCTGDJMVc1oKlZA7MifIThB0pRCjiS9YaMWmisMI",
-    "messageBody": "I thought we agreed that the metric was going to be the number of projects which are following the communications part of the goverannce policy",
-    "timestamp": "2024-03-28T10:12:54.723Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$mxfUZMARjv9kUVbl6SvXimxwa3Z5MA7QzmhH_FPUYSY",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "we can indeed compile dictionary-passing in Haskell to simple function-passing in PLC and for builtins... but we can't currently pass those functions!",
+    "timestamp": "2024-04-05T10:58:47.240Z"
   },
   {
-    "_id": "$9G4KEdtkyKNCTakANtgBVDA2lDXL8k6-F3u-kLnlzVg",
-    "messageBody": "for actions, how about: 1. Stabilize the governance policy 2. Work with projects to help them implement the governance policy 3. Monitor implementation progress",
-    "timestamp": "2024-03-28T10:14:23.549Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$XIAprpn8LmuTwYh_x20KIZPOjY0gY1AIpq3c8s4HgiY",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "well, we can't implement it today with our current builtins, right? because a builtin that takes an ordering function as an argument is a HO builtin, no?",
+    "timestamp": "2024-04-05T10:58:10.593Z"
   },
   {
-    "_id": "$DvAgpjKsNJEizRzk4TNbOzQGs8a4cnJoOpT0o9ES8rE",
-    "messageBody": "I agree that this is ambitious. Maybe let's say 50%, and just be conscious that we're less likely to achieve this one",
-    "timestamp": "2024-03-28T10:15:22.467Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$wc7oHzXq23GZdUn8HQqjgEXQX-TLwAtYRWPipbtwhcs",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "> because we need to pass in the ordering function what's the problem with that? It's all functions in GHC Core as well and we can wrap it up in a class in Plutus Tx making the whole thing indistinguishable from what GHC does",
+    "timestamp": "2024-04-05T10:57:26.277Z"
   },
   {
-    "_id": "$8IGRJUanv1ji-wFryLCO955J-TeSeNisXxIKUUXTdtI",
-    "messageBody": "> with dedicated security officers appointed to core projects. delete, this is just jumping ahead to what the policy will be",
-    "timestamp": "2024-03-28T10:16:29.107Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$wXzbemTJSJ4WYnd9jvOqfn9kzkwxmhrVP2YfK4iJAcY",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "I think the issue with `Map` is more that we need HO builtins to even make them _possible_, because we need to pass in the ordering function. Sure, we'd then have a question of what API to expose, but at the moment I think we simply can't do a generic map at all",
+    "timestamp": "2024-04-05T10:55:13.218Z"
   },
   {
-    "_id": "$mzL77gEiuDSAEHTuREg7KWK9PxdOx4Eiq4k2vARijys",
-    "messageBody": "the actions are jumping ahead to what the policy will be",
-    "timestamp": "2024-03-28T10:17:57.199Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$545tVVJ2KJPPPDd8C1QLHkGQJd0_bfxwR_y8upyED7o",
+    "anonymizedUserId": "0e965b252adbbce5cd4713c5d8576e7bd9bbd68058c7e90cd61be6ab2026d88e",
+    "messageBody": "> I think I'm unsure that we can do all higher-order builtins that way. we can't do _all_ builtins for any kind of builtins. So I think the worst part is that even if we could have HO builtins without any limitations, how useful could we even make them? You have a `Map`: what are you going to expose as builtins? The whole API of `Data.Map`? The most useful functions? The most general ones, even though their instantiations aren't going to be as fast as they're in the API of `Data.Map`? Etc, it's all relative and we can't get _all_ of anything. Bottom line is that HO builtins in some form are possible and have some utility.",
+    "timestamp": "2024-04-05T10:52:02.192Z"
   },
   {
-    "_id": "$7Tl7L6Aihd9-aJTdKGq9XTVvWfrZZGZURaandde5-KE",
-    "messageBody": "do we want to limit this to Cardano projects? unsure",
-    "timestamp": "2024-03-28T10:17:25.521Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$v1W0esiLhL5hS-1KCQG5fM5gp5KnynWZTsUr-4ur1y0",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "If not, I'm sure we can figure out a way to make it work",
+    "timestamp": "2024-04-05T10:40:47.348Z"
   },
   {
-    "_id": "$pCIOSrrqVn2g7WT69Ugdkej51UoIglreXSc_Y6au7Vk",
-    "messageBody": "> <user_id_removed> I don't know that we can set such an ambitious timeline for this goal (end of 2024) because a large part of finding and organizing primary maintainers let alone \"backup\" or secondary maintainers will largely depend on the amount of budget that Intersect is going to be given to execute on this goal. > > Is it enough to lay the groundwork to identify potentially viable individuals? What does the maintainer \"grant\" or \"contract\" application/RFP and subsequent hiring process look like at this point? Yes, any maintainer needs to have demonstrated their ability by an extended period of successful contributions, and be willing to engage on an essentially unlimited basis. That limits the pool a lot.",
-    "timestamp": "2024-03-28T09:44:54.594Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$cdPvyBhuzxOAWQgcuEcdIEcIXGGShkSvtfBQ3zLbWLI",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Can we refer to source files not located under the `doc/read-the-docs-site` from it?",
+    "timestamp": "2024-04-05T10:25:11.150Z"
   },
   {
-    "_id": "$4RhzaGJcyRLt7tcQoNoKkocFsQ48vdK1SuMqs8LksXY",
-    "messageBody": "The best option it seems is email lists, ala linux kernel that is a lot to ask of people nowadays which is why github and gitlab become popular we ought to stick to Cardano, and point people in the right direction. We all benefit when others do good, and people do good without needing to be told they are free to do that! But yes, keep the scope in check Intersect is the long term future of Cardano the freedom interoperability decentralization thing is nice, but gotta make do with whats available now even stinky microsoft and their swanky product github",
-    "timestamp": "2024-03-28T05:10:10.763Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$cQQkFKWqBKIQaq9JNdPm_7v75u8r3eU6Wy_magxdayM",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "single source of truth is usually the answer",
+    "timestamp": "2024-04-05T10:23:40.436Z"
   },
   {
-    "_id": "$dkXk_FAyyRWZX7iEgcErPguzWaZqnXTgjjZnbjNK14I",
-    "messageBody": "heh yeah, but even with email lists, the vast majority of people will end up subscribing to it with their Google or Apple email account so... where does that get us really? The lesser of two weevils? I don't think it's a bad goal, just out of scope for this particular group :)",
-    "timestamp": "2024-03-28T07:06:51.001Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$X2dd_m5UCtTChaMyLfN2wbsPEP7klGBy7_4yzuQDW-0",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "read the mapping from a file, read that file into the docs to make the table?",
+    "timestamp": "2024-04-05T10:23:31.726Z"
   },
   {
-    "_id": "$N_7rLFgVHoLz3OQLXbPqNnmuRWod4jL5Y02IgN7wztc",
-    "messageBody": "> <user_id_removed> still gotta trust the sha, need signatures, trusted parties, etc. hello! please share details on the trusting trust issues you mentioned how do you get trust in a signing key? would newer hashing algorithms suffice?",
-    "timestamp": "2024-03-28T05:24:14.370Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$HPLaSetuc-_J69ql_ba5tsk2jiCspT6HzBPCZj1PBxs",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Joseph Fajen: FYI^ The instance of a classical more general problem of keeping docs up-to-date. What's our solution going forward?",
+    "timestamp": "2024-04-05T10:21:39.439Z"
   },
   {
-    "_id": "$hhBKoJGJDc2HQs7HJselpOi4Aruv6BlB7uXtdeW34iw",
-    "messageBody": "* I actually have a way to do this with partner Bitergia called a footprint analysis that shows all contributors and projects that have worked on, showing the footprint INtersect is connecting",
-    "timestamp": "2024-03-28T09:51:09.535Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$cotGCFhjK0ORapkZZzebevfMVZpHXGpSd_tv-HhxOr8",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Sorry, concerns come up faster than I address them 😆. Next concern is that we duplicate this error information in our [troubleshooting doc](), and its already outdated: PT19 is missing and maybe other changes too.",
+    "timestamp": "2024-04-05T10:18:35.275Z"
   },
   {
-    "_id": "$LrvLElzorhcxIGs-9kgy1VhP1TgHrZbAd14TEyoflhE",
-    "messageBody": "I actually have a way to do this with partner Bitergia called a footptrint analysis that shows all contributors and proejcts that have worked on, showing the fottprint INtersect is ocnnceting",
-    "timestamp": "2024-03-28T09:50:12.819Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$hTXLvNsW6DbfX0LSl5e2axCO46j4Tmt-gR4lorPTEsY",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "will do.",
+    "timestamp": "2024-04-05T10:10:09.222Z"
   },
   {
-    "_id": "$JIor9CySzQ6sCh7TdlSjBt9sKSNAPHMbcTKxxG700ec",
-    "messageBody": "we do have tyhe policy, but its also the effort of having proejct adoption, and we've only piloted with @marcin currently, so Q2 or Q3 i think makes sense",
-    "timestamp": "2024-03-28T09:56:34.179Z"
-  },
-  {
-    "_id": "$IjeJO1c-zK5mOTGKSSaji7ltMpmn5WWZrj-r7jAPtS8",
-    "messageBody": "i think most of the definitions will come from the project incubation policy which is target complete by end of Q2",
-    "timestamp": "2024-03-28T09:58:49.219Z"
-  },
-  {
-    "_id": "$MRvvejheJobC2j2zzUt29_CnH9ItCWh2IiPuAwOQDtA",
-    "messageBody": "I thought we agreed that \"X% of decisions\" was unmeasurable?",
-    "timestamp": "2024-03-28T10:12:09.421Z"
-  },
-  {
-    "_id": "$J3VI9lovQceSZoSI0MB6pY8HW8fpgMa_xRQgbsDPiiI",
-    "messageBody": "* **G1 - By \\[quarter/year\\], we’ll empower the health of Cardano projects by creating and implementing a Lifecycle Management Framework. That way we’ll have a clear view about the future of our initiatives, and monitor key aspects such as diversity, sustainability and funding.** **Metrics:** - x% of the projects will audited - y% of projects will have a diversified funding model **Actions:** **1. Conduct project audits** Develop and execute an audit plan for all Cardano (or not all, if not, to be specified) projects to assess their current stage, health, and needs. This includes (proposals) - reviewing project documentation - development progress - community engagement / maintainers / contributors - funding models - risks **2. Develop the Lifecycle Management Framework** This framework will include guidelines for project stages, key milestones, success metrics, risk indicators, intervention strategies, and post-mortem actions. Also a plan for continuously monitoring projects. **3. Adopt key open source policies for project guidance and sustainability** OSC will define and adopt a set of at least 5 essential open-source policies focused on guiding project development and sustainability.",
-    "timestamp": "2024-03-27T17:30:43.803Z"
-  },
-  {
-    "_id": "$CR2ynougZxlmziE8FgU4WLiPwz9c9qkYQufFNyjcFY4",
-    "messageBody": "_** G1 - By [quarter/year], we’ll empower the health of Cardano projects by creating and implementing a Lifecycle Management Framework. That way we’ll have a clear view about the future of our initiatives, and monitor key aspects such as diversity, sustainability and funding.**_ **Metrics:** - x% of the projects will audited - y% of projects will have a diversified funding model **Actions:** **1. Conduct project audits** Develop and execute an audit plan for all Cardano (or not all, if not, to be specified) projects to assess their current stage, health, and needs. This includes (proposals) - reviewing project documentation - development progress - community engagement / maintainers / contributors - funding models - risks **2. Develop the Lifecycle Management Framework** This framework will include guidelines for project stages, key milestones, success metrics, risk indicators, intervention strategies, and post-mortem actions. Also a plan for continuously monitoring projects. **Adopt key open source policies for project guidance and sustainability** OSC will define and adopt a set of at least 5 essential open-source policies focused on guiding project development and sustainability.",
-    "timestamp": "2024-03-27T17:29:58.066Z"
-  },
-  {
-    "_id": "$UGQWx1R1ymjZbeGatZCw5Ymj46EYeupZFCjxsQtDJa8",
-    "messageBody": "**G3 - By the end of 2024 (??) 80% of core Cardano projects will be supported by paid maintainers from at least two companies. We’ll prioritize contracted maintainers from other organizations to ensure project diversity and sustained contribution. We’ll utilize and promote existing tooling and internal resources to support their involvement.** **Actions:** **1. Engage past collaborators (+ identify maintainers)** Conduct a survey among core Cardano project teams to identify companies and professionals they've successfully collaborated with in the past. Compile a list of potential maintainers with proven track of records. **2. Engage TSC** Present a formal request to the TSC, emphasizing the strategic importance of diversifying project maintainers **3. Facilitate maintenance engagements** Initiate a matchmaking process between core Cardano projects and potential maintainers identified in action #1",
-    "timestamp": "2024-03-27T17:33:15.157Z"
-  },
-  {
-    "_id": "$imsIQUFZhWGrcsXGlYvsQlMHlveSBIrec_acr2Rx4TA",
-    "messageBody": "**G4 - By [quarter/year], establish a security framework for all OS Cardano projects that will include [...]. By [quarter/year] we’ll be ensuring at least x% of projects adhere to standardized security policies, with dedicated security officers appointed to core projects.** **Metrics:** % of Cardano projects implementing the standardized security policy. **Actions** **1. Develop and standardize security policies** Collaborate with security experts within / outside the Cardano ecosystem to create comprehensive security policies that cover aspects of open-source project development and maintenance **2. Security officers for core projects** Identify and appoint professionals as security officers for each core project, responsible for overseeing and enforcing security practice. **3. Implement a security issue reporting** Establish a process for the community to report security vulnerabilities, and outline steps for response / resolution by teams and security officers.",
-    "timestamp": "2024-03-27T17:34:54.109Z"
-  },
-  {
-    "_id": "$EYJzXlf6nz0E1hGsD7FNBKPO5m-XJTbijDx7OVNv5og",
-    "messageBody": "* **G4 - By \\[quarter/year\\], establish a security framework for all OS Cardano projects that will include \\[...\\]. By \\[quarter/year\\] we’ll be ensuring at least x% of projects adhere to standardized security policies, with dedicated security officers appointed to core projects.** **Metrics:** % of Cardano projects implementing the standardized security policy. **Actions** **1. Develop / standardize security policies** Collaborate with security experts within / outside the Cardano ecosystem to create comprehensive security policies that cover aspects of open-source project development and maintenance **2. Security officers for core projects** Identify and appoint professionals as security officers for each core project, responsible for overseeing and enforcing security practice. **3. Implement security issue reporting** Establish a process for the community to report security vulnerabilities, and outline steps for response / resolution by teams and security officers.",
-    "timestamp": "2024-03-27T17:36:32.659Z"
-  },
-  {
-    "_id": "$DR4RperAW_3zkzxhn9vwgZy_WaQOKZGZvhoXNBa6wqg",
-    "messageBody": "> <user_id_removed> Hello everyone!! > > First of all I want to send you a big thanks for the good feedback received today on the goals 🥰 > > For the Friday's meeting, when some decisions should be made, I'll put here the last version for each goal, in a separate message. > I tried to distil some actions, or action candidates to be more precise, according to my current level of knowledge and understanding... If something doesn't make sense, or should be reformulated, please come up with you proposal, or how would you see the goal/metric/action being reformulated. > > Thanks again, and I'll keep my fingers crossed :) Small caveat but Thursday's meeting :)",
-    "timestamp": "2024-03-27T17:30:19.507Z"
-  },
-  {
-    "_id": "$fWOz9vCFaG6IXqTZMANGzwpHT_cHmmMPJmBnBmILNRo",
-    "messageBody": "Hello everyone!! First of all I want to send you a big thanks for the good feedback received today on the goals 🥰 For the Friday's meeting, when some decisions should be made, I'll put here the last version for each goal, in a separate message. I tried to distil some actions, or action candidates to be more precise, according to my current level of knowledge and understanding... If something doesn't make sense, or should be reformulated, please come up with you proposal, or how would you see the goal/metric/action being reformulated. Thanks again, and I'll keep my fingers crossed :)",
-    "timestamp": "2024-03-27T17:27:10.039Z"
-  },
-  {
-    "_id": "$2h-LoLW1SwjRBw3cLyRVMJEyMniadXOo6r2uRdSI_y0",
-    "messageBody": "**G2 - By [quarter/year], aim for X% of governance decisions across both core and non-core Cardano projects to be made through transparent processes, documented in an open forum. For core projects, governance decisions will align closely with TSC’s recommendations and technical expertise.** **Actions:** 1. Stabilize the communication guidelines and tooling 2. Promote and disseminate the governance policy 3. Monitor and evaluate governance processes",
-    "timestamp": "2024-03-27T17:31:59.053Z"
-  },
-  {
-    "_id": "$4xgIhQdqv7T7DBo1yn1gYdpwXC9bb0s9fpENVqHlffc",
-    "messageBody": "That would have been my assumption too, but this seems to be debatable in the security community. Vulnerabilities can be discovered or leaked before the open source is patched, and hacked versions can be more easily constructed by malicious actors",
-    "timestamp": "2024-03-27T12:31:49.269Z"
-  },
-  {
-    "_id": "$-0dipAO8YKoHzNoS4gxdNpQsUk0uGyxlAqcA4bigg1w",
-    "messageBody": "> <user_id_removed> This is fine but it misses out a huge amount; governance actions can let us move to a new protocol version, but in order to get to that point a huge amount has to have happened, and we're thinking about development work here. > > So the governance process I'm thinking about here is more like: > - Intersect looks at CIPs (or sponsors the writing of CIPs) > - This leads to contractual proposals to implement some things > - This leads to them getting implemented > - This leads to them getting released and deployed (providing the governance action gets approved) > > What ensures this process follows the will of the community? Something like: the membership of intersect is a proxy for the community, the TSC is accountable to the membership, and everything else is accountable to the TSC Yes, the governance actions simply give us high level consensus on specific on-chain actions",
-    "timestamp": "2024-03-26T12:10:17.781Z"
-  },
-  {
-    "_id": "$YPGLTNENTWONFO3HMUMrPt0pWf-P3XIy6C3UEee4Cq4",
-    "messageBody": "> So the vision for Cardano is that community will be expressed through governance actions. This is fine but it misses out a huge amount; governance actions can let us move to a new protocol version, but in order to get to that point a huge amount has to have happened, and we're thinking about development work here. So the governance process I'm thinking about here is more like: - Intersect looks at CIPs (or sponsors the writing of CIPs) - This leads to contractual proposals to implement some things - This leads to them getting implemented - This leads to them getting released and deployed (providing the governance action gets approved) What ensures this process follows the will of the community? Something like: the membership of intersect is a proxy for the community, the TSC is accountable to the membership, and everything else is accountable to the TSC",
-    "timestamp": "2024-03-26T11:39:25.243Z"
-  },
-  {
-    "_id": "$ytrFsNZsdi3YSDtRNpJ-MZzKoMz4bluQh3Fvz6z9wEM",
-    "messageBody": "I'd expect some contributors to be motivated to do work that is not prioritised, simply because they are interested in a new feature, for example - that will then need to be incorporated somehow - and perhaps balanced against other work. This is common in open source projects",
-    "timestamp": "2024-03-26T12:16:16.937Z"
-  },
-  {
-    "_id": "$ixUINZpi3g_Ham6QcBYDtCZPU0e5cEBqQZ6Is7RVAGY",
-    "messageBody": "It is an improvement over proprietary software, where no one except a few privileged individuals know the source code. There is also an incentive not to disclose vulnerabilities right away in the hopes it can be patched before other people notice",
-    "timestamp": "2024-03-26T15:41:10.887Z"
-  },
-  {
-    "_id": "$Mi_ATSkGEb1IFGJ-k1JhjwTUDTiArqxynAahsrBIyCM",
-    "messageBody": "> <user_id_removed> We do build the node with nix already :) but I don't think most of the SPOs use that route Most SPOs honestly rely on the \"CNTools\" package which I believe just fetches the binaries at this point",
-    "timestamp": "2024-03-26T17:02:01.025Z"
-  },
-  {
-    "_id": "$6RjYrDym6HiMaXslC2zy11OIv2ZlC34lEiM-3g0L1jA",
-    "messageBody": "Ultimately, the community as a whole can express approval or not via participation in the on-chain actions, but it has the opportunity to participate at earlier stages via direct engagement with Intersect",
-    "timestamp": "2024-03-26T12:12:29.678Z"
-  },
-  {
-    "_id": "$oihM3mjiGzXqekka7HvotBq8m-K6K6OuFKVX_HDF7IA",
-    "messageBody": "but for a HF to even be possible you already need all the SPOs **that matter** to agree to install a new version of the node software. :)",
-    "timestamp": "2024-03-26T16:57:30.161Z"
-  },
-  {
-    "_id": "$679ReFmU5wCD03W_WPdCzP49nDVkSgZJivg-BTnjRRY",
-    "messageBody": "Work prioritisation will be a matter of constructive dialogue between users and implementors to identify what is wanted and what is feasible",
-    "timestamp": "2024-03-26T12:13:58.444Z"
-  },
-  {
-    "_id": "$AHom7t09t1F1cuXyKfHKbgLjlICpKjfAbusrcAAv8XI",
-    "messageBody": "The TSC will be the route for focusing community priorities, engaging in dialogue, setting up contracts etc",
-    "timestamp": "2024-03-26T12:11:20.908Z"
-  },
-  {
-    "_id": "$XFKp7VhUWZmvjcsLoeNEij2ukZ1G7Yv8SHjKUXLpBLo",
-    "messageBody": "> <user_id_removed> just to add some rumination on the centralization aspect: there are various aspects of running Cardano that are somewhat necessarily centralized because they rely on everyone agreeing to do something. Most notably, that means updating the software and going for HFs. The community gets a veto on HFs with 1694, but for a HF to even be possible you already need all the SPOs to agree to install a new version of the node software (and the same one!). > > Arguably, a major function of intersect is to take the decentralized governance input from the community and mediate that into the more centralized bits of work that have to happen. That's why I keep banging on about Legitimacy: making sure everything is accountable to the TSC keeps us tethered to the decentralized governance because the TSC is accountable to that (how that works is not our problem, fortunately!) Do I understand it right that by Legitimacy you mean the need to assure quality of software accessible via Intersect GitHub org page? thank you.",
-    "timestamp": "2024-03-26T05:51:32.804Z"
-  },
-  {
-    "_id": "$BaOSfedsee-wYU-nsIb3ALbGOvM8HHliT_YcrHqorDg",
-    "messageBody": "Maybe this would clarify the point: I would delete my GitLabs if I could get away with it. The only reason I have them is I need to host a database somewhere and I need the access control that comes with the software. Were it the case that I could rely on an access control system encoded in plutus, I would do that instead, which would as well incidentally improve the supply chain provenance. So these problems are either related or not depending on how you look at it.",
-    "timestamp": "2024-03-25T14:37:23.534Z"
-  },
-  {
-    "_id": "$aT1muNYKoAatPmKrrxOK9W2JhU6qzMygLdBwpSaNIAw",
-    "messageBody": "* As you said it's non-trivial - and my inclination here would be to simply discharge web2 from the software development process entirely, actually. Because, why not?",
-    "timestamp": "2024-03-26T05:35:58.586Z"
-  },
-  {
-    "_id": "$ipfsl9pektZimHW8X-WP60uuzZVwabq6XaziZaSDR_o",
-    "messageBody": "As you said it's non-trivial - and my intuition here would be to simply discharge web2 from the software development process entirely, actually. Because, why not?",
-    "timestamp": "2024-03-26T05:34:52.413Z"
-  },
-  {
-    "_id": "$ODbOA5sSykbC6TfXtt3ycAlxwwhIBKV0CWLHO3Kg7zw",
-    "messageBody": "Michael Peyton Jones: You extracted what I was actually concerned about in the other thread.",
-    "timestamp": "2024-03-26T05:05:25.473Z"
-  },
-  {
-    "_id": "$BHgnFbPkA3DnUSWc95FyP8de25q_cfBE-pX5DjFrTjg",
-    "messageBody": "I feel like I already pointed out that this was a small improvement and not really what the point was.",
-    "timestamp": "2024-03-25T14:32:30.058Z"
-  },
-  {
-    "_id": "$vAcAzlGDkoEMI771toUZha1XuPFSuq7m1W74esepHJE",
-    "messageBody": "what _is_ the point then? it sounded like you thought this was very important",
-    "timestamp": "2024-03-25T15:27:54.662Z"
-  },
-  {
-    "_id": "$4n6CCBRB_S2WMDW0Ph2UwmPRhApr8WA1lseok0iEhsE",
-    "messageBody": "This what I'm concerned about, the rest is just my being imprecise.",
-    "timestamp": "2024-03-26T05:06:05.626Z"
-  },
-  {
-    "_id": "$y-H6hbcVXGx5SgY7JQ0o99dEgteCGIS9YpywISqKfxA",
-    "messageBody": "1000000776.jpg",
-    "timestamp": "2024-03-26T05:05:24.215Z"
-  },
-  {
-    "_id": "$ZRzfqAD8GbyvaTulSUiOkx5FSRGLRKsXeedf5OBHeXI",
-    "messageBody": "Sufficient SPOs must upgrade to a version of the node that executes the new protocol version",
-    "timestamp": "2024-03-25T12:04:55.640Z"
-  },
-  {
-    "_id": "$OATWdxt4-SeBgnftpOlcMHJ53jqvX84vO-_bU6exF5Y",
-    "messageBody": "In practice, we like ≥ 80% of SPOs to have upgraded, since otherwise significant stake will be left behind",
-    "timestamp": "2024-03-25T12:06:08.453Z"
-  },
-  {
-    "_id": "$mjs_rIrywDPaB5jhLEBI5a4Ks03DqwtRQxQodo6z8eo",
-    "messageBody": "Yes, responsibility is delegated to the repository maintainers",
-    "timestamp": "2024-03-25T12:07:08.357Z"
-  },
-  {
-    "_id": "$vm0Oz5VepbSKvsbfKLNguhyE0b69blZgoF8g8w9xrdg",
-    "messageBody": "And both SPO and DRep votes must exceed some threshold",
-    "timestamp": "2024-03-25T12:05:29.848Z"
-  },
-  {
-    "_id": "$4Dj18lxVtIgg_nzvOprB7WDPlwa8d3EE-77i6sPl0Ww",
-    "messageBody": "Collective agreement then needs to be reached when a release is cut",
-    "timestamp": "2024-03-25T12:07:45.614Z"
-  },
-  {
-    "_id": "$bgEbV5C9k17LMk_E2QNy4QJTwIItbkQh2fvNfvm6uZo",
-    "messageBody": "But that is not an absolute requirement",
-    "timestamp": "2024-03-25T12:06:29.012Z"
-  },
-  {
-    "_id": "$-osUCpA9ZZ-rsS8oVz8IT7y9E1_UANeu655wPqio85M",
-    "messageBody": "We don't recommend binary upgrades for SPOs",
-    "timestamp": "2024-03-25T12:09:24.103Z"
-  },
-  {
-    "_id": "$lUBwdVjSMxAH0B9KZGzLCA-uU4yQ1JwGgLtNTBquZDA",
-    "messageBody": "It's not an issue for the OSC",
-    "timestamp": "2024-03-25T12:09:04.327Z"
-  },
-  {
-    "_id": "$mQxLnY4TA2hvSqu_QsBvSO1ggt6cjKkKOW0Rf3ShI7g",
-    "messageBody": "OK",
-    "timestamp": "2024-03-25T12:09:43.084Z"
-  },
-  {
-    "_id": "$oY2ATy1Z_SnMH5AJpVM2jCRFLTGJOzbbvIuXeelJj90",
-    "messageBody": "(If you look carefully, you'll see there are some running nodes that don't respect the current protocol version - they are effectively defunct, since they cannot follow the current chain, and their stake is not contributing to the chain maintenance - users will be encouraged to switch pool, since they will otherwise lose rewards)",
-    "timestamp": "2024-03-25T11:59:07.344Z"
-  },
-  {
-    "_id": "$twq3dYpcg0woJDf_NtUHk--kAUvoH4lZOyphvwL_e1E",
-    "messageBody": "OK, if I understand correctly then I think the point of interest in my concern is - When a protocol upgrade event is agreed, how do we establish what the source of truth is for the software supply chain that would provide the binary for the required compatibility there? Or, does it simply not matter?",
-    "timestamp": "2024-03-25T12:04:52.874Z"
-  },
-  {
-    "_id": "$k3Km5JyMlDY2rFjPhfIyoOnaOvBm_q0O74k_muCVYqA",
-    "messageBody": "So there is no centralised control over when SPOs upgrade, just an agreement on when a protocol upgrade happens (which will be enforced by voting under CIP-1694)",
-    "timestamp": "2024-03-25T12:00:12.168Z"
-  },
-  {
-    "_id": "$yy_-eUol5VcZrrrwtUKJXL3Q6KKgPLlEH2bynuB5zpQ",
-    "messageBody": "right, so if the majority is on a new protocol, then there is an incentive for people to follow suit. But if you're trying to get the majority to move... that's a social activity",
-    "timestamp": "2024-03-25T11:59:51.395Z"
-  },
-  {
-    "_id": "$_v6xZr7LxG1TSakvUrtRlrKetAirJBwNTxsYKkjxFyE",
-    "messageBody": "(This is really background for the OSC - other committees will be handling software upgrades - Tech Steering Committee and Hard Fork Committee mainly)",
-    "timestamp": "2024-03-25T12:01:35.968Z"
-  },
-  {
-    "_id": "$hGFtnaWO9mTwCm0gX-8FvwKQ-fGVBO3x5um418rStts",
-    "messageBody": "**but for a HF to even be possible you already need all the SPOs to agree to install a new version of the node software (and the same one!).** Not true",
-    "timestamp": "2024-03-25T12:04:13.467Z"
-  },
-  {
-    "_id": "$_t-pF-SRtuAaUic1_eDfPziXM8bF2P3_-qTEh-d_xZU",
-    "messageBody": "So we already have several node versions running simultaneously. We're just very careful to make sure that they all agree on the protocol",
-    "timestamp": "2024-03-25T11:56:51.282Z"
-  },
-  {
-    "_id": "$9mshh28lU0qkuK6YTHjLZF8QN7XFudoppvnBmOs1gMQ",
-    "messageBody": "(The OSC simply needs to set development policies that will assist with the agreed upgrades)",
-    "timestamp": "2024-03-25T12:02:48.230Z"
-  },
-  {
-    "_id": "$h-i2ZQSTFBWRJkn_2FsHD-puOLi0NB1ZDGmQcu_EWpA",
-    "messageBody": "so with all the above, its safe to conclude that moving anytime soon would be detrimental in many ways",
-    "timestamp": "2024-03-25T12:03:21.479Z"
-  },
-  {
-    "_id": "$ML9xnkFK9Mf3Lfdfd4BNl9NRpoac9yG_YAh2OF2kx9w",
-    "messageBody": "just to add some rumination on the centralization aspect: there are various aspects of running Cardano that are somewhat necessarily centralized because they rely on everyone agreeing to do something. Most notably, that means updating the software and going for HFs. The community gets a veto on HFs with 1694, but for a HF to even be possible you already need all the SPOs to agree to install a new version of the node software (and the same one!). Arguably, a major function of intersect is to take the decentralized governance input from the community and mediate that into the more centralized bits of work that have to happen. That's why I keep banging on about Legitimacy: making sure everything is accountable to the TSC keeps us tethered to the decentralized governance because the TSC is accountable to that (how that works is not our problem, fortunately!)",
-    "timestamp": "2024-03-25T10:51:19.626Z"
-  },
-  {
-    "_id": "$yRWlQq0jC4rng2S4BSnOggwbDDRJV2TJqCG_hB55PrU",
-    "messageBody": "> <user_id_removed> I'm not averse to gitlab I just think that the github stuff is one of the parts of our system that is actualyl working super well, and we shouldn't mess with it thats why i think it'll heavily be discussion for the TSC as well given the relative impacts to suppliers and ongoing delivery for such a scope change, OSC would need to lay out benficial reasosn in a recommendation to such an move",
-    "timestamp": "2024-03-25T10:36:31.429Z"
-  },
-  {
-    "_id": "$q26eyAsXJ35si2go0ehSbKlhAIqqHvYK1OhIZx49DQ0",
-    "messageBody": "\"does the decentralized governance of the community approve of merging this PR?\" mu: we have set up a process that allows us to make these decisions while remaining broadly accountable, so we don't need to worry about it day-to-day",
-    "timestamp": "2024-03-25T10:52:15.768Z"
-  },
-  {
-    "_id": "$Tkyw0XnvdOGz7bCt5hC4E5xcl1rWflveis9E-W3Skeo",
-    "messageBody": "I'm not averse to gitlab I just think that the github stuff is one of the parts of our system that is actualyl working super well, and we shouldn't mess with it",
-    "timestamp": "2024-03-25T10:34:33.256Z"
-  },
-  {
-    "_id": "$cpCi5in0UEpY8NxrSGzs1U0l9utZMdTMjlti6MHI51A",
-    "messageBody": "And reliance on whoever GitHub is hosted by. It does tend to go down when aws goes down.",
-    "timestamp": "2024-03-25T10:33:19.414Z"
-  },
-  {
-    "_id": "$XssTbmcmN08Pc5dhAW8pVNUg1fsIdaNCFZFLk4siSJ0",
-    "messageBody": "How is the same-version-of the-node software enforced actually?",
-    "timestamp": "2024-03-25T11:29:57.932Z"
-  },
-  {
-    "_id": "$lRRp3uFZ7zgGgHmTips2i1y9OAgzvllYPySCdkrFp0k",
-    "messageBody": "is that a major problem for us?#",
-    "timestamp": "2024-03-25T10:34:00.564Z"
-  },
-  {
-    "_id": "$EvnGkn7PV0Fug0EectlQK9WIqE-Zza4d5a06w_qalfc",
-    "messageBody": "* is that a major problem for us?",
-    "timestamp": "2024-03-25T10:34:02.489Z"
-  },
-  {
-    "_id": "$7K-XrbcnzyazFvvxSbiRXBu7TuGdAdOWMqfgI1IV3eM",
-    "messageBody": "so?",
-    "timestamp": "2024-03-25T10:33:54.835Z"
-  },
-  {
-    "_id": "$8-3t3g9-YJtGuKhIx1b9ljq7JNvQyI91SCD1Jkq8RAc",
-    "messageBody": "Daniel Firth: I still don't see how the choice of hosting platform is relevant. It is _absolutely_ important that the Intersect cardano repos are recognized as the canonical source for building the binaries that run on the cardano network, otherwise the whole thing is pointless. But I don't see how you avoid that ever",
-    "timestamp": "2024-03-25T10:18:08.959Z"
-  },
-  {
-    "_id": "$zh6B4OIQuNpR2cjyZ6xXsDPtEjn53a2qXCciLMGMtyY",
-    "messageBody": "> <user_id_removed> moving to gitlab would be enormously disruptive - everyone was already on github thats what my major concern is, it would have to a major consesnus to make a change currently",
-    "timestamp": "2024-03-25T10:20:05.684Z"
-  },
-  {
-    "_id": "$D48z5p9poDqHNTkvrELlckLu677vMPGYj9T71A3WIOU",
-    "messageBody": "> <user_id_removed> the impact level would be the same as the orginal core node migration right? you are referring to the migration from iohk to intersect?",
-    "timestamp": "2024-03-25T10:18:01.489Z"
-  },
-  {
-    "_id": "$xDm3UlTlKcEhnoDVQclqfdiAtaGdHOXJft8-c8JN0sA",
-    "messageBody": "being on gitlab makes no difference to the process of deciding \"where do I build my binaries from?\"",
-    "timestamp": "2024-03-25T10:20:01.549Z"
-  },
-  {
-    "_id": "$qAu9DvdZCyNGzCnFqCBLYEnpM8EvatYffejgNN4lins",
-    "messageBody": "moving to gitlab would be enormously disruptive - everyone was already on github",
-    "timestamp": "2024-03-25T10:19:10.979Z"
-  },
-  {
-    "_id": "$rlwn9VRnuQKv6ZZK_SGjX0-SAr33VSoI1XJTEbLmWqY",
-    "messageBody": "> <@locallycompact-github:matrix.org> you are referring to the migration from iohk to intersect? yes",
-    "timestamp": "2024-03-25T10:18:46.619Z"
-  },
-  {
-    "_id": "$45Ry62DU9s7odkEx0Pilnn9N72XPr4Mm-mUT_RpXKAA",
-    "messageBody": "the impact level would be the same as the orginal core node migration right?",
-    "timestamp": "2024-03-25T10:14:53.530Z"
-  },
-  {
-    "_id": "$B5eNdxK-xWu43ZqHgSLSVSgCjDADadoy8JCJbStEmGA",
-    "messageBody": "this is why legitimancy is one of the key things we need to ensure",
-    "timestamp": "2024-03-25T10:18:50.920Z"
-  },
-  {
-    "_id": "$s7Lzap5PZz51-gX8MO8psq4S0ZtW8iyqzp6gnDioYqU",
-    "messageBody": "i'll add it to the agenda, post strategy ratification for the OSC",
-    "timestamp": "2024-03-25T10:15:29.128Z"
-  },
-  {
-    "_id": "$N2p51awNdL6FFHmN0kFpnpoO5BQOQ4VcjjEeZvN8AgY",
-    "messageBody": "I see, I heard gitlab is what other foundations use and migration form github to gitlab is fairly straightforward although reversing back is not",
-    "timestamp": "2024-03-25T10:08:50.460Z"
-  },
-  {
-    "_id": "$j29yL_jo3gQ4aFtOPLcw_YPeURdErQbAiETdxq6baO8",
-    "messageBody": "yes, for one reason that gitlab supports arbitrary levels of namespcing urls and github only one: github.com/organisation/project",
-    "timestamp": "2024-03-25T10:09:38.723Z"
-  },
-  {
-    "_id": "$6-mE-wdRoLoKR-78Mz5SWbcrdd9z7IlsmvCkdGLqQYs",
-    "messageBody": "well i think the discussion is something for the OSC to recommend, TSC to review, then go to baord for decision",
-    "timestamp": "2024-03-25T10:12:19.480Z"
-  },
-  {
-    "_id": "$_sKq98B_P7QeBdYsIkkMWFp9JPhFF3N49-PC8Dj1U38",
-    "messageBody": "with all the scope creep though probably be something after the hardfork I imagine possibly 🤔",
-    "timestamp": "2024-03-25T10:14:02.516Z"
-  },
-  {
-    "_id": "$b4di9kTF56rkJwgnHHulH9T4qlPfgbSkou_eAZI6yg8",
-    "messageBody": "I can say that GitLab is very easy to maintain though, I maintain two instances.",
-    "timestamp": "2024-03-25T10:08:14.809Z"
-  },
-  {
-    "_id": "$nqPQRmV8F7mGanh80kWmHTtsmEO_VGSdkkLFqiSThm8",
-    "messageBody": "* is GitLab instances cheaper to run then github, thats a pro from expense Pov",
-    "timestamp": "2024-03-25T10:10:27.931Z"
-  },
-  {
-    "_id": "$axLYDlXcwNhLHQPk5zkRFWWAV4FMZEQhehsBC1l0u7A",
-    "messageBody": "One 8 core VM on community edition GitLab can support thousands of accounts.",
-    "timestamp": "2024-03-25T10:10:53.780Z"
-  },
-  {
-    "_id": "$fEnwxal15PkkKUyA2g-ZEHftrosFqkGIbSu-XzW0qvo",
-    "messageBody": "is gotlabt instances chaeper to run then github, thats a pro from expense Pov",
-    "timestamp": "2024-03-25T10:10:15.903Z"
-  },
-  {
-    "_id": "$p-jQ-NJDUDG-cCllkHL7S8lr0CdP6fTJJbgPGOa_AIs",
-    "messageBody": "sound good.",
-    "timestamp": "2024-03-25T10:13:11.981Z"
-  },
-  {
-    "_id": "$xqe_7VTpL-B4t6XTk4rm4rmqIiwKwl85rzJAngamSnM",
-    "messageBody": "> <user_id_removed> Hi Sebastian, > Not a problem, we can hold a vote to acknowledge the change, and if I have you can ping me Daniel's email, I will add him to necessary files. > Given the focus of today's call will be toward the strategy for the duration, i think conversation on this today may overshoot the limited time the OSC has to get the startegy content populated and formalized, > > Would you be ok if I was to host this conversation next week? > That will allow me to get someone from Intersect who can easily answers the questions and how this all relates from the governing documentation as well. Yeah no hurry on when the rotation happens. I just realize I don't have as much bandwidth as Daniel will have. He is also a core contributor to the Hydra project, so some Cardano relevance, but is even more involved with other open source communities around nix, haskell and gitlab (as far as I know). WDYT about the \"Relationship between committees, working groups and projects\" agenda item?",
-    "timestamp": "2024-03-22T10:29:12.047Z"
-  },
-  {
-    "_id": "$jiGlrYLfesXfMA4SDKA00wKXEvh6yc9vgH6h0p4ZQqw",
-    "messageBody": "HI Everyone, to Recap: We agreed on strategic pillars and proposed goals, homework it add thoughts to miro board here: =/ Bogdan and I will consolidate Monday , Tuesday and propose actions to this content, we will do detailed review in Wednesday WG for whoever can make the time and then have the OSC call this Thursday to ratify the content And if all goes well celebrate the long weekend and clsoing out the governing board mandate for the OSC",
-    "timestamp": "2024-03-22T16:23:22.566Z"
-  },
-  {
-    "_id": "$56wmTNGXchRLq7IsUWmrQ2B3H8s3q8I9DXIt_g7_1To",
-    "messageBody": "I wanted to add it next week agenda, as i'm also working out the TSC and OSC scope doc this week and want to bring an expert on intersect committee functions for the conversation",
-    "timestamp": "2024-03-22T10:31:25.930Z"
-  },
-  {
-    "_id": "$5LHkeUm3Qeyf6IAN9kqOTcO5sVslvhWgbsmQKz79-ek",
-    "messageBody": "If we are to rotate you out, I personally wanted to thank you for all your contribution Sebastian, you have had really good points and insights and will be missed.",
-    "timestamp": "2024-03-22T10:11:40.870Z"
-  },
-  {
-    "_id": "$Bt6r5iJxw7Q5biuUsaCdFS1d0bt-pPowhbsLGd0bsd8",
-    "messageBody": "I would like to push back very hard against the use of GitHub at all. I'm not sure anything else strikes me as more important to address.",
-    "timestamp": "2024-03-24T11:47:12.731Z"
-  },
-  {
-    "_id": "$M7tOcGgFxtVd-yypQF5AUVO4ej03wwX10Tirio88Jp0",
-    "messageBody": "Daniel Firth: You have been nominated to be on the open source committee effective today to take my seat.",
-    "timestamp": "2024-03-22T15:10:45.677Z"
-  },
-  {
-    "_id": "$TT8Xu_iqdc2yfY9IGRjTT9byOgQrTvZzM70eahWzLeM",
-    "messageBody": "What would be the alternative?",
-    "timestamp": "2024-03-24T23:56:29.570Z"
-  },
-  {
-    "_id": "$yZ47LD-2A8VVkURffJPdiXVcFB819nvnf76tniWKuKI",
-    "messageBody": "Great. I hope I can be of service.",
-    "timestamp": "2024-03-22T15:11:19.667Z"
-  },
-  {
-    "_id": "$33pkV81rbztuJUUmjNZqsoChTeoDb07oOykHstjSOK0",
-    "messageBody": "as opposed to?",
-    "timestamp": "2024-03-24T20:52:28.086Z"
-  },
-  {
-    "_id": "$7WVL1GnxRaZbarDyo219IE1SVYIZyNm66mEVAiPn3d4",
-    "messageBody": "> <user_id_removed> Thank you all, for reviewing the current draft on the strategy, from my initial takeaway, our Friday sync will not be enough nor near the sufficient level of detail to get through the content without having a combed agenda for each Friday. > I will be scheduling a strategy TWG session = weekly to review the draft, edit, change and ensure we get thinsg aligned before the whole OSC call to agree on th week's outcomes. > Would anyone @here like to be included? BTW: What are your expectations on OSC members time-wise? I can barely fit this 1 hour + some prep time before/after.",
-    "timestamp": "2024-03-11T12:13:15.401Z"
-  },
-  {
-    "_id": "$FMUsNWJexRSv5K5Qdq8WwYh88Keak-PN_mR31FQzMFc",
-    "messageBody": "Thank you all, for reviewing the current draft on the strategy, from my initial takeaway, our Friday sync will not be enough nor near the sufficient level of detail to get through the content without having a combed agenda for each Friday. I will be scheduling a strategy TWG session = weekly to review the draft, edit, change and ensure we get thinsg aligned before the whole OSC call to agree on th week's outcomes. Would anyone @here like to be included?",
-    "timestamp": "2024-03-11T11:23:32.905Z"
-  },
-  {
-    "_id": "$P5XeBqxxRQpv7-_BZWCUtVPxUQEHAyvsAZqwuMCjrJE",
-    "messageBody": "Thank you everyone who was able to participate, please find all the link form today's meeting for review and community comment :slightly_smiling_face: OSPO Model Deck: OSPO Model Miro: OS Strategy Deck: OS Strategy Doc: OS Strategy Testing Criteria Deck: 3 files",
-    "timestamp": "2024-03-01T17:34:05.492Z"
-  },
-  {
-    "_id": "$VdBUqpojJAGeH0bU-msSGrUVXNjpYnuGesFmreVZIbc",
-    "messageBody": "* Thank you everyone who was able to participate, please find all the link form today's meeting for review and community comment 🫡 OSPO Model Deck: OSPO Model Miro: OS Strategy Deck: OS Strategy Doc: OS Strategy Testing Criteria Deck: 3 files",
-    "timestamp": "2024-03-01T17:34:23.665Z"
-  },
-  {
-    "_id": "$GAySzpkhEqIN0wq2sEZIe6nCbYUmInFQtDwJ7KVPBIE",
-    "messageBody": "that's why the working groups exist: so we explicitly call out the stuff that needs more time and try to find people who have it!",
-    "timestamp": "2024-03-11T12:19:38.893Z"
-  },
-  {
-    "_id": "$6gy68etoHPrNES58Cc78IqaaKXIrlmpnt8XH_HAdKvM",
-    "messageBody": "this is what we want so no porblem to me, we will sort it through with the committee :)",
-    "timestamp": "2024-03-01T15:56:59.694Z"
-  },
-  {
-    "_id": "$EArmdzJ6z-QCNjNQhv2eR_lzrozqxpV_hZQOIL9SLOw",
-    "messageBody": "as mentioened by MPJ, the hour a week is the only mandate, the strategy TWG is vounteer time if you ahve it",
-    "timestamp": "2024-03-11T12:23:31.356Z"
-  },
-  {
-    "_id": "$fvvaxtJWQ_pR3qPCOjSrj9H7y3U1s9YUaxB9mGJf2dc",
-    "messageBody": "lots of disagreement, sorry",
-    "timestamp": "2024-03-01T15:30:55.573Z"
-  },
-  {
-    "_id": "$M0z1Z-NCHhFGZmzyxZGd4wzFT54tONjtLivnRwRG-1k",
-    "messageBody": "Got it, thanks",
-    "timestamp": "2024-03-11T13:16:45.778Z"
-  },
-  {
-    "_id": "$mekUX2-Fu1Y-zMRV7KMf_WiR6Orizv7oHmgZsPSq96Y",
-    "messageBody": "> <user_id_removed> I'm thinking more like \"if you go off-topic too much in project channels you might get kicked\" Ok, I am looking at notes on WG governance by Simon, chair of the Certification working group which were shared privately. The relevant questions are for writing a document as you described are: \"is there a members list\",\"is this list public?\", \"how do we define behaviour as good?\", \"is there a mechanism to remove members from the group?\" I hope this is helpful 🤠",
-    "timestamp": "2024-02-27T17:49:44.691Z"
-  },
-  {
-    "_id": "$kFVqfa4NAQ335mIQ_usDlsSV7ljaL8q-uZxb7ViPSj0",
-    "messageBody": "> <user_id_removed> is there an intersect blog or something? We do have the overall Intersect gitbook and regular blog post from developer update, can ask Tim for connections points will link you in convo in slack with him. Welcome Silona!",
-    "timestamp": "2024-02-28T10:57:57.740Z"
-  },
-  {
-    "_id": "$jeOO3gYUX87XfmCAM9nXZA_wl-ZwSUcruGH_h_H4Xl0",
-    "messageBody": "Every fridat Open Source Committee (Intersect) Friday, March 1 · 8:00 – 9:00am Time zone: America/Los_Angeles Google Meet joining info Video call link: Or dial: ‪(US) +1 413-659-8679‬ PIN: ‪727 183 298‬# More phone numbers:",
-    "timestamp": "2024-02-28T14:18:09.784Z"
-  },
-  {
-    "_id": "$jP_57Mk32C5qR6c621zCMkPSBn9vpDQewxpfvHeVxa8",
-    "messageBody": "> <user_id_removed> Silona Bonewald: hi Silona, you might want to come to the OSC meetings on Fridays also! Video Link and time?",
-    "timestamp": "2024-02-28T14:17:43.750Z"
-  },
-  {
-    "_id": "$x36ljnsS8nVNgJzp-hH3mvzNGspSmjLuMPCORtLHxCs",
-    "messageBody": "Christian Taylor: is the link always the same? could we put it in the room description perhaps? maybe also a link to the gitbook space?",
-    "timestamp": "2024-02-28T14:19:16.509Z"
-  },
-  {
-    "_id": "$TIkeuQ8Dz0_xCS8dmxBlpXvsEcrxL3GcxdgTHjcVicU",
-    "messageBody": "Silona Bonewald: hi Silona, you might want to come to the OSC meetings on Fridays also!",
-    "timestamp": "2024-02-28T10:51:04.409Z"
-  },
-  {
-    "_id": "$f--KrHXJ89ZPjVl6scIRLjIevH6aXUHVazx1-TxjVFk",
-    "messageBody": "Michael Peyton Jones: let me know if I can help... Tam is contracting me as an Open Source Expert.",
-    "timestamp": "2024-02-27T23:13:31.028Z"
-  },
-  {
-    "_id": "$TnNl3rQbkqSa9rUdeEUMNUOTS5cs5KiHXZHOy_xeZe8",
-    "messageBody": "YEs it always the same, hosted under my gmail as fully open",
-    "timestamp": "2024-02-28T14:21:04.715Z"
-  },
-  {
-    "_id": "$scKmK4ufPVcUNLQuD4Zd3lcFELT0pdq5IDe207dwqcg",
-    "messageBody": "just practical stuff",
-    "timestamp": "2024-02-27T17:39:43.928Z"
-  },
-  {
-    "_id": "$GLBvP2BFdNL8ls2XuEF9iIU9u1B0gj3ieu_pDYRtfio",
-    "messageBody": "* 😶‍🌫️ it's Alex, curious to try matrix. Last time it helped me find an opportunity to get a PR merged to `cabal`",
-    "timestamp": "2024-02-26T16:26:39.761Z"
-  },
-  {
-    "_id": "$GfI_bvpAMfsQktpSk0cMFtOOFy0FkpomIYJmYZkbGM4",
-    "messageBody": "* 😶‍🌫️ it's Alex.",
-    "timestamp": "2024-02-26T16:25:09.842Z"
-  },
-  {
-    "_id": "$QYy7FhsQb2Gko39AXckU2MIxnENB34NuN9HQA6HUeGI",
-    "messageBody": "* 😶‍🌫️ it's Alex",
-    "timestamp": "2024-02-26T16:25:29.217Z"
-  },
-  {
-    "_id": "$BKNuvY0oyWXPdHmA1ODPWW94U8JuF3_EJQrQKUCuwWA",
-    "messageBody": "😶‍🌫️",
-    "timestamp": "2024-02-26T16:24:38.629Z"
-  },
-  {
-    "_id": "$lYvUlNjt88FpG1yhlfjZ0fIQrlXxN4XSpao7HVOGZGM",
-    "messageBody": "👋",
-    "timestamp": "2024-02-26T16:03:12.542Z"
-  },
-  {
-    "_id": "$swlUbhftiqgf1pl3NdQn-dAcFo5IWDYGc2VBsjdYhqo",
-    "messageBody": "Is this thing on?",
-    "timestamp": "2024-02-26T17:07:32.440Z"
-  },
-  {
-    "_id": "$XMftC-41NPbWxoChl7nv9jSIzKNoe2MJNXkyvUM0TlM",
-    "messageBody": "👋",
-    "timestamp": "2024-02-26T16:19:21.716Z"
-  },
-  {
-    "_id": "$2eAbmN-0dNMTcnSpmDcZem8-YgPnZV0elchW1wxO1Y8",
-    "messageBody": "🙃",
-    "timestamp": "2024-02-26T16:21:23.257Z"
-  },
-  {
-    "_id": "$nn6ODqJcZ3ospWUsiERxj-ZSU72WN0XPFQyvPDOXwoY",
-    "messageBody": "yup",
-    "timestamp": "2024-02-26T17:09:32.497Z"
-  },
-  {
-    "_id": "$8vW8UqeMeZDdDTvv1QUV4elPVtW017FB_Nh31ODsVUc",
-    "messageBody": "Right. So watching it through with 3/4 also feel ambivalent: on one side I really like how it tries to avoid HR process which is broken (at least for me) but I recall the book about hacking that I am almost finished reading and I see how this process gives people incentives to hack the concepts of impact and merit to get to the status of a Core Dev. And then it also has strong measurability bias; From Sreckovic and Windsperger, “Decentralized Autonomous Organizations and Network Design in AEC.” it follows that this could potentially be a way to lose the most valuable people.",
-    "timestamp": "2024-04-05T14:47:52.813Z"
-  },
-  {
-    "_id": "$wDW12Fjbsh6cQmpeCr3J9oBdxq_7LjSE3mEhTMbTBbc",
-    "messageBody": "Oh I was very earlier on the CI/CD space probably because i had created similar structures back when I worked creating backend structures for MMOs. and github was a PTA (I still argue it is at least 5 yrs behind GL). I tried to get paypal to use gitlab instead for that reason but they didn't have a self hosting option yet. So instead we just copied the gitlab interface for our internal CI/CD that we had to write for the Orchestration tooling I was in charge of refactoring.",
-    "timestamp": "2024-04-05T23:40:42.316Z"
-  },
-  {
-    "_id": "$sAIZiTRHmLbUBqzaxbDTgeD2XYXuIva1KyM9P2nGFns",
-    "messageBody": "you also have situations to try and avoid from risk perspective, one good example is the latest xz attack where a maintainer purposely included malware into the code and caused some havoc, i thinkthe solution is an inbetween, where the is a psth that guide the best way to become one but doenst guarantee it per say, becuase the interaction with the core teams already doing the work is quite a criucail factor to weigh in",
-    "timestamp": "2024-04-05T14:54:06.723Z"
-  },
-  {
-    "_id": "$Zipv9uYRMTdch8s-uxOku56hhe6LRqRz88K_e9h-LnI",
-    "messageBody": "> <user_id_removed> charles having rather different opinions to us I am watching the video and its helpful, at least in part; I shared it with the GovTool subgroup 2; which is \"the decentralized project manager\" subgroup. Could you point out where your opinions differ? Sociocracy 3.0 recommends identifying tensions as one of the core components of success in building decentralized orgs, and when two leaders have different opinions its is a tension. Thank you.",
-    "timestamp": "2024-04-05T13:33:33.927Z"
-  },
-  {
-    "_id": "$EWLQOg0MvGkXzY-p31rEnnWqor5YLbJneyJN8AUV1IM",
-    "messageBody": "* you also have situations to try and avoid from risk perspective, one good example is the latest xz attack where a maintainer purposely included malware into the code and caused some havoc, i think the solution is an in-between, where the is a path that guide the best way to become one but doesn't guarantee it per say, because the interaction with the core teams already doing the work is quite a crucial factor to weigh in",
-    "timestamp": "2024-04-05T14:54:20.750Z"
-  },
-  {
-    "_id": "$5SaJqrrq3Mtyp9nmV5lf9qlpF1zafmxftG1UywXHI_w",
-    "messageBody": "> <user_id_removed> but then several here now of my gitlab bias. Of course, we run our own gitlab install via the open source edition so no one is harvesting our data. I would like to hear about your Gitlab bias. :)",
-    "timestamp": "2024-04-05T08:54:04.692Z"
-  },
-  {
-    "_id": "$zU3CWfxQuFEObtCnJ7Mlx4smPFGxEGdF6hLsMKQukL0",
-    "messageBody": "well, it makes a bunch of assertions about what kinds of contributor there are and how you get to be one, which are fairly directly incompatible with our governance policy 🤷",
-    "timestamp": "2024-04-05T13:34:26.137Z"
-  },
-  {
-    "_id": "$2tQleZfNV43eQ6BKz08KnpiZJrCmRUysp33BYt0R0IY",
-    "messageBody": "and I have always been wildly against the idea that there is some kind of certification process that you go through which results in you getting commit rights",
-    "timestamp": "2024-04-05T13:34:45.397Z"
-  },
-  {
-    "_id": "$DZclXzHI5REj1soLuel5pAUL-ZglxnZruzd7WEr1SdE",
-    "messageBody": "This definitely TSC territory to clarify as we also are defining further maintainer roles as well",
-    "timestamp": "2024-04-05T13:58:53.298Z"
-  },
-  {
-    "_id": "$o7F46eogmKcaY4IVIdTVhswCocRslZfh4_T-nVp7MgY",
-    "messageBody": "Screenshot from 2024-04-05 16-46-38.png",
-    "timestamp": "2024-04-05T14:47:51.425Z"
-  },
-  {
-    "_id": "$KqZhFiu87E8S8ouZTbZwF-hYYUduQwrQ2RwdP4Y1k44",
-    "messageBody": "* Hi! Happy holidays and congratulations on achieving the goal for Q1! Meanwhile I have an async question. In the GovTools working group we come to the discussion of prioritisation: some members of the group would provide feature suggestions to populate backlog, while others will need to decide what needs to be done first. On the whim of fates I find myself in the position of a chair of this second group, whose goal is to prioritise the work packages and issues provided by the first group. The issue at hand is that if discussing the items directly the complexity of discussion will presumably in the future stall the development: it is something that is described in detail in Alternative Dispute Resolution and treaties on ontology of conflict (conflict of interest between involved parties). The proposed solution is to agree on objective criteria for ranking options before viewing options themselves. But here I am facing a blocker and need advice and help with, and I hope OSC is the right body to bring up such a discussion; forgive me if its not. One way to prioritise (and this has been actually proposed in the meeting) is by amount of work: do simple things first, more difficult things later. This would work in this particular case, but since we are thinking about robust governance mechanisms we must also think ahead and think about situations where a flood of minute tasks prevents us from delivering some more critical changes. In this case a solution would be to use software quality attributes as our measuring stick, and agree that e.g. we prefer security over UX, so vulnerabilities must be addressed first even if it's a lot of work, while UI fixes are deferred. We could use ISO 5055 standard, which has a decent number of attributes, with the claim that they are actually measurable. However it's not open source, and needs to be bought like any other ISO standard. I hoped that this work was cut out for us by the OSC, but trying to frame the problem using OSC strategy I find myself stuck because the values are somewhat general and I don't understand how to apply them in this context. What source of ground truth should be used for prioritising tasks for project development under the umbrella of Intersect? Can you suggest a short list (3 to 7) of attributes which we could use for backlog prioritisation? Maybe you can recommend an open source alternative to ISO which I could study to find a documentation of such kind? Thank you!",
-    "timestamp": "2024-04-04T13:25:45.689Z"
-  },
-  {
-    "_id": "$LY9lu2gJlsk260o9-CbLK1cT_hidMTgz8CF12lGa7ms",
-    "messageBody": "Hi! Happy holidays and congratulations on achieving the goal for Q1! Meanwhile I have an async question. In the GovTools working group we come to the discussion of prioritisation: some members of the group would provide feature suggestions to populate backlog, while others will need to decide what needs to be done first. On the whim of fates I find myself in the position of a chair of this second group, whose goal is to prioritise the work packages and issues provided by the first group. The issue at hand is that if discussing the items directly the complexity of discussion will presumably in the future stall the development: it is something that is described in detail in Alternative Dispute Resolution and treaties on ontology of conflict (conflict of interest between involved parties). The proposed solution is to agree on objective criteria for ranking options before viewing options themselves. But here I am facing a blocker and need advice and help with. One way to prioritise (and this has been actually proposed in the meeting) is by amount of work: do simple things first, more difficult things later. This would work in this particular case, but since we are thinking about robust governance mechanisms we must also think ahead and think about situations where a flood of minute tasks prevents us from delivering some more critical changes. In this case a solution would be to use software quality attributes as our measuring stick, and agree that e.g. we prefer security over UX, so vulnerabilities must be addressed first even if it's a lot of work, while UI fixes are deferred. We could use ISO 5055 standard, which has a decent number of attributes, with the claim that they are actually measurable. However it's not open source, and needs to be bought like any other ISO standard. I hoped that this work was cut out for us by the OSC, but trying to frame the problem using OSC strategy I find myself stuck because the values are somewhat general and I don't understand how to apply them in this context. What source of ground truth should be used for prioritising tasks for project development under the umbrella of Intersect? Can you suggest a short list (3 to 7) of attributes which we could use for backlog prioritisation? Maybe you can recommend an open source alternative to ISO which I could study to find a documentation of such kind? Thank you!",
-    "timestamp": "2024-04-04T13:03:10.934Z"
-  },
-  {
-    "_id": "$eSeNBRuBuzl7prIm9maCsm2w0S4kGh3N5hffWYZHkbs",
-    "messageBody": "I'm not sure that the OSC has much to offer on the question of \"what should intersect prioritise for funding?\" 🤷 What I _would_ suggest is that as much as possible you do this in the open: make github issues or whatever for all the things you are considering, have discussion on them. That also will give you at least a a bit of a barometer for community sentiment.",
-    "timestamp": "2024-04-04T14:09:03.523Z"
-  },
-  {
-    "_id": "$2MltjwO8T8-SQ3Gutmk6S-xTm6uVqzW93X_s8H2wEpA",
-    "messageBody": "Fair enough, my framing is too broad. And thank you for the good piece of advice to clarify the case more with the community and providing transparency in the process.",
-    "timestamp": "2024-04-04T15:07:29.099Z"
-  },
-  {
-    "_id": "$L72C3Sow1zvz2kOM9Eh2rMk0qTzWMOOVYCVMoU3eDc4",
-    "messageBody": "Just an update, we are cancelling this week's call to allow everyone to recuperate from an intense Q1, we will resume same time next week.",
-    "timestamp": "2024-04-04T09:11:49.849Z"
-  },
-  {
-    "_id": "$9Ste5WawnkE4sgIvNO-sdy9U3j9Fd2g4gWJN7NrT7JQ",
-    "messageBody": "charles having rather different opinions to us",
-    "timestamp": "2024-04-04T16:13:25.156Z"
-  },
-  {
-    "_id": "$oStZqetPe14I1XDL2apR6buYEni_t80nUEJpxsn8m3A",
-    "messageBody": "well, to me, I guess 😂",
-    "timestamp": "2024-04-04T16:16:24.678Z"
-  },
-  {
-    "_id": "$3u7-ly-cZgcAVBBaG7c6bKquee6HesEwKFABIcKjBXY",
-    "messageBody": "ya, i think we need a week to have items to discuss",
-    "timestamp": "2024-04-04T08:51:27.426Z"
-  },
-  {
-    "_id": "$8gudUNPiC4u7y-qIgQAgK9cYg0OzAXvg4joBkDdPItg",
-    "messageBody": "y'all need to watch this:",
-    "timestamp": "2024-04-04T16:13:12.735Z"
-  },
-  {
-    "_id": "$jGImHzYN8hvFavfQhHpTedUNgxZD74sAUhaweqR5XgU",
-    "messageBody": "im saying these repos basically have everyone as maintainers except for cardano node, which has a dedicated team structure, osmething to think if we need to add them to specific team rather then wholesale coretech",
-    "timestamp": "2024-04-03T10:31:05.735Z"
-  },
-  {
-    "_id": "$Wy4kOPV0LRjd0A3ADv0PpYp9NrkFb_bvOyUk0wYfd_w",
-    "messageBody": "Wanted to see if yall wanted to cancel this week's call and meet again next week? This will allow me to progress on some our deliverables for OSC.+ and provide a break after our 8 sessions on startegy in March 😅",
-    "timestamp": "2024-04-04T01:24:30.625Z"
-  },
-  {
-    "_id": "$vwniuxrNRBcylQd6VMf6nPVTgQJcN5Fk0WBcVSLNBAU",
-    "messageBody": "I think what you're saying is \"we have a whole bunch of repositories where it's not clear who owns them or what project they're part of\"?",
-    "timestamp": "2024-04-03T10:34:16.916Z"
-  },
-  {
-    "_id": "$D7531drUXK2AIzNQ79qnsIaFC7b0VXOw6Bj0cglQeDI",
-    "messageBody": "in a snene yes,we know who is accounatble just not responsible",
-    "timestamp": "2024-04-03T10:41:30.191Z"
-  },
-  {
-    "_id": "$pzktayDggB-7P1KwRxFTyovsTD8XoXgeXZbhG2-a0_I",
-    "messageBody": "not sure we have too much to discuss?",
-    "timestamp": "2024-04-04T08:44:25.334Z"
-  },
-  {
-    "_id": "$b-JWMDJgviZZXDveZOAXYjljJhmNHfbVfbozGBcJa1E",
-    "messageBody": "I'm not sure I'm getting you",
-    "timestamp": "2024-04-02T15:25:18.722Z"
-  },
-  {
-    "_id": "$550IK3rFaIb02ITdj0SyXto58S1FQEAry2DXHsY-Ffo",
-    "messageBody": "This looks awkward as hell.",
-    "timestamp": "2024-04-03T07:11:02.177Z"
-  },
-  {
-    "_id": "$USRYgxIrcZPN6ZXKaaGsl22YCI6fOL0KCEnnnMvMCHU",
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$EpN8BnNnOU36_UK_WksAK0MOrZnwOsjeFIA7wkyGn7A",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
     "messageBody": "sure",
-    "timestamp": "2024-04-04T08:44:20.707Z"
+    "timestamp": "2024-04-05T10:09:54.315Z"
   },
   {
-    "_id": "$BgkD_S3KhCFjg-FRw56bf-eUXMRW6X-meDIEvw8mQ_s",
-    "messageBody": "what does?",
-    "timestamp": "2024-04-03T08:56:16.750Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$7ktMzurmsK1RWIGGA5IlFuKM7GCWJACwnRxplGsGRzE",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "> <user_id_removed> the second bit isn't in the script Ok, so there is no urge to optimise it. However, should we have them consistent anyway? (For the sake of a good UX)",
+    "timestamp": "2024-04-05T10:09:48.393Z"
   },
   {
-    "_id": "$i-uY6ud0Gb5QCZtF5w7zinY8IqRgtSV8Cr8skKooR-M",
-    "messageBody": "good stepping stone to get things rolling, the team structure in GitHub we can map to reflect their proposals then too, because we have 9 repos altogetehr all coretech have wrote access to as well",
-    "timestamp": "2024-04-02T13:08:42.152Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$A74QErzZPR06dYwt0z1LQNiJUOvaFuDp-95a9i-ZMbA",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "so you can put whatever you want there",
+    "timestamp": "2024-04-05T10:08:05.029Z"
   },
   {
-    "_id": "$tDWzCsBxIHN9jAwR_yJ14vJpvCWbEpRbxAZAOFggm1g",
-    "messageBody": "we need to talk to the teams, get them to agree that they're a project and what we're going to publish, and then we can maybe make PRs for them writing that up",
-    "timestamp": "2024-04-02T13:00:07.378Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$erYLC9dKQoWtnBp44bSLQj1ukG34dM2unjGX4GXKTTo",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "that's the point",
+    "timestamp": "2024-04-05T10:08:01.947Z"
   },
   {
-    "_id": "$eCC5QjWsvqeyfmKXlz9eHkghO5AdnJU3M_7-iUynS4s",
-    "messageBody": "every repo needs to have an maintainers though, and I rather not list all maintainers for Cardano node to be all of CoreTech, fine to list them as contributors, repeat the above for",
-    "timestamp": "2024-04-02T13:15:19.668Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$VGvZShgs10kFtmALMTkdIKtUZZqnb1kMoRBs2IM-9Ms",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "the second bit isn't in the script",
+    "timestamp": "2024-04-05T10:07:59.395Z"
   },
   {
-    "_id": "$AuQiOtyrzuNnJm7AIFSGBOXAmIBRRsU5Rwlr37QLwG4",
-    "messageBody": "Michael Peyton Jones: I agree we need to finalie the strcuture, I will sync with Ryan Williams, we was taking a stab at that for me in MArch",
-    "timestamp": "2024-04-02T12:46:52.313Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$3wJ3W8FXhBJZJbq6cxdVEOUQ89l9wowkLMthCfZeFeU",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "(Whatever reasoning we follow, I expect it to be applied consistently)",
+    "timestamp": "2024-04-05T10:07:54.677Z"
   },
   {
-    "_id": "$9gi-aUo4Jb4Vp7pRpqBmbBiA_nJqxCBOA4d8Tzdy8fQ",
-    "messageBody": "* Michael Peyton Jones: I agree we need to finalize the structure, I will sync with Ryan Williams, he was taking a stab at that for me in March",
-    "timestamp": "2024-04-02T12:47:08.920Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$dliGreNUxN1bmb1XxXVfGgG2N8ZUG7NNTU-TtHZhtwI",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "If we care about bytes, should we remote the Module.function qualifier assuming its in the stacktrace already?",
+    "timestamp": "2024-04-05T10:07:21.808Z"
   },
   {
-    "_id": "$83uGtF0tD_srGYoZnF7712BBjKXZQ9GXedbsQDMSUG8",
-    "messageBody": "the governance policy suggests that you can refer to the teams as a way of listing contributors/maintainers",
-    "timestamp": "2024-04-02T13:11:37.296Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$4pt6FWtgOu1w68PqP6mC0p6tfRUQozC65FTzTyjiuDU",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "I reckon that addition of module makes sense in context where stack trace is not revealing the module otherwise.",
+    "timestamp": "2024-04-05T10:06:18.386Z"
   },
   {
-    "_id": "$yoknILFQVm0wnMw-3KX0BGuMYYffZsrCeBDPjO3RtrU",
-    "messageBody": "well, I think this is a collaborative thing",
-    "timestamp": "2024-04-02T12:59:48.730Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$lUqHRTqZ9wIorwuIA83I52O3JZcOfbEkk83OTFv0ueE",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "another question (related): ``` [ (\"PT1\", \"TH Generation of Indexed Data Error\") , (\"PT2\", \"Void is not supported\") , (\"PT3\", \"Ratio number can't have a zero denominator\") , (\"PT4\", \"'round' got an incorrect input\") , (\"PT5\", \"'check' input is 'False'\") , (\"PT6\", \"PlutusTx.List.!!: negative index\") , (\"PT7\", \"PlutusTx.List.!!: index too large\") , (\"PT8\", \"PlutusTx.List.head: empty list\") , (\"PT9\", \"PlutusTx.List.tail: empty list\") , (\"PT10\", \"PlutusTx.Enum.().succ: bad argument\") , (\"PT11\", \"PlutusTx.Enum.().pred: bad argument\") , (\"PT12\", \"PlutusTx.Enum.().toEnum: bad argument\") , (\"PT13\", \"PlutusTx.Enum.Bool.succ: bad argument\") , (\"PT14\", \"PlutusTx.Enum.Bool.pred: bad argument\") , (\"PT15\", \"PlutusTx.Enum.Bool.toEnum: bad argument\") , (\"PT16\", \"PlutusTx.Enum.Ordering.succ: bad argument\") , (\"PT17\", \"PlutusTx.Enum.Ordering.pred: bad argument\") , (\"PT18\", \"PlutusTx.Enum.Ordering.toEnum: bad argument\") , (\"PT19\", \"PlutusTx.List.last: empty list\") , (\"PT20\", \"PlutusTx.Ratio.recip: reciprocal of zero\") ] ``` the table started with the \"PTXX <-> Error explanation\" pattern and then quickly changed to the \"PTXX <-> Module: error explanation\"",
+    "timestamp": "2024-04-05T10:05:38.838Z"
   },
   {
-    "_id": "$D7mqgGSMQ3zyxnF0Wsvq60LAXZaaDohwVTGR6MerY-M",
-    "messageBody": "yes, cardano-node would also need teams",
-    "timestamp": "2024-04-02T15:25:07.881Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$Eaj5aUw_C16sYV_s5sqsp7FvrlGBIILlBvzbiIm2aQs",
+    "anonymizedUserId": "7266966582d171065f7987b9ad357e21e44bd49f265d353b9a71f64e03f860ed",
+    "messageBody": "> However, I suspect that just using divideInteger will be faster and cheaper than doing a conversion, a shift, and another conversion. * > However, I suspect that just using divideInteger will be faster and cheaper than doing a conversion, a shift, and another conversion. Kenneth MacKenzie Bitwise operations can be performed on byte strings only in CIP-0058. On the other hand the aritmetic operations can be performed on integers only. In cryptographic algorithms arithmetic and bitwise operations interleave frequently. As a consequence one has to switch between integers and bytestrings via `integerToByteString`/`byteStringToInteger` frequently. That conversion may have significant cost and diminish the advantage of using bitwise operations after all. Moreover `integerToByteString` does not work for negative numbers which requires special handling in cryptographic algorithms, a.k.a. costs you dearly. I have doubts if bitwise operations on byte strings is an optimal choice for cryptographic applications. Perhpas it's worth revising the design choice by allowing bitwise operations on Plutus integers directly. libgmp which is used as runtime for haskell and Plutus integers has direct support for bitwise operations on integers.",
+    "timestamp": "2024-04-05T10:02:07.359Z"
   },
   {
-    "_id": "$D3SOU1eYsDAIdGyxbzUMgsqD1MMDyMVSlvzE3xmmut0",
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$XNScvHCTVIrWm_KLgFtUq5vvpaROTnmKexpwa-Q__5M",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "so be it. I'll add the note.",
+    "timestamp": "2024-04-05T10:01:06.861Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$dcothPZElJXnEH4OWeEYiFfTxO213I2XB-o1rQATSTw",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "that's the only reason they exist",
+    "timestamp": "2024-04-05T10:00:54.271Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$tyKmiO-gH_cFxYP8THFPfWoOqv3WSY0RbMJtP5De04E",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "so `TH_GEN_INDEXED_DATA` is >6 the size of at three character code",
+    "timestamp": "2024-04-05T10:00:50.569Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$s4vsaCymWDnbdiENsLV1eQ47nQlRE5A_rSXbhklxcN8",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "This is a good point, I didn't think of costing aspect...",
+    "timestamp": "2024-04-05T10:00:47.083Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$i6sdyJeAMbw71I4QxlP531QdPgzHftfuMbwimzHRGfE",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "also bear in mind that the whole point of them was to be short, since strings take up lots of space",
+    "timestamp": "2024-04-05T10:00:26.675Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$6_2-oUTrdBbBOMjoaAPsHdTf2h8bhdwb1lIGmpfmFDA",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Either way there is a confusion",
+    "timestamp": "2024-04-05T09:59:31.630Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$Ucssux1uQWU3fwSf1V-5wPJziDGr6n5rTuADd_aQYpA",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Looks like the choice is between \"Keep having a ~slightly~ confusing ordered table\" and \"Confuse users ~a lot~ once, but then keep the less confusing table\" :)",
+    "timestamp": "2024-04-05T09:59:08.801Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$4OxeWPSjhdMt2SGkpjA925YSKlkMsWp7pPc4tA8x3Yo",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "we can change it whenever we want, the only cost is confusing people",
+    "timestamp": "2024-04-05T09:57:46.897Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$E0QkYuD7E6WHBLkvvu4PQGYjmVmn_a-1Uqn8jVJD5hM",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Is it too late to change the approach?",
+    "timestamp": "2024-04-05T09:57:10.168Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$1mihwNcDhIH2F2fvLemA-PEHICXHroLBbf1PcbfznpQ",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "🤷",
+    "timestamp": "2024-04-05T09:56:17.316Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$ZKbgGNytYkGx0hZBks0vlGWEcHgEFnp5rWUO4irbpXw",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "that's the deal with error codes: new stuff has to go at the end",
+    "timestamp": "2024-04-05T09:56:11.107Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$1H0ed1ooEvmeeewPmofAtXRq_MN3D3Ywviaf-CzNCHY",
+    "anonymizedUserId": "7266966582d171065f7987b9ad357e21e44bd49f265d353b9a71f64e03f860ed",
+    "messageBody": "* > However, I suspect that just using divideInteger will be faster and cheaper than doing a conversion, a shift, and another conversion. Kenneth MacKenzie Bitwise operations can be performed on byte strings only in CIP-0058. On the other hand the aritmetic operations can be performed on integers only. In cryptographic algorithms arithmetic and bitwise operations interleave frequently. As a consequence one has to switch between integers and bytestrings via `integerToByteString`/`byteStringToInteger` frequently. That conversion may have significant cost and diminish the advantage of using bitwise operations after all. Moreover `integerToByteString` does not work for negative numbers which requires special handling in cryptographic algorithms, a.k.a. costs you dearly. I have doubts if bitwise operations on byte strings is an optimal choice for cryptographic applications. Perhpas it's worth revising the design choice by allowing bitwise operations on Plutus integers directly. libgmp which is used as runtime for haskell and Plutus integers has direct support for bitwise operations on integers directly.",
+    "timestamp": "2024-04-05T09:53:30.533Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$q5VcmvWPE4ZMvG95H57rk266Jh0_Zg-RiqP86YjTp7U",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* Now I want to add a new error code \"The reciprocal of zero\", which is related to the `PlutusTx.Ratio` and is only going to be used there.",
+    "timestamp": "2024-04-05T09:46:08.909Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$aUBL02N8oIprQefnN42FMBaf05wSWuro3X8guTQklX4",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "I wonder why did we go for orderable codes [PT1 ..] and not something like semantic codes e.g. `TH_GEN_INDEXED_DATA`",
+    "timestamp": "2024-04-05T09:45:33.699Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$s_tUheAv98ctSECDaQqqWsoLxiyxmB8T-fBNK59nzeM",
+    "anonymizedUserId": "7266966582d171065f7987b9ad357e21e44bd49f265d353b9a71f64e03f860ed",
+    "messageBody": ">However, I suspect that just using divideInteger will be faster and cheaper than doing a conversion, a shift, and another conversion. Bitwise operations can be performed on byte strings only in CIP-0058. On the other hand the aritmetic operations can be performed on integers only. In cryptographic algorithms arithmetic and bitwise operations interleave frequently. As a consequence one has to switch between integers and bytestrings via `integerToByteString`/`byteStringToInteger` frequently. That conversion may have significant cost and diminish the advantage of using bitwise operations after all. Moreover `integerToByteString` does not work for negative numbers which requires special handling in cryptographic algorithms, a.k.a. costs you dearly. I have doubts if bitwise operations on byte strings is an optimal choice for cryptographic applications. Perhpas it's worth revising the design choice by allowing bitwise operations on Plutus integers directly. libgmp which is used as runtime for haskell and Plutus integers has direct support for bitwise operations on integers directly.",
+    "timestamp": "2024-04-05T09:45:22.027Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$dPktVpOnV2toJjKK3WbxKrkRl1f0_oTR_cqnQgvr9qU",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* OTOH, if I mutate the table such that I insert PT4 and shift all the other codes... how terrible is that? Is re-assigning error codes a no-go?",
+    "timestamp": "2024-04-05T09:44:25.320Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$91ybG8xp3SMByfTm1DLzsR1mOZyA5Hca8E6IfR8qYE0",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "OTOH, if I mutate the table such that I insert PT4 and shift all the other codes... how terrible is that?",
+    "timestamp": "2024-04-05T09:44:00.302Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$GWcekG9AdY2uNkhzZZ5wPBzHfKRYatOIDEgiKQK0V58",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "the downside is that errors are not ordered by the module anymore, e.g. PlutusTx.Ratio -related errors are going to be spread across the table.",
+    "timestamp": "2024-04-05T09:42:58.206Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$QxcbyKRMoZYdpUwfglNR3koQBFWB_Ggsd9OMM2HtwJM",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "The simplest (but arguable not the rightest) thing to do is to append \"PT20\", \"PlutusTx.Ratio.recip: ....\"",
+    "timestamp": "2024-04-05T09:42:05.825Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$zTMDobZsKJZWtW0OrcizOL0AjXFBDN14Xqnv4bu7FJw",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Now I want to add a new error code \"The reciprocal of zero\", which related to the `PlutusTx.Ratio` and is only going to be used there.",
+    "timestamp": "2024-04-05T09:41:00.137Z"
+  },
+  {
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$0cZIAKuvh5xBrmCjwripQSZlv8ELKaFkgB2Qtv7dSuo",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
     "messageBody": "image.png",
-    "timestamp": "2024-04-02T13:15:21.791Z"
+    "timestamp": "2024-04-05T09:39:46.092Z"
   },
   {
-    "_id": "$0fOlXIghZdbSDC9jKDLKperN7WCEYxWEt13cw9IVq4Y",
-    "messageBody": "Michael Peyton Jones: I don't want to assume, but I would imagine you have read the above OSO Strategy document. By end of Q4 we should complete various tests/audits for each project, this will involve ensuring each project aligns with governance, and that should be inclusive resolving the concern with cardano-node",
-    "timestamp": "2024-04-02T12:35:15.617Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$dzI4nqATVoS3CwO8Z-OLg2LvRdCQplbX6tbJ5gji4s4",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "In the `PlutusTx.ErrorCodes` module we have this table: 🧵",
+    "timestamp": "2024-04-05T09:39:37.694Z"
   },
   {
-    "_id": "$ThO1Fn-Z0H8ByFdcjh3XdvmaVkIv6a0O7E_taDutcIY",
-    "messageBody": "also, if this doesn't match up with reality that can of course mean that the proposed ontology in the governance policy is bad and we should change it!",
-    "timestamp": "2024-04-02T11:42:19.863Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$b0OWq_n8lsxFoDf-1l7srui3tCTsOsmbjxWj02jJZAM",
+    "anonymizedUserId": "1770569b1a38d39c1c44e35e9d49e1d5f226525f7ee52d69d82dbe5f6e3b6818",
+    "messageBody": "Thanks for quick response! Let me recheck - maybe it is a bug on my side :-)",
+    "timestamp": "2024-04-05T09:19:25.644Z"
   },
   {
-    "_id": "$eyW4o_uIeqU1SSw7puk7ebaNVpvlkSD0ESAwvCOVCro",
-    "messageBody": "Yes, what I am saying is compatible with that. I'm arguing that it's causing problems so we should get on with at least some of it",
-    "timestamp": "2024-04-02T12:41:08.873Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$k8hUw0qwh0Dk0qndKulOxSiE8jaZu88jKVL2krj0lmU",
+    "anonymizedUserId": "1770569b1a38d39c1c44e35e9d49e1d5f226525f7ee52d69d82dbe5f6e3b6818",
+    "messageBody": "* Hello, I've a question regarding Plutus versioning and the set of available builtin functions. I have a specific scenario at hand - I would like to use new crypto primitives (`blake2b_224` and `keccak_256`). Introduction of these primitives was publicly announced as part of Plutus V3. I checked and I'm able to use `blake2b_224` using `Plutus V2` on the `preprod` so I'm happy but also a bit confused now :-) How can I determine if I can use a given `builtin` on a given network?",
+    "timestamp": "2024-04-05T09:15:33.492Z"
   },
   {
-    "_id": "$rn77SgO_Q4p3qvDb5ea_8CpuynQhL6ppbubnvDHi3pk",
-    "messageBody": "If this is repetitive I apologize, but at least it is some additional clarity for the moment, even if only for me",
-    "timestamp": "2024-04-02T12:35:42.849Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$CXv27_B1Czv7j9B80k2chiaeNUIYDvqnnsLufxEep8U",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "the \"Plutus Core on Cardano\" section of the spec should say what is available when:",
+    "timestamp": "2024-04-05T09:14:53.255Z"
   },
   {
-    "_id": "$8MoLGKlj-MPUcS6LguUmEid_GGjpW1Bt0Ny3sLsu6uU",
-    "messageBody": "the set of contributors is certainly not co-extensive with the set of contributors to ledger or network!",
-    "timestamp": "2024-04-02T11:32:15.033Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$mrNMD5Ge0rUYhNk_Qf0xnsNztEgdhXsVOa2ERhIBaDU",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "um, that sounds like a bug, potentially? Kenneth MacKenzie ?",
+    "timestamp": "2024-04-05T09:14:39.778Z"
   },
   {
-    "_id": "$uQoKtJ746HZ2uBkQpDIZ_jgVPTp5h-l3eZhdaHnybPs",
-    "messageBody": "I think it is just another project, that happens to be poorly organized at the moment",
-    "timestamp": "2024-04-02T11:31:49.387Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$BwTrCY86tfmDP9fH-qYNdaydRVEf-nV3uvnBy-Nb5FA",
+    "anonymizedUserId": "1770569b1a38d39c1c44e35e9d49e1d5f226525f7ee52d69d82dbe5f6e3b6818",
+    "messageBody": "Hello, I've a question regarding Plutus versioning and the set of available builtin functions. I have a specific scenario at hand - I would like to use new crypto primitives (`blake2b_224` and `keccak_256`). Introduction of these primitives was publicly announced as part of Plutus V3. I checked and I'm able to use `blake2b_224` using `Plutus V2` on the `preprod` so I'm happy but also a bit confused now :-) How can I determine if I can a given `builtin` on a given network?",
+    "timestamp": "2024-04-05T09:08:35.249Z"
   },
   {
-    "_id": "$pZPkczdmXYrhaXasFWNpbmz-ufDvgbA3IRnk8wxZwEQ",
-    "messageBody": "Understood, I will reach back when I have a clearer understanding for next steps",
-    "timestamp": "2024-04-02T11:53:28.675Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$xiHr6yBE9LMpQRBRzgA0COm9Gpc1B_z-ODkAStUuPSA",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "yes, your version is fine for costing. I think I'm unsure that we can do _all_ higher-order builtins that way. In particular, it requires us to be able to represent a computation that fully constructs the result as a PLC term, which needn't be possible. e.g. for `mapList` you can return a spine of `cons` applications. But suppose we had not exposed `cons` for some reason (perhaps the data structure has invariants and we don't want to expose the raw constructors). Then we might not be able to produce a term that evaluates to the right thing.",
+    "timestamp": "2024-04-05T08:43:02.423Z"
   },
   {
-    "_id": "$DSIMJlhV9UhxG7lRLHIZXUBei2fnAbnN4iL05Ap2xmg",
-    "messageBody": "\"by end of Q4\" doesn't mean \"do it in q4\" 😁",
-    "timestamp": "2024-04-02T12:41:31.953Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$KAC6VzY_rKnN7MGbcYnHIwOAaE-CDXW3PmRhrlpm4Fs",
+    "anonymizedUserId": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+    "messageBody": "in this case I think digging in is optional but virtuous. Sometimes we learn about optimization opportunities by doing stuff like thsi!",
+    "timestamp": "2024-04-05T08:40:16.517Z"
   },
   {
-    "_id": "$TcVz1Epj0iYBCoQms57-PvBPcRRlMriYpSqAvHDm6W4",
-    "messageBody": "ok",
-    "timestamp": "2024-04-02T11:34:58.721Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$jtj_38YuTkaEMZBAest80ZIYbwV60VRkD-JJeE6qYV0",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* > But why do the numbers go up? I'll dive deeper to find an answer to this question today.",
+    "timestamp": "2024-04-05T08:17:04.954Z"
   },
   {
-    "_id": "$gugKiJExvIIbR2-39lhn0rUyjqZu5bmyHHR850kc8Ew",
-    "messageBody": "cardano-node should have the same committers as each of the repos that it is said to integrate, but if there is not a need for integration and the underlying repos have a larger project purpose, then node should be removed/re-org'd under a different repo",
-    "timestamp": "2024-04-02T11:30:25.973Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$vIVJN1us84jLJPjjCmxwCFQOIipzIuFUfT_3_2tjbBQ",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "* > But why do the numbers go up? I'll dive deeper to find an answer to this question today.",
+    "timestamp": "2024-04-05T08:16:55.378Z"
   },
   {
-    "_id": "$qr9EZuFi4unwDvNnGrCoULkTssHRrzi35oxxDsSpVAY",
-    "messageBody": "So under the tems of Governance cardano-node should have the same maintainers/committers as ledger.",
-    "timestamp": "2024-04-02T11:28:32.698Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$VxcqV-RoXr553lOaepEvlQP3oHcUQR__9a8HXY1S89s",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "I'll dive deeper to find an answer to this question today.",
+    "timestamp": "2024-04-05T08:16:34.626Z"
   },
   {
-    "_id": "$UPKQpC8u4kP_q8IDGg-vY2kQy8-sOvtiNY2kjLiru90",
-    "messageBody": "`cardano-ledger`, `ouroboros-network` etc. are all separate projects with separate mainainers (and hence separate governance)",
-    "timestamp": "2024-04-02T11:31:13.233Z"
-  },
-  {
-    "_id": "$-Y_YKcT8fQObJRIx2b2XwFfaaGESAMVDQx-Ju21IT9k",
-    "messageBody": "`cardano-node` is weird because it doesn't clearly have a team of maintainers at the moment",
-    "timestamp": "2024-04-02T11:24:37.315Z"
-  },
-  {
-    "_id": "$jI-_c_mmFAsApIqXPQUOLBc9U3kWlmEM4g__SNZe5Wk",
-    "messageBody": "they share some common cause, this is the idea of the \"meta-project\"",
-    "timestamp": "2024-04-02T11:31:30.469Z"
-  },
-  {
-    "_id": "$FYbCMLozOHBSi5VR9-auqhnslLZSQXAlkmNfySdD3OM",
-    "messageBody": "but the problem is: what to say about `cardano-node`",
-    "timestamp": "2024-04-02T11:31:36.050Z"
-  },
-  {
-    "_id": "$5uYKaz5r1vdFdepX18qjpRn_oIrl8Dygl6mFc0-CLD0",
-    "messageBody": "Unless I have something incorrect",
-    "timestamp": "2024-04-02T11:30:35.782Z"
-  },
-  {
-    "_id": "$Z-1ilyXvEvDAlnRfE8uBaRT4FatMupUoA9n3ip1MVc0",
-    "messageBody": "\"Cardano\" is a meta-project",
-    "timestamp": "2024-04-02T11:24:22.511Z"
-  },
-  {
-    "_id": "$QpFCsFBUMoC3puzMklwqk2_YBgD685gkBJnp-Tntd_I",
-    "messageBody": "no",
-    "timestamp": "2024-04-02T11:30:51.010Z"
-  },
-  {
-    "_id": "$bsmZ8hqDWxDYbO-sWl-IMXzg5jGg7h47CJ498hOYjvg",
-    "messageBody": "well, basic conformance to the governance policy in terms of the information that is written in the project documentation would be a start. That would force us to then answer a bunch of questions like \"is this a project? is it part of another project? or what?\"",
-    "timestamp": "2024-04-02T11:19:10.283Z"
-  },
-  {
-    "_id": "$6_qYWRY9n3WrurmKcAxLnKNZytnjDKEIZHTAkC3M-qE",
-    "messageBody": "I was trying to say that if there is not already a process/guideline in place that defines a project, that becomes the roadblock before we can move forward",
-    "timestamp": "2024-04-02T11:06:25.984Z"
-  },
-  {
-    "_id": "$0pUmmWxse2bmpk2-EKIXJ-c22PhpzJw5fX3dlwdJRdQ",
-    "messageBody": "If there is a project where those fall, then the project should be defined as cardano-node and then the continuous drop to each respective repo",
-    "timestamp": "2024-04-02T11:23:57.119Z"
-  },
-  {
-    "_id": "$citrqMmyGLk-cYB22E50iOub8M68J7Ma_NFHFnZ43Jg",
-    "messageBody": "Per the readme, cardano-node is the integration of the above including networking and node-shell",
-    "timestamp": "2024-04-02T11:22:58.509Z"
-  },
-  {
-    "_id": "$MQTymaS4jjZxcXVV-9rbGoi7MZKOaozStsnpOO_VhZs",
-    "messageBody": "Michael Peyton Jones: Can you expand on what you are asking for in terms of structure?",
-    "timestamp": "2024-04-02T11:17:29.470Z"
-  },
-  {
-    "_id": "$_JEVZQ7FviN8yRYto9JgxRIDjzd8_U4oksgJLw5S1DE",
-    "messageBody": "Are ledger and consensus etc under their own projects?",
-    "timestamp": "2024-04-02T11:22:28.349Z"
-  },
-  {
-    "_id": "$vy4oVE5CPWTggCZO7q8no7UCtOMt1mGLPQ8AR6hYY4Y",
-    "messageBody": "`cardano-ledger` etc. is a separate project, yes",
-    "timestamp": "2024-04-02T11:24:07.942Z"
-  },
-  {
-    "_id": "$X4VoPB318TQkI-UQRal5Ezd_XusQ1yZoiOXK7jAhAsQ",
-    "messageBody": "in the terminology of the governance policy",
-    "timestamp": "2024-04-02T11:24:16.844Z"
-  },
-  {
-    "_id": "$LUAurmfgB1jO6tYKodKO6Saxch-Nwo-liQcSaaSgwpI",
-    "messageBody": "[there is]()",
-    "timestamp": "2024-04-02T11:08:46.326Z"
-  },
-  {
-    "_id": "$m41J5AL1mYq9G0hDV_nCnxWzwj84Bq01rb1hBT8NpWw",
-    "messageBody": "I was just stating that in order to have a productive incubation/lifecycle in place, it will require that we begin with a clear project definition. Therefore ensuring the the project aligns with what should/shouldn't be considered a project.",
-    "timestamp": "2024-04-02T11:05:36.942Z"
-  },
-  {
-    "_id": "$-u0JSzxLxa9PwcbSDqbPtR3DJM7Zn_0laLMwIxAm6Jo",
-    "messageBody": "Project incubation is a Q2 deliverable, So unless I am missing something already provisioned, this will be a topic of discussion as we push forward this Q",
-    "timestamp": "2024-04-02T11:02:54.576Z"
-  },
-  {
-    "_id": "$YrKOl07Zp4EOHuxmhbfDDHNlsZVNHXM2_12AbMXriYk",
-    "messageBody": "> <user_id_removed> I would not use the term Ratified as that means the board approved it. changed it to by approved by OSC in all dialogues",
-    "timestamp": "2024-03-29T17:31:26.155Z"
-  },
-  {
-    "_id": "$uGdRV-dTJ7SJ7XLX5uhGUvFn7aTofX6ylvW0J96DzUo",
-    "messageBody": "I think we need to do some work on getting at least the basic project structure suggested in the governance policy agreed on and written down",
-    "timestamp": "2024-04-02T11:01:19.407Z"
-  },
-  {
-    "_id": "$UtGhFRhXD-8TkbFQh5OJ1W1YMZaYYy7OAK_aPZ2cITE",
-    "messageBody": "see e.g. discussion in #cardano-node:matrix.org , it's not even totally clear at the moment whether it is a project, etc.",
-    "timestamp": "2024-04-02T11:01:40.473Z"
-  },
-  {
-    "_id": "$HRqMbh49419395ss40VpgCdQzDDTKx77qxLrL229d4M",
-    "messageBody": "this is about the definition of what project is, and applying it to what we already have",
-    "timestamp": "2024-04-02T11:04:06.936Z"
-  },
-  {
-    "_id": "$NdIkJYFt24tf9RkghNV6OHyEuM9faCwLiJFxpzvMf9Y",
-    "messageBody": "I don't think this is about incubation",
-    "timestamp": "2024-04-02T11:03:48.505Z"
-  },
-  {
-    "_id": "$TZBDfp2MfapA0k3MYZk6MaEKfIR1DfORTHwcS1gcz4g",
-    "messageBody": "or lifecycle",
-    "timestamp": "2024-04-02T11:03:56.510Z"
-  },
-  {
-    "_id": "$gdeLzBrAZ4VD4pQCgBQ5d7R6f4gtfx_zs14h1bDJSUg",
-    "messageBody": "I am aware",
-    "timestamp": "2024-04-02T11:04:29.284Z"
-  },
-  {
-    "_id": "$kFk3NrgnS66aBLcBS3TX5skz4ejcrwguox2d94luus8",
-    "messageBody": "I spoke with the gitlab team previously when I was at IEEE SA OPEN about adding a balloting feature to the process and they were very interested in discussing it.",
-    "timestamp": "2024-03-29T16:40:26.161Z"
-  },
-  {
-    "_id": "$uJAwqmx8nzzyGYq9q2ICx98TNeYSQqRexe50UAkzZ6g",
-    "messageBody": "but then several here now of my gitlab bias. Of course, we run our own gitlab install via the open source edition so no one is harvesting our data.",
-    "timestamp": "2024-03-29T16:36:36.212Z"
-  },
-  {
-    "_id": "$f5FlpwpO06D5NyfTh6bJnI8mTLIiQISPLbVES1hkMTQ",
-    "messageBody": "> <user_id_removed> still gotta trust the sha, need signatures, trusted parties, etc. yes and github is still sha1",
-    "timestamp": "2024-03-29T16:34:43.890Z"
-  },
-  {
-    "_id": "$GAwy1wVoPKG26YP5URAfqroU6xqfXQAIfGB19g7iHcM",
-    "messageBody": "* Here is strategy approved by the OSC as of yesterday:",
-    "timestamp": "2024-03-29T17:24:32.774Z"
-  },
-  {
-    "_id": "$PTilFJYUOpMX0i7w1Hx03CMTGJHvLO6hRe-SQ81fy5Q",
-    "messageBody": "I would not use the term Ratified as that means the board approved it.",
-    "timestamp": "2024-03-29T16:05:12.678Z"
-  },
-  {
-    "_id": "$e58E8CkkSD0IW0WXZxNmiPRLYD_L12mmpMP9WkgsxaU",
-    "messageBody": "Here is strategy ratified as of yesterday:",
-    "timestamp": "2024-03-29T13:55:39.320Z"
-  },
-  {
-    "_id": "$NdSxrWzbgPcM6mTrnrm6RGOObeO4Fo8AIGgEr-ZWzM0",
-    "messageBody": "* Here is strategy approved by the OSC as of yesterday:",
-    "timestamp": "2024-03-29T17:25:57.853Z"
-  },
-  {
-    "_id": "$SG3f6VL-0iwY1V8pJWB4jc7w4JDdZ6ViVZ15KK7zSOA",
-    "messageBody": "* Here is strategy approved by the OSC as of yesterday:",
-    "timestamp": "2024-03-29T17:25:33.104Z"
-  },
-  {
-    "_id": "$evKODzAmeR7R1WvutCza4R61CKL-IRga2CMXbg80ebc",
-    "messageBody": "also /",
-    "timestamp": "2024-03-29T16:35:09.853Z"
-  },
-  {
-    "_id": "$XAC6lo-a9h6Y6aRMJh6rg28WwJVkYdfky8AWWcScGDY",
-    "messageBody": "G3 - By the end of 2024, 50% of core Cardano projects will be supported by paid maintainers from at least two companies. We’ll prioritize contracted maintainers from other organizations to ensure project diversity and sustained contribution. We’ll utilize and promote existing tooling and internal resources to support their involvement. Actions: 1. Engage past collaborators (+ identify maintainers) Conduct a survey among core Cardano project teams to identify companies and professionals they've successfully collaborated with in the past. Compile a list of potential maintainers with proven track of records. 2. Engage TSC Present a formal request to the TSC, emphasizing the strategic importance of diversifying project maintainers 3. Facilitate maintenance engagements Initiate a matchmaking process between core Cardano projects and potential maintainers identified in action",
-    "timestamp": "2024-03-28T13:41:07.159Z"
-  },
-  {
-    "_id": "$2OuyHwbB371XVIAbjBWrNwogGQC0qk13c0oRlPrfm4E",
-    "messageBody": "G4 - By Q4,2024, establish a security framework for all OS Cardano projects that will include [...]. By (Q4,2024) we’ll be ensuring at least 80% of projects adhere to standardized security policies, with dedicated security officers appointed to core projects. Metrics: 80% of Cardano projects implementing the standardized security policy. Actions 1. Develop / standardize security policies Collaborate with security experts within / outside the Cardano ecosystem to create comprehensive security policies that cover aspects of open-source project development and maintenance 2. Security officers for core projects Identify and appoint professionals as security officers for each core project, responsible for overseeing and enforcing security practice. 3. Implement security issue reporting Establish a process for the community to report security vulnerabilities, and outline steps for response / resolution by teams and security officers.",
-    "timestamp": "2024-03-28T13:42:01.361Z"
-  },
-  {
-    "_id": "$ZHNS3q8d85CMMeU-gscKT4LlO0sCxZoAFEFZTFBDgj4",
-    "messageBody": "Agenda for today will: 1) Solidify updated goals form the Strategy TWG yesterday 2) Agree to high level action items to deliver these goals 3) High level review of the foundation framework form past conversations in March 4) vote to ratify this initial strategy reminder: that we will be testing this strategy implantation first two months of Q2 and tracking progress, then revise this initial draft accordingly to new demands or lessons learned It is important we get something to start with today and then use the testing as the point of correction.",
-    "timestamp": "2024-03-28T14:07:25.680Z"
-  },
-  {
-    "_id": "$6-rd98eOts8o_BwZ2b-9XrAO7DyyEjYeArwhyCbA8Ns",
-    "messageBody": "Thank you to all involved in today's call and overall effort! Appreciate the laboring effort to get this first iterative strategy over the line!",
-    "timestamp": "2024-03-28T16:09:19.188Z"
-  },
-  {
-    "_id": "$nalcHfGrrBkm35iSeTw0yj4E9lubOiWFJ39TYzewuMw",
-    "messageBody": "PLease join inntoday if you can need simple majority for vote",
-    "timestamp": "2024-03-28T15:01:44.348Z"
-  },
-  {
-    "_id": "$WCDW1fcQCPrIwUdd6IqC7lClrwIinWZkY_K99-_T2zo",
-    "messageBody": "I say we start here and if we hate it, revaluate in Q2 after pilot?",
-    "timestamp": "2024-03-28T13:51:55.888Z"
-  },
-  {
-    "_id": "$7-mZvN9AwDvgAdvt06hfYYADxu2nLBytWlTJKMe3X8M",
-    "messageBody": "I say we start here and if we hate it, revaluate in Q2 after pilot?",
-    "timestamp": "2024-03-28T13:51:51.421Z"
-  },
-  {
-    "_id": "$0whw9qhv7X-ZnqvY5mHABeNJ3cRhwpK1Z_uNRpFZTgQ",
-    "messageBody": "I say we start here and if we hate it, revaluate in Q2 after pilot?",
-    "timestamp": "2024-03-28T13:51:47.777Z"
-  },
-  {
-    "_id": "$sOHEAOl39kt3BYu8-BWRQEcep1u6nGc8i-a7nNegedM",
-    "messageBody": "I say we start here and if we hate it, revaluate in Q2 after pilot?",
-    "timestamp": "2024-03-28T13:51:39.135Z"
-  },
-  {
-    "_id": "$_1VVe3V0-ZcD2WpUBS-Tk2HBBH0n1HSysGiY4ZqeD14",
-    "messageBody": "* **G1 - By \\[quarter/year\\], we’ll empower the health of Cardano projects by creating and implementing a Lifecycle Management Framework. That way we’ll have a clear view about the future of our initiatives, and monitor key aspects such as diversity, sustainability and funding.** **Metrics:** - x% of the projects will audited - y% of projects will have a diversified funding model **Actions:** **1. Conduct project audits** Develop / execute an audit plan for all Cardano (or not all, if not, to be specified) projects to assess their current stage, health, and needs. This includes (proposals) - reviewing project documentation - development progress - community engagement / maintainers / contributors - funding models - risks **2. Develop the Lifecycle Management Framework** This framework will include guidelines for project stages, key milestones, success metrics, risk indicators, intervention strategies, and post-mortem actions. Also a plan for continuously monitoring projects. **3. Adopt key open source policies for project guidance & sustainability** OSC will define and adopt a set of at least 5 essential open-source policies focused on guiding project development and sustainability.",
-    "timestamp": "2024-03-27T17:37:25.710Z"
-  },
-  {
-    "_id": "$FPO0pMgrbOE5Tt3osRnGzdcB9PUKydPLOryUvgYoRgk",
-    "messageBody": "I feel like this naturally should be targeted to Q3 2024 so that it is ready and complete(-ish) by the time of the Annual Members Meeting (early October) and elections and potentially budget-setting during the members meeting and/or constitutional convention time period (early December). 1. Should there first be a framework for what counts as a \"core\" Cardano lib and then maybe 1..n \"halo\" or \"valence\" levels of auxiliary/complimentary projects? Maybe we should aim to have auditing of all \"core\" and L1 repositories by Q4 2024 w/ full auditing of all Intersect projects to be completed by Q1 25? 2. Is the framework described here a necessary precursor to be completed prior to work on #1 beginning? 3. This one seems arbitrary (why 5? which 5?) and is this really just a very tenuous extension of #2?",
-    "timestamp": "2024-03-28T02:26:37.234Z"
-  },
-  {
-    "_id": "$qB1MHc435D9U8KeFv16r1folq2FvFGaVHL3j36bTQTk",
-    "messageBody": "Cardano is more than just a financial system! It is public infrastructure. Personally, I do not feel comfortable developing public infrastructure on top of someone else's private property, it's just asking for the rug to be pulled out from beneath us. Cute analogies aside, the focus ought to be open standards, interoperability, decentralization, and freedom (artistic, financial, etc.). I just think it would take only a little effort to include a section stating that Github is proprietary, it is centralized, it could potentially rug pull all the intersect repos, and we should really consider exploring alternatives, preferably ones that are free and open source and decentralized",
-    "timestamp": "2024-03-28T02:29:03.600Z"
-  },
-  {
-    "_id": "$AkcigQbfkI7iJfdCwQpZ7z9J-euVBZ-vTl6cIRpPU0U",
-    "messageBody": "I don't know that we can set such an ambitious timeline for this goal (end of 2024) because a large part of finding and organizing primary maintainers let alone \"backup\" or secondary maintainers will largely depend on the amount of budget that Intersect is going to be given to execute on this goal. Is it enough to lay the groundwork to identify potentially viable individuals? What does the maintainer \"grant\" or \"contract\" application/RFP and subsequent hiring process look like at this point?",
-    "timestamp": "2024-03-28T03:57:26.767Z"
-  },
-  {
-    "_id": "$GBMd1jcPlBlhYoT7wC7_z-mOLUVP-bQYWc94JkPfCKI",
-    "messageBody": "I feel like most of this is already covered by the introductory policy that Michael Peyton Jones has already started working on and publishing via the GitBook. I also wrote at least a draft project/committee governance procedure that has only received feedback from Michael Peyton Jones up to this point. However, I think with the work that's already been done on this to this point through the other efforts of this committee we could target Q2 2024 for this one",
-    "timestamp": "2024-03-28T02:34:22.942Z"
-  },
-  {
-    "_id": "$EwdFMXDuK91kTorQIyH8Lq0Cof1VPQClHt-gVtUDwa4",
-    "messageBody": "I think these actions are good and align well with what the security policy working group has been developing. However, I think that adherence to these security policies would be a \"mandate\" if you will for all Intersect-maintained repositories and so the measurement should always be 100%?",
-    "timestamp": "2024-03-28T04:28:16.884Z"
-  },
-  {
-    "_id": "$oc46J5-HWC0EN_WQRK0a3SsMs7BJ9Ptv7v2HFwmnCMU",
-    "messageBody": "I'm not sure at all about how this one is formulated, and if it captures what Michael Peyton Jones was highlighting today... So, Michael, what do you say?",
-    "timestamp": "2024-03-27T17:38:58.899Z"
-  },
-  {
-    "_id": "$xWoZNFdygKe1Q90t7vkP1U3VwAAsihfjbVvJmrEvfDI",
-    "messageBody": "Decentralizing GitHub is not our mission or remit and seems way beyond the scope",
-    "timestamp": "2024-03-28T03:09:30.007Z"
-  },
-  {
-    "_id": "$KUKlj8N55eXP0F9AqgKImoL9PE5Tl3beALkERjINDuA",
-    "messageBody": "Which options are those that exist today?",
-    "timestamp": "2024-03-28T03:07:12.226Z"
-  },
-  {
-    "_id": "$h9TdgLwZiQmYz_TMAxCsDhtnzD5DDOuopPzUVvFzGTo",
-    "messageBody": "> I think the point would be that the messaging would be off, that being an open source, decentralized project whos infrastructure is primarily hosted on a proprietary, centralized service I personally don't see any contradiction here. Even if we believe in decentralization generally, that doesn't mean it's a good use of our energy to push for decentralization in all places. Our project is about decentralizing financial systems; not necessarily software development systems. A bit like the tendency for charities to gradually become \"generic charities\" - we should focus on our mission, and not spend energy on stuff that isn't significantly contributing to that.",
-    "timestamp": "2024-03-27T10:03:16.778Z"
-  },
-  {
-    "_id": "$zGYstBfM4PPTBl-Yht8dv6LewlqTarXtT04Xo7Obe0M",
-    "messageBody": "> <user_id_removed> It is worthwhile then, I think, that even if we do choose github, we let others know the risks of centralized and proprietary services, and set the long term goal to move towards a truely free and open, decentralized alternative. That way it brings attention to the fact an alternative doesn't exist and hopefully encourages new devs to try and solve the problem Great idea.",
-    "timestamp": "2024-03-27T07:07:11.406Z"
-  },
-  {
-    "_id": "$ewIdDNqfx6zW5rSYqHei0n7z5XpVmW7RP9MB3VK3zdA",
-    "messageBody": "It is worthwhile then, I think, that even if we do choose github, we let others know the risks of centralized and proprietary services, and set the long term goal to move towards a truely free and open, decentralized alternative. That way it brings attention to the fact an alternative doesn't exist and hopefully encourages new devs to try and solve the problem",
-    "timestamp": "2024-03-27T04:38:08.671Z"
-  },
-  {
-    "_id": "$mXTcKNspAkEyJwv1_fbHFm9FIVxl9IVebJRoxljw8UA",
-    "messageBody": "I agree that given the two options github is more accessible than gitlab. Personally, I would love to see a truely decentralized alternative come about, though I recognize Cardano needs options available now, and who knows when something like decentralized and open source github gets released.",
-    "timestamp": "2024-03-27T04:38:03.659Z"
-  },
-  {
-    "_id": "$NXSl3XrMkGLg3m-Jc8O7gSkNnBbaxeqrsSLgzoTd7wY",
-    "messageBody": "You might have more options if you use on chain gadgets, like you can delegate trust to a token that advances the latest HEAD of the code, or recursively delegate trust, so it doesn't matter so much who signed the code and uploaded it, as long as your personal trust web says it's OK then it is",
-    "timestamp": "2024-03-27T10:06:17.327Z"
-  },
-  {
-    "_id": "$KMnbiUWzb4OUz5PWdM_YZ4CTGtdHV1Tm0pHy69OUk3U",
-    "messageBody": "Right, but it's not about proprietary services, it's about accessibility to a decentralized audience of consumers. Switching to GitLabs is great and all, but that ultimately just ends up in a different, less reliable centralized third-party hosting the repos",
-    "timestamp": "2024-03-27T04:14:08.361Z"
-  },
-  {
-    "_id": "$9OjD8FvsMkB2QmN3vt7Qt40lRFyEI5KGi-KLEm74Dwc",
-    "messageBody": "sure, if you have some clever trick for getting trust in a signing key using the chain, fine",
-    "timestamp": "2024-03-27T10:59:52.286Z"
-  },
-  {
-    "_id": "$bSD-uPO1UT7xeLyl4VPNyzGdUEtPe4AvfQjp7iqQmWg",
-    "messageBody": "So which is more accessible and open to the community, a permissioned GitLabs or GitHub?",
-    "timestamp": "2024-03-27T04:14:36.683Z"
-  },
-  {
-    "_id": "$5uQsD5dReJDg2kn3sn2Ej_OWf5uHsqMJ_WWeZSQbraA",
-    "messageBody": "still gotta trust the sha, need signatures, trusted parties, etc.",
-    "timestamp": "2024-03-27T10:00:27.288Z"
-  },
-  {
-    "_id": "$VDnLbs31kCsokmhcWMuOdy8u78dbbbk47-j-lShH5oo",
-    "messageBody": "Ah dang, that's a bummer Yeah, people do opt for the path of least resistance I imagine there will be some hardcore SPOs that compile everything from source, and its bootstrappable and reproducible Is there a way where the binaries they compile can safely be dsitrubted to other SPOs, in a decentralized way? Or maybe even distributed computing, for people that want to compile from source, but don't have strong enough hardware to pull it off",
-    "timestamp": "2024-03-27T00:10:34.313Z"
-  },
-  {
-    "_id": "$X_szPIn4uWgLhncCtgLvwVyTbWib050U-caqhMZDSZo",
-    "messageBody": "I think the point would be that the messaging would be off, that being an open source, decentralized project whos infrastructure is primarily hosted on a proprietary, centralized service though I believe people should be free to host wherever they choose, the medium is the message, and the message comes off as conflicted when open source software chooses proprietary services",
-    "timestamp": "2024-03-27T03:49:22.520Z"
-  },
-  {
-    "_id": "$p29G7-VKNikE-_j1On7VPTC3xZC2btRn8dxjgCLj8M4",
-    "messageBody": "> <user_id_removed> We do build the node with nix already :) but I don't think most of the SPOs use that route I personally find guix nicer to use compared to nix, partly because it is scheme based Why is it that most opt to download the binary as opposed to building with nix?",
-    "timestamp": "2024-03-26T19:07:14.236Z"
-  },
-  {
-    "_id": "$GBeA-UxsAFFCw6Iq4nneT-K7RyuKHZ4l_X8FO0040KQ",
-    "messageBody": "There is potential to do something like create a trusted network that will pin Cardano binaries on a known and trusted open source stack like IPFS and make the files available that way if we're really that worried about a compromise at GH",
-    "timestamp": "2024-03-27T00:37:17.260Z"
-  },
-  {
-    "_id": "$_Es9Cy88B88EUVq7iCEuxQ2CHbNg065Tp_dK7ILw4T8",
-    "messageBody": "Problem of course being that Iagon themselves are not a fully-open source project although they are a \"Cardano\" native project and they've received some flak for patenting some of their tech stack",
-    "timestamp": "2024-03-27T00:23:16.945Z"
-  },
-  {
-    "_id": "$MUHbn5y6A9tqz2Hrh7tRzxWr7djdc44osSQRJbO5znk",
-    "messageBody": "Also, most of our SPOs don't know how to properly set up and run the build environment... we've learned that from the struggles w/ lib-sodium since the early days",
-    "timestamp": "2024-03-26T23:56:37.560Z"
-  },
-  {
-    "_id": "$88QQJzVtCay8KlJzJSFB5xPG0g3eTiWXs_jqVo_9NM0",
-    "messageBody": "i.e. Iagon node operators pledge to offer X storage space for hosting signed binaries of core Cardano components that can be built and sha256'd against commits?",
-    "timestamp": "2024-03-27T00:22:31.253Z"
-  },
-  {
-    "_id": "$8ik1g0V5_1CFa8Jgf54i6Z-k95I-xThxEaYen-9JuZM",
-    "messageBody": "Would that be something we could reach out to a project like Iagon that is alleging to offer decentralized storage and compute from community members to provide?",
-    "timestamp": "2024-03-27T00:21:58.713Z"
-  },
-  {
-    "_id": "$4-1S_MjJ9_0TYKMJx6h6tLuhH8LOcVBSpe_lRmhW0YU",
-    "messageBody": "Cause the build process can take forever and it takes like a minute or less to fetch a binary and get running",
-    "timestamp": "2024-03-26T23:56:06.448Z"
-  },
-  {
-    "_id": "$H5l7zcYMHEYCmKXPFYjvCOEBiwWct0XgGZGXQ5E6gZM",
-    "messageBody": "* Right. A question was raised in the governance tooling working group about insuring reliability of these tools, with expressed need to keep connection to the OSC. So I'll keep asking questions to understand your vision better, hopefully to relay and advice to the GovTool WG. Software that we publish is the result of the community will. It is implied that there needs to be a way to have the community`s will expressed in a measurable way, and that there needs to be a way to enforce it. One of the roles of govtools is to facilitate expression of the community's will. So the vision for Cardano is that community will be expressed through governance actions. Is my understanding correct? Thank you!",
-    "timestamp": "2024-03-26T11:05:08.649Z"
-  },
-  {
-    "_id": "$_6DsgNlstLb_PGbPP2KxLwNtB0bsvzn9Z6VfidPwcYI",
-    "messageBody": "Right. A question was raised in the governance tooling working group about insuring reliability of these tools, with expressed need to keep connection to the OSC. So I'll keep asking questions to understand your vision better, hopefully to relay and advice to the GovTool WG. Software that we publish is the result of the community will. It is implied that there needs to be a way to have the community`s will expressed in a measurable way, and that there needs to be a way to enforce it. One of the roles of govtools is to facilitate expression of the community's will. So the vision for Cardano is that community will be expressed through governance actions. Is my understanding correct? Thank you!",
-    "timestamp": "2024-03-26T10:03:58.588Z"
-  },
-  {
-    "_id": "$vYIaMsk4U3WxXuuDv7MW6EOXsxU_sKPhQp_rA3MPCPU",
-    "messageBody": "> <@locallycompact-github:matrix.org> sent an image. This is a matter of trusting the build system. That includes evaluating compilers, build mechanisms, libraries, operating systems, scripts, etc. Generally, we take widely used tools on trust (ghc, cabal, nix, Linux, Windows etc) - they may not be perfect, but they generally are not malicious (and it would be rare to target a specific application). As long as we are clear about the tool chain, and sufficiently diligent in terms of applying security updates, not using newly released systems etc, we should satisfy reasonable security concerns.",
-    "timestamp": "2024-03-26T09:16:21.765Z"
-  },
-  {
-    "_id": "$bxA4-Ruwp8se3kLfwaF8NKW4aHBVQb9gd-Hh93gUIrs",
-    "messageBody": "hello! i use a tool called guix and it may be useful for building cardano node from source. It builds packages in a reproducible way, and is free and open source software. It is based on Nix, and has found usage in building bitcoin node from source here is a video describing how it's used in bitcoin:",
-    "timestamp": "2024-03-26T07:12:02.236Z"
-  },
-  {
-    "_id": "$bUkN5SqxIGeUqrEEuFVhqwy8yzMTQPurU2XswxCm604",
-    "messageBody": "Gotcha. I think it's a little unclear whether supply chain security is in our remit but I think arguably it is (not sure who else is going to be thinking about it!). I'd definitely be in favour of us forming a WG to think about it",
-    "timestamp": "2024-03-26T09:08:04.976Z"
-  },
-  {
-    "_id": "$Z7cMPCY_yFgvlprHwSOG8wslOY0Iz8yxJ-H6pLSh_t0",
-    "messageBody": "* Do I understand it right that by Legitimacy you mean the need to have mechanisms for assuring quality of software accessible via Intersect GitHub org page? thank you.",
-    "timestamp": "2024-03-26T05:52:26.724Z"
-  },
-  {
-    "_id": "$SDPclBTBosaX0EbkkkfKqRXS65Bi4bqiZgFSaGj_fPg",
-    "messageBody": "Open source by itself doesn’t really improve security (it may be easier to identify or inject attacks)",
-    "timestamp": "2024-03-26T09:25:41.800Z"
-  },
-  {
-    "_id": "$OwaDakrSdyTEvKx9uV-fadFh0FM_TYM2Kia82vQWngM",
-    "messageBody": "Not quality, but rather that the software that we publish is the result of following the community's will",
-    "timestamp": "2024-03-26T09:05:24.389Z"
-  },
-  {
-    "_id": "$n3oOFy7TxmG-8Zaw-FJqoojexAOLpX7wOjzlPvIefC4",
-    "messageBody": "We do build the node with nix already :) but I don't think most of the SPOs use that route",
-    "timestamp": "2024-03-26T09:06:19.513Z"
-  },
-  {
-    "_id": "$UlCbw9HvkDEuaVGVO1o2c6BECQhv_DDD2h20enH5aO4",
-    "messageBody": "My opinion: - The fact that most Intersect repos are Git-based and open source, I do not feel loosing control by using Github. In my experience, managing alternative infrastructure eg. Gitlab is not cheap, considering things like reliability, operational security, account and access management etc. CI/CD workflow on GitHub is pretty good and reliable as well. - While I recognize the theoretical risk of GitHub or Microsoft discontinuing Intersect account, the likelihood seems negligible. The advantages of staying far outweigh the minimal risks involved. So, I agree with Michael and Kevin.",
-    "timestamp": "2024-03-25T13:10:59.751Z"
-  },
-  {
-    "_id": "$ovzLUqG4bIU_KtJwz8U1EMsz3tH1Rcah89MYEKsMEXw",
-    "messageBody": "sure, but I think Daniel is worried about how to be sure that you're getting the (honestly developed) software that you expect when you build it from source. which is non-trivial",
-    "timestamp": "2024-03-25T12:26:53.395Z"
-  },
-  {
-    "_id": "$NYX4Bu4sIHViNHRdWSLduZe6xjOpfpuxj6eNtPE69vU",
-    "messageBody": "> <user_id_removed> To the extent that I would be renegotiating the Continuity contract... agreed, will keep it the same, not sense in messing up current ops",
-    "timestamp": "2024-03-25T12:22:54.519Z"
-  },
-  {
-    "_id": "$QmkZ7hieQFGsqPYg4SDToMe3KZuVEcvWj_mkHqvPvRI",
-    "messageBody": "Commercial (or other legal) contracts reduce the required level of trust - there are financial or other penalties for misbehaviour",
-    "timestamp": "2024-03-25T12:19:56.745Z"
-  },
-  {
-    "_id": "$-uZxaTn1M6SB7pFCm1gUFHneQDhHosUwSeHkdHuyMNk",
-    "messageBody": "There is a direct burden of trust on node contributors etc. We need to know that individual contributors can be trusted",
-    "timestamp": "2024-03-25T12:18:08.733Z"
-  },
-  {
-    "_id": "$busCNtWqxyVsxxDVAm_7urNj1EdZ3DIo0qDNIwgUa5s",
-    "messageBody": "To the extent that I would be renegotiating the Continuity contract...",
-    "timestamp": "2024-03-25T12:20:58.232Z"
-  },
-  {
-    "_id": "$J086b8TzkR1vYbheUfefMEUGRUdl3vFu2ZmFV-hpCtQ",
-    "messageBody": "(e.g. someone maliciously alters a library and this goes unnoticed)",
-    "timestamp": "2024-03-25T12:16:44.941Z"
-  },
-  {
-    "_id": "$k8eb_j_uqX-NgJoi2DcefpPQK8VnLni-kANfFWDkeNE",
-    "messageBody": "The only real issue would be third-party package releasers",
-    "timestamp": "2024-03-25T12:16:21.317Z"
-  },
-  {
-    "_id": "$hRrvBdJK3M9Zct-MbkYaqwZCWzShB3XR45SvciZDTfw",
-    "messageBody": "This would be a major change",
-    "timestamp": "2024-03-25T12:21:36.477Z"
-  },
-  {
-    "_id": "$dMMq7LJTcSuHrt_FGEDvGyhhFs-SFTy1XhNmINCdbpY",
-    "messageBody": "at the moment you need to trust - for the node source: either a) github and Intersect to not be trying to mess with you, or b) the keys used to sign the commit you get - CHaP downloads are signed, but you need to trust package releasers and github again",
-    "timestamp": "2024-03-25T12:14:01.794Z"
-  },
-  {
-    "_id": "$Mz0-5bUX39_31PEIGEfhP-ablhjzX8YVtEwfRDR7Ieg",
-    "messageBody": "We already have trusted release processes that provide node instances for general use, but again we would recommend suppliers building from source (wallet providers, DApp developers, exchanges, etc)",
-    "timestamp": "2024-03-25T12:10:36.781Z"
-  },
-  {
-    "_id": "$nRECC76c2ggKQu7V_zu7zv_HScDDmx0LCXAmN7jD7Gk",
-    "messageBody": "The burden of proof is greater for binaries. The github sources provide the source of truth for the node",
-    "timestamp": "2024-03-25T12:12:04.278Z"
-  },
-  {
-    "_id": "$PJWlG4IQSDoYgN_L8l_OlEDY3h6qdie4Qmh-V_uwSKU",
-    "messageBody": "But we already have processes there - no need to invent new ones (just adapt to the Intersect setting if we need to)",
-    "timestamp": "2024-03-25T12:13:26.562Z"
-  },
-  {
-    "_id": "$KWBmeTH-FkbwxbRnjg8qsfbr9qmm_KW_W1XCxeiDTSc",
-    "messageBody": "From a practical perspective, I'm worrying more about e.g. someone injecting an easter egg that goes unnoticed",
-    "timestamp": "2024-03-25T12:14:47.186Z"
-  },
-  {
-    "_id": "$xImBK5RfZf4LOotvEZ-4Q9-GBfzr3_FJ1r3MTmg_G70",
-    "messageBody": "Github and Intersect are presumably sufficiently trustworthy (if not, the community will replace them)",
-    "timestamp": "2024-03-25T12:15:38.911Z"
-  },
-  {
-    "_id": "$OHoWpHOrBx5vD4hKYA0rhMwzu9bekbsaPsrjMCJoF7g",
-    "messageBody": "I think my question is the same whether source or binary, but yes.",
-    "timestamp": "2024-03-25T12:11:16.758Z"
-  },
-  {
-    "_id": "$8u4EErYv6R1jJqnSpbHzpFxCpgopGfl10FFN5EF9k8I",
-    "messageBody": "Yes. Protect the releases. Build from source",
-    "timestamp": "2024-03-25T12:12:53.336Z"
-  },
-  {
-    "_id": "$KfD2Nx37awHKACTYkIXb-PEq-8NlbCOWU5ZZzuJUons",
-    "messageBody": "I do think supply-chain security is a reasonable thing to think about",
-    "timestamp": "2024-03-25T12:12:11.550Z"
-  },
-  {
-    "_id": "$7Wa8J41_LnQTX5y99j44GhFCEG7tRMD7Dk6kkEing8k",
-    "messageBody": "> <user_id_removed> Most of what we do is free on github, isn't it (because we're open source)? We're hosting our own runners, but we'd need to do that anyway on some other system (this is part of our CI) there is a monthly usage bill for seats and teams",
-    "timestamp": "2024-03-25T11:51:08.846Z"
-  },
-  {
-    "_id": "$jVobWyOGlW3ow8kN5V3WF5Rj8upJsZcoxvVsJbgBgCg",
-    "messageBody": "but, to be clear, you could run a different piece of node software that simply advertised itself as supporting the new protocol version, right? It just might not work",
-    "timestamp": "2024-03-25T11:54:59.790Z"
-  },
-  {
-    "_id": "$7HT-t66P0Jf3t9IIi_t_vCrck5HUdtSs1Xh9serLTI4",
-    "messageBody": "If a node doesn't follow the agreed protocol, its blocks will be rejected by the consensus algorithm, or it will be excluded from the stake that is participating in validation",
-    "timestamp": "2024-03-25T11:53:36.461Z"
-  },
-  {
-    "_id": "$uSU8ALFYSQDI0ez4QMvDPFvy3y5x-9RBfGjvjXpcHbI",
-    "messageBody": "The hard fork combinator then enables the transition. Non-upgraded nodes fail at that point",
-    "timestamp": "2024-03-25T11:52:25.122Z"
-  },
-  {
-    "_id": "$FoG1A2jzKLl-cbbjAUYCuowCWwXUHsZhbEJWacjx6q0",
-    "messageBody": "Nodes need to follow the same protocol. The maximum protocol version is advertised by the node",
-    "timestamp": "2024-03-25T11:50:51.225Z"
-  },
-  {
-    "_id": "$tetZMGqLCg_OZgcO1ecfEriVaMMluT_7CzYFdezfjIU",
-    "messageBody": "The \"social\" coordination is handled by the Hard Fork Committee",
-    "timestamp": "2024-03-25T11:54:01.934Z"
-  },
-  {
-    "_id": "$D1yV-J7eqsJUMXCfdvN3JKDplem5hk9bpeCVgvb4oF8",
-    "messageBody": "Yes, that's what I meant by it must follow the same protocol",
-    "timestamp": "2024-03-25T11:55:28.827Z"
-  },
-  {
-    "_id": "$ezFOwmVlogr9tp7YUW2P8ifz-dpM-cLkcCaLtP5zgP0",
-    "messageBody": "The above from pooltool shows current node versions ()",
-    "timestamp": "2024-03-25T11:56:13.556Z"
-  },
-  {
-    "_id": "$W2MH3XIPj0QqiysF8W7nWMKOd-UR72znNhXoadc8zq4",
-    "messageBody": "image.png",
-    "timestamp": "2024-03-25T11:55:33.753Z"
-  },
-  {
-    "_id": "$f_JN78eLLnDbsmh5jM-DHnq9cUJWYCFAS0Oy83V8Qhc",
-    "messageBody": "> <user_id_removed> is GitLab instances cheaper to run then github, thats a pro from expense Pov Most of what we do is free on github, isn't it (because we're open source)? We're hosting our own runners, but we'd need to do that anyway on some other system (this is part of our CI)",
-    "timestamp": "2024-03-25T11:49:04.966Z"
-  },
-  {
-    "_id": "$HNccABWelWAvVO-mv2SvZ5m2sJl-erztJNAXuCwkMMc",
-    "messageBody": "The only time an outage would be a major issue would be e.g. if we were preparing a critical release, but we can generally keep working in the background, use local/distributed copies etc - we usually have multiple redundant copies to let us do that",
-    "timestamp": "2024-03-25T11:44:31.294Z"
-  },
-  {
-    "_id": "$QTAaH6WDkMPZR2q9yVNRq3bWs7bgnAs6RYA-a3E6eck",
-    "messageBody": "obviously if you do that it might not work properly and then if everyone else is using the proper software your node won't connect or whatever. So there's an incentive to not needlessly deviate from what \"everyone else\" is doing",
-    "timestamp": "2024-03-25T11:34:23.928Z"
-  },
-  {
-    "_id": "$5HgqyBjj4ipoame4Omg1UlpFCXq4_xCuWEgNwyYT3Fs",
-    "messageBody": "but e.g. when they want to do a HF I think they pretty much ring all the SPOs up and go \"hey, are you on the latest software? please update!\"",
-    "timestamp": "2024-03-25T11:34:50.787Z"
-  },
-  {
-    "_id": "$59Jj1QlZDfxqGfgm9LtWRDdN9_psACoSCBfu9uROHBs",
-    "messageBody": "afaik it's entirely social. There is nothing that stops SPOs from building their own binaries, or hacking them up",
-    "timestamp": "2024-03-25T11:33:44.364Z"
-  },
-  {
-    "_id": "$p8bHI7b1vVf9GjFCNYrpSLlNcTLXzInIOoF1Hbp1rrE",
-    "messageBody": "I've used gitlab in the past, and it didn't work that well",
-    "timestamp": "2024-03-25T11:41:38.695Z"
-  },
-  {
-    "_id": "$ITo7M4defSqjeG2hMUdPro32CycCkxp6RmfAB_R1Gao",
-    "messageBody": "There would be a very high productivity cost to moving",
-    "timestamp": "2024-03-25T11:41:06.737Z"
-  },
-  {
-    "_id": "$87f3KfEqO7GrYjH630Eci6hWrRUrhO7CKlJnrrBA_Ic",
-    "messageBody": "Yes, we really don't want to move from github",
-    "timestamp": "2024-03-25T11:39:43.689Z"
-  },
-  {
-    "_id": "$xasmHkfz3uFDOOiFeHP6KGleIZ08a4-5KxmQAOKsmDQ",
-    "messageBody": "GitHub outages are rare in practice, and quickly resolved",
-    "timestamp": "2024-03-25T11:40:32.238Z"
-  },
-  {
-    "_id": "$q8GWbPMCqR48kfXLOhVULN7iydBo2j4RVdybDWYvLpI",
-    "messageBody": "Right, it is an improvement that respect in that it's self-hosted and we can choose who owns the access rights to the gitlab data, but it is still a \"third party\" from the perspective of the chain, it's off-chain data.",
-    "timestamp": "2024-03-25T10:25:07.425Z"
-  },
-  {
-    "_id": "$glf5tgJ6XpDH60ygCc2LW2TsFuOtcUETeNBKq4_0fks",
-    "messageBody": "> <user_id_removed> being on gitlab makes no difference to the process of deciding \"where do I build my binaries from?\" I agree with this, that's why I said it doesn't solve the problem.",
-    "timestamp": "2024-03-25T10:20:36.288Z"
-  },
-  {
-    "_id": "$PCwYHakWUBszDeOxFnhZH2Ac_BJGfIH1iQIfEXWui9Y",
-    "messageBody": "* I only mention gitlab as other mbo's have used that to remove the problem Daniel is describing and to not have their data \"owned\" by a third party",
-    "timestamp": "2024-03-25T10:22:13.061Z"
-  },
-  {
-    "_id": "$D19HgO6OdqFxYX7E9CdXMDvddtDHg_J4cMZ51jLHNJs",
-    "messageBody": "given the costs it would have to be enormously beneficial given all the other things we could be spending our limited energy on",
-    "timestamp": "2024-03-25T10:20:41.923Z"
-  },
-  {
-    "_id": "$7t1gjWVeDTb9iTcOwrkpfKVEQ9rquvLCAiilijR8V2U",
-    "messageBody": "> <@locallycompact-github:matrix.org> I agree with this, that's why I said it doesn't solve the problem. so... why do you want it?",
-    "timestamp": "2024-03-25T10:20:51.259Z"
-  },
-  {
-    "_id": "$nUhesFTGw68-c-slFa9WKLGvK6-hg8nf3lTOQZdTYQs",
-    "messageBody": "I only mention gitlab as other mbo's have used that to remove the problem Daniel is describing and to not have their data owned by a third party",
-    "timestamp": "2024-03-25T10:21:53.505Z"
-  },
-  {
-    "_id": "$3Ia61sn0DSKPW3tteoo4atyIIpKx658b1xcwZdD0tkQ",
-    "messageBody": "* so.... what's different from github that matters?",
-    "timestamp": "2024-03-25T10:28:06.914Z"
-  },
-  {
-    "_id": "$LOEhX7DJfSpf88EOnTJvLRbJQHstwCzTVPP4xExfr0E",
-    "messageBody": "Well it cuts out Microsoft, it that matters.",
-    "timestamp": "2024-03-25T10:28:39.313Z"
-  },
-  {
-    "_id": "$qgKnAjYWiNMbVfL14Nebb6u-EgI3tI8shvTMZ00WDFM",
-    "messageBody": "so.... what's different from github that matters/",
-    "timestamp": "2024-03-25T10:28:04.056Z"
-  },
-  {
-    "_id": "$1ZveeASnLZk5yO6_cOHExqjb4vB6lTkwP3Q49MVNoN4",
-    "messageBody": "the scope altogether to another platform though would take some planning and be something that changes current release mgt, ie just a lot of overhead to manage, I'm indifferent as to what tools are utilized, but there just has to be a central decision made and then the governing board to adopt such a change",
-    "timestamp": "2024-03-25T10:07:17.200Z"
-  },
-  {
-    "_id": "$Mm_9yd3ZcpYY_eoCPEnYMl7RmINHf5f02VZZNUA9W18",
-    "messageBody": "So I think GitLab has a number of advantages there in that it's self-hosted, etc. Much more flexible than GitHub - I would support a change in that direction, but still fundamentally then the \"canonical\" code and release information are still hosted \"on the web, by someone\".",
-    "timestamp": "2024-03-25T10:07:18.166Z"
-  },
-  {
-    "_id": "$nnlss2aGaE9RISTPa87Iuw0LPj8Yh4JufjYcddIM3As",
-    "messageBody": "For example, how do any potential governing actors claim what are the official releases of say, the node, are without a trusted third party hosting that information on a website?",
-    "timestamp": "2024-03-25T09:51:34.480Z"
-  },
-  {
-    "_id": "$NJE5xJkHbIddRu2lK3Btvt0PbNGd9G0OmYAZIZeXIl8",
-    "messageBody": "Well notionally anything that isn't centralized SaaS, but even that doesn't drive the nail in far enough - if we are serious about decentralised governance.",
-    "timestamp": "2024-03-25T06:07:42.687Z"
-  },
-  {
-    "_id": "$fCEqoDndbKWRCYQvgQSy5fE-M7oOj3p6CBzMfHtMYIY",
-    "messageBody": "why does being serious about decentralized governance say something about what tools we use to host our development work?",
-    "timestamp": "2024-03-25T09:31:46.725Z"
-  },
-  {
-    "_id": "$lGL4rSwCK-B5lM8mhNrit5KvppGUsZKXv_WorzbWaXU",
-    "messageBody": "Maybe I'm wrong but this just strikes me as incredibly important. 🤷‍♂️",
-    "timestamp": "2024-03-25T09:52:14.923Z"
-  },
-  {
-    "_id": "$V9fwa1yu2oCL1LR8_91mfGOwVpIeu7u7m2hk1EJ_RTg",
-    "messageBody": "would you suggest a tool like gitlab as the appropriate solve?",
-    "timestamp": "2024-03-25T10:04:29.658Z"
-  },
-  {
-    "_id": "$xC-NqT4yHz_YMA7yOKK_ixgWR9sqnd2iR2tGCqOuDq4",
-    "messageBody": "It doesn't solve the problem in that sense, but it is an improvement.",
-    "timestamp": "2024-03-25T10:07:46.207Z"
-  },
-  {
-    "_id": "$bOqDf8oqY3MU_G2bo4eOq7ZNaulTB_xXlYoPXs5H7xk",
-    "messageBody": "Because it's custodial SaaS",
-    "timestamp": "2024-03-25T09:33:23.544Z"
-  },
-  {
-    "_id": "$BXBmIRqYRKlZdaOXf2bokw30-d5D-YNM1acBe5QSMB4",
-    "messageBody": "> <user_id_removed> Christian Taylor: I would like to bring two topics to today's meeting > - Ask about rotating seats / yield my seat to Daniel Firth > - Relationship between committees, working groups and projects Hi Sebastian, Not a problem, we can hold a vote to acknowledge the change, and if I have you can ping me Daniel's email, I will add him to necessary files. Given the focus of today's call will be toward the strategy for the duration, i think conversation on this today may overshoot the limited time the OSC has to get the startegy content populated and formalized, Would you be ok if I was to host this conversation next week? That will allow me to get someone from Intersect who can easily answers the questions and how this all relates from the governing documentation as well.",
-    "timestamp": "2024-03-22T10:09:51.018Z"
-  },
-  {
-    "_id": "$CRSNtKdEWS9430GSQZZ6CYPspijwa1o4-lP7Xm10pnQ",
-    "messageBody": "> <user_id_removed> Hey @here so suggestion to test items going to the board, my name change for OSPO will be subject to board approval and I wanted to make sure since most are in agreement if yall would be cool for me putting this as an OSC recommendation to the board? This will also formulate a pathway for future items that we might need the board to approve, drafting a doc now on this. Please let me know your thoughts, all the reasonings has been based on the talks I've had with most of you on the subject before. > Looks good to me",
-    "timestamp": "2024-03-22T09:56:20.584Z"
-  },
-  {
-    "_id": "$AKeCg25_sSfy7ykxUqpittoBh3Erf1CukR0dFReX_9A",
-    "messageBody": "Hey @here so suggestion to test items going to the board, my name change for OSPO will be subject to board approval and I wanted to make sure since most are in agreement if yall would be cool for me putting this as an OSC recommendation to the board? This will also formulate a pathway for future items that we might need the board to approve, drafting a doc now on this. Please let me know your thoughts, all the reasonings has been based on the talks I've had with most of you on the subject before.",
-    "timestamp": "2024-03-22T09:35:12.586Z"
-  },
-  {
-    "_id": "$VAG4Sky5vWgNMj7i55X3fUgnjfSZvbnD4ca6AlclIbU",
-    "messageBody": "Christian Taylor: I would like to bring two topics to today's meeting - Ask about rotating seats / yield my seat to Daniel Firth - Relationship between committees, working groups and projects",
-    "timestamp": "2024-03-22T09:57:02.845Z"
-  },
-  {
-    "_id": "$r3hbzJrriPVXU_qTCcIjwJYACeNNrTuUDRh0WNna6IQ",
-    "messageBody": "Sorry to all, with the confusion on timezone and daylights savings causing push back on calendar time, I have redone the invite to be the sametime as usaul, enxt week 🙂",
-    "timestamp": "2024-03-15T17:06:06.110Z"
-  },
-  {
-    "_id": "$PiHuKwPnsmNCvJTDEGgfcLtKBN3pUa9WKNaRCRKZ53U",
-    "messageBody": "* no worries! I will keep you looped in on Modnay",
-    "timestamp": "2024-03-22T09:41:19.557Z"
-  },
-  {
-    "_id": "$vdAzDnzsZ1ss88kcJZBYYuQg7cV55DI9m9VhadDCtys",
-    "messageBody": "btw I can't make it today, sorry!",
-    "timestamp": "2024-03-22T09:39:21.775Z"
-  },
-  {
-    "_id": "$0CUeGPVUXtrjR8pA2_cCpUqCyOUopeY7yeJwgwr8Vms",
-    "messageBody": "sounds fine to me",
-    "timestamp": "2024-03-22T09:39:17.250Z"
-  },
-  {
-    "_id": "$dfUrTwJ5i6xwVlfbuC6kmLojjalma_m3cSBOyPCsVAU",
-    "messageBody": "now orries!",
-    "timestamp": "2024-03-22T09:39:41.442Z"
-  },
-  {
-    "_id": "$60SHvLbEdJ8LxoU3w5myc3suA7j-8_T_w2Fnh23VOOY",
-    "messageBody": "Nick Clarke Sandip Pandey Adam Dean the-coot here is a straw draft of a potential policy that could I think address most of the issues",
-    "timestamp": "2024-03-15T11:31:42.087Z"
-  },
-  {
-    "_id": "$HxLSqUFB4h8-M650QAL9RxP7ZrcMV1Mc7_P7lIr2GaE",
-    "messageBody": "Christian Taylor: are we really having an open-source meeting on Saturday's 5:30 in the morning my local time? 😁",
-    "timestamp": "2024-03-15T17:03:59.061Z"
-  },
-  {
-    "_id": "$7EFWPTjZioUzmpgpp8lUGILT53sFxnj91vlkQwO8mkE",
-    "messageBody": "create a task force to do the thing and then discuss in the WG. Is a common pattern.",
-    "timestamp": "2024-03-12T20:41:33.587Z"
-  },
-  {
-    "_id": "$yU70j2dxNwdBD3IJouymaH7wG9GYIgFnvAS6WWgGTTA",
-    "messageBody": "I could copy the link to the room but I can't invite people, which is weird",
-    "timestamp": "2024-03-15T11:34:07.913Z"
-  },
-  {
-    "_id": "$qKl8M-z-U9Ir5DNJCGY3RNvUJeKmcQfZdeEzl9ayjd0",
-    "messageBody": "weird that you need permissions to invite people to rooms 🤔 this isn't a private room I thought?",
-    "timestamp": "2024-03-15T11:33:51.174Z"
-  },
-  {
-    "_id": "$A8NGBco1TNV2FrGi_68rGTZ4zB1Ufud-zl2XIxz5cG4",
-    "messageBody": "> <user_id_removed> Christian Taylor: can you invite Kevin to this room? invited him",
-    "timestamp": "2024-03-15T11:33:12.919Z"
-  },
-  {
-    "_id": "$AfN2bYgfdR1Kf7cS3u_eT9BRLN-g4MzzD548CHCuKSE",
-    "messageBody": "that's weird, need to do soem discovery on that, cause \"it's public\"",
-    "timestamp": "2024-03-15T11:59:25.382Z"
-  },
-  {
-    "_id": "$f8OR-UlPSRpRh97j8due9hY6TVw8ukZR6sMIF3zgSnI",
-    "messageBody": "I fixed the invite pay no attention to the redundant one 😅",
-    "timestamp": "2024-03-15T17:05:55.100Z"
-  },
-  {
-    "_id": "$cm-yg16QFgfBSon14Jo4CMHClejMO102JiSPKNNzYPE",
-    "messageBody": "Christian Taylor: can you invite Kevin to this room?",
-    "timestamp": "2024-03-14T16:47:05.942Z"
-  },
-  {
-    "_id": "$TIf5_-zPbq9Ibe73Wb39sY30JdbO3aZ1_Fj8yWvnOJA",
-    "messageBody": "Please find the agenda for tomorrow's call and the strategy items to be discussed: Old Business: Update from Policy TWG (MPJ, Marcin, CT) Update on Workflow for the OSPO (Gheorge) Update from Strategy TWG (Sandip, Bogdan, CT) New Business: Moderation Policy (MPJ) Testing Criteria for Strategy (CT, Gheorge) For the Strategy: Please know this strategy is around 60% percent done in development and is intended to work with the OSC and the community over the month of March to finalize the additional 40% of it's content to formulate a community developed actionable strategy for Cardano. The deck summary, please read this first: The google doc, this is the meat of it:",
-    "timestamp": "2024-02-29T17:05:13.976Z"
-  },
-  {
-    "_id": "$07CUcwbstNBhx3ygN0JEPaHybbBz_xacEv_vDiVTM3g",
-    "messageBody": "btw I'd like to raise as a topic for tomorrow discussion of moderation policy for our public comms channels (ugh). We have a CoC which is great, but I think we might need to add a few more guidelines",
-    "timestamp": "2024-02-29T14:36:10.721Z"
-  },
-  {
-    "_id": "$HS2GhjCSa_dW4XEVL2BCIoRYRgdEpjiXuizZzunHxWM",
-    "messageBody": "I made a PR to the governance policy to add some more stuff about teams based on what the cardano meta-project has been asking for:",
-    "timestamp": "2024-02-29T10:10:16.982Z"
-  },
-  {
-    "_id": "$J1i-d78HUbFrMbJeEEW96goTOIlSsOv2ef4nF55QEJQ",
-    "messageBody": "Meeting minutes from last week have been updated and draft of startegy has been added to gitbook :sunglasses:",
-    "timestamp": "2024-03-01T14:52:25.338Z"
-  },
-  {
-    "_id": "$Y2OxM63cOJc_4_TO2BHRPhc_fqbWjCi2Zl6lg_C5PYg",
-    "messageBody": "can we get this as a github PR so we can comment on it easily?",
-    "timestamp": "2024-03-01T14:59:20.399Z"
-  },
-  {
-    "_id": "$nWlrCZrlkngX2Gjwf4sQz1_Ik0CFwW5QaQ7xeYltylU",
-    "messageBody": "* 100% agree with the above, will add before we discuss strategy",
-    "timestamp": "2024-02-29T15:01:50.225Z"
-  },
-  {
-    "_id": "$_X8rs21qhZz3m4la3cRUVtNk0NhXhFC5QZrRSZHCy5g",
-    "messageBody": "100% agree wth the abvpe, willa dd before we discuss startegy",
-    "timestamp": "2024-02-29T15:01:28.410Z"
-  },
-  {
-    "_id": "$LKSlum0EsUtJzZS80wmlLeIFk612K5fvAgC2j5uPnmc",
-    "messageBody": "I commented on the google doc",
-    "timestamp": "2024-03-01T15:30:46.250Z"
-  },
-  {
-    "_id": "$B4-cL_QzwLQXz7KUtIPY1UEZN9WITk7Y7Pah2FeydVo",
-    "messageBody": "'",
-    "timestamp": "2024-03-01T14:52:35.959Z"
-  },
-  {
-    "_id": "$Fg68AmBxlZBMyznsPYN_cJRhnRPrjhFo5liSWITjXTI",
-    "messageBody": "some discussion about matrix from the Plutus Core team: - concern about stuff being too public (I think this is mostly psychological, but maybe I need to write an evangelical post) - concern about timewasting (we need some guidelines on what topics are appropriate, and to empower people to moderate based on this)",
-    "timestamp": "2024-02-27T15:45:44.158Z"
-  },
-  {
-    "_id": "$jmA9jxrp9XQnan5HfDZtjSFIUa1Z3BEhvddCauPjUI8",
-    "messageBody": "> <user_id_removed> I might draft a page on moderation guidelines for the space 🤔 In my experience, a community management framework that is popular in Cardano is Sociocracy 3.0. An alternative is which approaches community management from point of view is social change and public policy.",
-    "timestamp": "2024-02-27T17:38:38.178Z"
-  },
-  {
-    "_id": "$sYrS3D_W7Hq1RvPNPm8cGS3bY4BLpTW8mWSnw1PftuA",
-    "messageBody": "since I also think we need something like \"why it's good to have your communications in an open space\"...",
-    "timestamp": "2024-02-27T15:47:13.535Z"
-  },
-  {
-    "_id": "$F10dDpMtqxFwaP64zAUAICbB7fXP2MIUzzPTQjiwfKI",
-    "messageBody": "I'm thinking more like \"if you go off-topic too much in project channels you might get kicked\"",
-    "timestamp": "2024-02-27T17:39:38.080Z"
-  },
-  {
-    "_id": "$3dIg7W0DFIrJNeP5gpI_HLNHx8F4p7tEgC8zr6PQw34",
-    "messageBody": "I might draft a page on moderation guidelines for the space 🤔",
-    "timestamp": "2024-02-27T15:46:12.912Z"
-  },
-  {
-    "_id": "$n3SrQFsgiiDtaGWjInLtESFiihex0yVj1Nmh5UBUcWI",
-    "messageBody": "I don't think we need anything that complicated",
-    "timestamp": "2024-02-27T17:39:15.979Z"
-  },
-  {
-    "_id": "$WJBLFByWqAE15zaYbM52IrZ2xMNGORAxDfJxZ2tODNk",
-    "messageBody": "is there an intersect blog or something?",
-    "timestamp": "2024-02-27T15:46:56.856Z"
-  },
-  {
-    "_id": "$Vswq101nLwl8p2pDOEtKnCEofoUQWNhX6kTqT7XJbWw",
-    "messageBody": "mostly action items for me I think",
-    "timestamp": "2024-02-27T15:45:48.068Z"
-  },
-  {
-    "_id": "$qFYzgQ8oZux9axo9ax9tsyWqUbJ7Z_IidkITsxrj4sk",
-    "messageBody": "intersect town hall now!",
-    "timestamp": "2024-02-27T17:01:39.337Z"
+    "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
+    "messageId": "$odMPHmkCDV7yAlvA6ppkXOtcEzrb7JM-5SalhwZA1Ug",
+    "anonymizedUserId": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
+    "messageBody": "Could it be that costs are higher when our inliner is used because the definitions of `&&` and `||` aren't removed despite being unused?",
+    "timestamp": "2024-04-05T08:16:04.465Z"
   }
 ]
