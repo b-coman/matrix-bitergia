@@ -2,20 +2,21 @@
 // description: This file contains the main function orchestrating the daily processing workflow.
 
 require('dotenv').config();
+const crypto = require('crypto'); // Import crypto module for hashing
 const processMessages = require('../../matrix/processMessages');
-const llmUtils = require('../../src/llmUtils');
-const { extractJsonFromString, validateLlmResponse } = require('../../src/validationUtils');
+const llmUtils = require('../llmUtils');
+const { extractJsonFromString, validateLlmResponse } = require('../validationUtils');
 const { fetchMessagesByDateAndRoom } = require('../../elastic/elasticFetchMessagesByDateAndRoom');
 const { fetchAllTopics } = require('../../elastic/elasticFetchTopics');
-const indexDocument = require('../../middleware/indexDocument');
-const { generateContent } = require('../../src/replacePlaceholders');
+const { indexDocument } = require('../../middleware/indexDocument');
+const { generateContent } = require('../replacePlaceholders');
 const { agents } = require('../../config/config');
 //const { logger } = require('handlebars');
 const logger = require('../../logger');
 
 
 // Main function orchestrating the flow
-async function processDailyMessages(targetDate, indexName, roomId) {
+async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
     try {
 
         // 1. get data
@@ -48,8 +49,13 @@ async function processDailyMessages(targetDate, indexName, roomId) {
 
         // 2. process data with llm --> topics
         const analysisPrompt = await generateContent(isFilePath = false, agents.dailyProcess, { DATE: targetDate, MESSAGES: JSON.stringify(aggregatedMessages, null, 2), TOPICS: JSON.stringify(aggregatedTopics, null, 2) });
+        logger.info("analysisPrompt");
+        logger.info(analysisPrompt);
+
         const llmResponseRaw = await llmUtils.analyzeTextWithLlm(analysisPrompt);
         const jsonString = extractJsonFromString(llmResponseRaw);
+        logger.info("jsonString");
+        logger.info(jsonString);
 
         if (!jsonString) {
             throw new Error('No JSON found in LLM response.');
@@ -58,7 +64,7 @@ async function processDailyMessages(targetDate, indexName, roomId) {
         const dailySummaryDocument = {
             date: targetDate,
             roomId: roomId,
-        //    roomAlias: roomAlias,
+            roomAlias: roomAlias,
             generalSentiment: jsonString.overall_sentiment.label,
             emergingTopics: jsonString.emerging_topics
         };
@@ -66,46 +72,37 @@ async function processDailyMessages(targetDate, indexName, roomId) {
         logger.info(dailySummaryDocument);
         // IMPORTANT HERE -->> Insert dailySummaryDocument into your Elasticsearch dailySummary index.  
 
+        const dailySummaryIndexName = process.env.INDEX_NAME_DAILY_SUMMARIES;
+        const dailySummaryDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}`).digest('hex');
+
+        console.log('dailySummaryIndexName', dailySummaryIndexName);
+        console.log('dailySummaryDocumentId', dailySummaryDocumentId);
+
+        const indexResult = await indexDocument(dailySummaryIndexName, dailySummaryDocument, dailySummaryDocumentId);
+        console.log('indexResult', indexResult);
+
+        const dailyTopicsIndexName = process.env.INDEX_NAME_DAILY_TOPICS;
         for (const topic of jsonString.main_topics) {
             const topicDocument = {
                 date: targetDate,
                 roomId: roomId,
-                //    roomAlias: roomAlias,
-                topicName: topic.topic,
-                topicPrevalence: topic.prevalence,
-                topicSentiment: "neutral" // Placeholder. Adjust as necessary.
+                roomAlias: roomAlias,
+                topicName: topic.topicName,
+                topicPrevalence: topic.topicPrevalence,
+                topicSentiment: topic.topicSentiment
             };
-        
+
             logger.info(topicDocument);
 
-            // IMPORTANT HERE -->> Insert topicDocument into your Elasticsearch topics index.
+            const dailyTopicDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}:${topic.topicName}`).digest('hex');
+
+            const indexResult = await indexDocument(dailyTopicsIndexName, topicDocument, dailyTopicDocumentId);
+            console.log('indexResult', indexResult);
+
         }
+
+        logger.info(`Completed processing daily messages and topics for date: ${targetDate} and room: ${roomAlias}`);
         
-
-return;
-
-        // 3. index data in elasticsearch
-        //await indexAnalyzedData(jsonString, indexName, roomId);
-
-        if (!validateLlmResponse(jsonString)) {
-            throw new Error('LLM response validation failed.');
-        }
-
-        // TODO: >>>> here more work to  do
-        console.log('Valid LLM response:', jsonString);
-        const indexableObject = {
-            date: jsonString.date,
-            overall_sentiment: jsonString.overall_sentiment,
-            emerging_topics: jsonString.emerging_topics,
-            statistics: jsonString.statistics,
-            main_topics: jsonString.main_topics.map(topicObj => topicObj.topic)
-        };
-
-        //TO DO: create documentId from targetDate and roomId
-        await indexDocument(indexName, indexableObject, documentId);
-        console.log('LLM output successfully indexed into Elasticsearch.');
-
-
     } catch (error) {
         console.error('An error occurred during the main flow:', error);
     }

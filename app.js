@@ -6,8 +6,8 @@ const roomMappings = require('./config/roomMappings');
 
 const { Client } = require('@elastic/elasticsearch');
 const { createIndexFromSchema } = require('./src/createIndex');
-const { processDailyMessages } = require('./src/workflows/dailyProcessingWorkflow');
-const { fetchProcessAndIndexMessages } = require('./src/workflows/messageProcessingWorkflow');
+const { processDailyMessages } = require('./src/flows/dailyProcessingFlow');
+const { fetchProcessAndIndexMessages } = require('./src/flows/messageProcessingFlow');
 
 
 const app = express();
@@ -65,7 +65,9 @@ app.post('/processDailyMessages', async (req, res) => {
     logger.info(`Room alias ${roomAlias} resolved to room ID ${roomId}`);
 
     try {
-        await processDailyMessages(date, indexName, roomId); // Pass the date and index name
+        await processDailyMessages(date, indexName, roomId, roomAlias); 
+        
+        logger.info(`Successfully processed daily messages for index ${indexName} and date ${date}`);
         res.json({ success: true, message: "Daily messages processed successfully." });
     } catch (error) {
         console.error('Error processing daily messages:', error);
