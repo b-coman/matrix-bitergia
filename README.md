@@ -23,18 +23,15 @@ This project is designed to fetch messages from a Matrix room, analyze their con
    ```bash
    git clone https://github.com/your-repo/matrix-message-analysis.git
 
-
 2. Navigate to the project directory:
 
     ```bash
     cd matrix-message-analysis
 
-
 3. Install the dependencies:
 
     ```bash
     npm install
-
 
 4. Create a .env file in the project root directory and add the following environment variables:
 
@@ -42,7 +39,6 @@ This project is designed to fetch messages from a Matrix room, analyze their con
     MATRIX_ACCESS_TOKEN=your-matrix-access-token
     ELASTICSEARCH_URL=your-elasticsearch-url
     LLM_API_KEY=your-llm-api-key
-
 
 Replace the placeholders with your actual values.
 
