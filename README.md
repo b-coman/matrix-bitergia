@@ -25,29 +25,29 @@ This project is designed to fetch messages from a Matrix room, analyze their con
 
 
 
-Navigate to the project directory:
+2. Navigate to the project directory:
 
-cd matrix-message-analysis
-
-
-
-Install the dependencies:
-
-npm install
+    ```cd matrix-message-analysis
 
 
 
-Create a .env file in the project root directory and add the following environment variables:
+3. Install the dependencies:
 
-MATRIX_ACCESS_TOKEN=your-matrix-access-token
-ELASTICSEARCH_URL=your-elasticsearch-url
-LLM_API_KEY=your-llm-api-key
+    ```npm install
+
+
+
+4. Create a .env file in the project root directory and add the following environment variables:
+
+    ```MATRIX_ACCESS_TOKEN=your-matrix-access-token
+    ELASTICSEARCH_URL=your-elasticsearch-url
+    LLM_API_KEY=your-llm-api-key
 
 
 
 Replace the placeholders with your actual values.
 
-Usage
+## Usage
 To analyze messages for a specific date, run the following command:
 
 node mainFlow.js YYYY-MM-DD
@@ -64,14 +64,9 @@ node populateDailyIndexes.js START_DATE END_DATE
 
 Replace START_DATE and END_DATE with the start and end dates in the format YYYY-MM-DD.
 
-Configuration
+## Configuration
 The project configuration can be found in the config/config.js file. Here, you can specify the Matrix room ID, the Elasticsearch index name, and the LLM agent configurations.
 
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License.
 
 ```
 
