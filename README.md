@@ -50,14 +50,12 @@ Replace the placeholders with your actual values.
 
 To analyze messages for a specific date, run the following command:
     
-    ```bash
     node mainFlow.js YYYY-MM-DD
 
 Replace YYYY-MM-DD with the desired date in the format YYYY-MM-DD.
 
 To analyze messages for a range of dates, you can use the populateDailyIndexes.js script:
     
-    ```bash
     node populateDailyIndexes.js START_DATE END_DATE
  
 Replace START_DATE and END_DATE with the start and end dates in the format YYYY-MM-DD.
