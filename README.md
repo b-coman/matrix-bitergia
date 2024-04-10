@@ -27,19 +27,22 @@ This project is designed to fetch messages from a Matrix room, analyze their con
 
 2. Navigate to the project directory:
 
-    ```cd matrix-message-analysis
+    ```bash
+    cd matrix-message-analysis
 
 
 
 3. Install the dependencies:
 
-    ```npm install
+    ```bash
+    npm install
 
 
 
 4. Create a .env file in the project root directory and add the following environment variables:
 
-    ```MATRIX_ACCESS_TOKEN=your-matrix-access-token
+    ```bash
+    MATRIX_ACCESS_TOKEN=your-matrix-access-token
     ELASTICSEARCH_URL=your-elasticsearch-url
     LLM_API_KEY=your-llm-api-key
 
@@ -48,18 +51,20 @@ This project is designed to fetch messages from a Matrix room, analyze their con
 Replace the placeholders with your actual values.
 
 ## Usage
+
 To analyze messages for a specific date, run the following command:
-
-node mainFlow.js YYYY-MM-DD
-
+    ```bash
+    node mainFlow.js YYYY-MM-DD
 
 
 Replace YYYY-MM-DD with the desired date in the format YYYY-MM-DD.
 
 To analyze messages for a range of dates, you can use the populateDailyIndexes.js script:
 
-node populateDailyIndexes.js START_DATE END_DATE
 
+    ```bash
+    node populateDailyIndexes.js START_DATE END_DATE
+ ```
 
 
 Replace START_DATE and END_DATE with the start and end dates in the format YYYY-MM-DD.
