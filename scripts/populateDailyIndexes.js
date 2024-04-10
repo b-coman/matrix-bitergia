@@ -39,5 +39,5 @@ async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
 // Usage
 const startDate = '2024-02-15'; // Adjust to your start date
 const endDate = new Date().toISOString().split('T')[0]; // Today's date in YYYY-MM-DD format
-const roomAlias = '#ouroboros-network:matrix.org'; // The specific room alias
+const roomAlias = '#intersect-space-admin:matrix.org'; // The specific room alias
 callProcessDailyMessagesRoute(startDate, endDate, roomAlias);

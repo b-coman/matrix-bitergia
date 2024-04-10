@@ -1,10 +1,10 @@
 require('dotenv').config();
-const axios = require('axios');
+//const axios = require('axios');
 const express = require('express');
 const logger = require('./logger');
 const roomMappings = require('./config/roomMappings');
 
-const { Client } = require('@elastic/elasticsearch');
+//const { Client } = require('@elastic/elasticsearch');
 const { createIndexFromSchema } = require('./src/createIndex');
 const { processDailyMessages } = require('./src/flows/dailyProcessingFlow');
 const { fetchProcessAndIndexMessages } = require('./src/flows/messageProcessingFlow');
@@ -13,8 +13,8 @@ const { fetchProcessAndIndexMessages } = require('./src/flows/messageProcessingF
 const app = express();
 app.use(express.json());
 
-// Initialize the Elasticsearch client
-const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
+// Initialize the Elasticsearch client --> not needed here I guess
+//const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 
 app.post('/processAllMessages', async (req, res) => {
     const indexName = determineIndexName(req); // Dynamically determine the index

@@ -59,6 +59,7 @@ exports.processMessages = async (targetDate = null, roomID) => {
         // Skip messages without a content body or not of type string
         if (!message.content || typeof message.content.body !== 'string') {
             console.warn('Message content or body is undefined or not a string, skipping:');
+            console.warn(message.content);
             return;
         }
 
