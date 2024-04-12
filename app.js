@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const logger = require('./logger');
+const logger = require('./config/logger');
 
 const { createIndexFromSchema } = require('./src/createIndex');
 const { processDailyMessages } = require('./src/flows/dailyProcessingFlow');

@@ -2,7 +2,7 @@ const { Client } = require('@elastic/elasticsearch');
 const fs = require('fs');
 const client = new Client({ node: 'http://localhost:9200' });
 const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
-const logger = require('../logger');
+const logger = require('../config/logger');
 const roomMappings = require('../config/roomMappings'); // Adjust the path as necessary
 
 const generateDateRange = (startDate, endDate) => {

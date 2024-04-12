@@ -12,7 +12,7 @@ const { indexDocument } = require('../../middleware/indexDocument');
 const { generateContent } = require('../replacePlaceholders');
 const { agents } = require('../../config/agentConfig');
 //const { logger } = require('handlebars');
-const logger = require('../../logger');
+const logger = require('../../config/logger');
 
 
 // Main function orchestrating the flow

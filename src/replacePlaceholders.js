@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const Handlebars = require('handlebars');
-const logger = require('../logger');
+const logger = require('../config/logger');
 
 /**
  * Generates content by replacing placeholders in a Handlebars template. 
