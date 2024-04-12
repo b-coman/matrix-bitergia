@@ -1,3 +1,8 @@
+// filename ./scripts/populateDailyIndexes.js
+// description This script is used to populate the daily indexes for the rooms in the roomMappings configuration file. 
+// it runs daily through a cron job
+
+require('dotenv').config();
 const axios = require('axios');
 const roomMappings = require('../config/roomMappings');
 
@@ -22,7 +27,7 @@ async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
     for (const date of dates) {
         try {
             await delay(delayBetweenRequests);
-            const response = await axios.post('http://localhost:3000/processDailyMessages', {
+            const response = await axios.post(`${process.env.API_BASE_URL}/processDailyMessages`, {
                 type: "summary",
                 roomAlias: roomAlias,
                 date: date
@@ -34,10 +39,12 @@ async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
     }
 }
 
-const startDate = '2024-04-09';
-const endDate = new Date().toISOString().split('T')[0];
+// Calculate yesterday's date to use as the date range
+const yesterday = new Date();
+yesterday.setDate(yesterday.getDate() - 1);
+const dateString = yesterday.toISOString().split('T')[0];
 
 for (const roomID in roomMappings) {
     const roomAlias = roomMappings[roomID];
-    callProcessDailyMessagesRoute(startDate, endDate, roomAlias);
+    callProcessDailyMessagesRoute(dateString, dateString, roomAlias);
 }

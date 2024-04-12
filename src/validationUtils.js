@@ -2,7 +2,7 @@
 
 const Ajv = require("ajv").default;
 const addFormats = require("ajv-formats");
-const responseSchema = require('../responseSchema.json'); // Ensure correct path
+const responseSchema = require('../config/responseSchema.json'); // Ensure correct path
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
