@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const helmet = require('helmet');
 const logger = require('./config/logger');
 
 const { createIndexFromSchema } = require('./src/createIndex');
@@ -11,8 +12,15 @@ const { appConfig } = require('./config/appConfig');
 global.appConfig = appConfig;
 
 const app = express();
-app.use(express.json());
+app.use(helmet()); // Use Helmet to set security headers
+app.use(express.json({ limit: '100kb' })); // Limit the size of incoming JSON payloads
 
+
+
+// test route
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
 
 app.post('/processAllMessages', async (req, res) => {
     const indexName = determineIndexName(req); // Dynamically determine the index
@@ -90,12 +98,31 @@ async function setupElasticsearch() {
     await createIndexFromSchema(global.appConfig.INDEX_NAME_TOPICS, global.appConfig.SCHEMA_FILE_PATH_TOPICS);
 }
 
+
+// Error handling middleware should be the last piece of middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
+
+
+let server; // Server object for graceful shutdown
 async function startServer() {
-    await setupElasticsearch(); // Ensure Elasticsearch indices are set up
+    await setupElasticsearch();
     const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 }
 
 startServer().catch(console.error);
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+    console.log('SIGTERM signal received: closing HTTP server');
+    if (server) {
+        server.close(() => {
+            console.log('HTTP server closed');
+        });
+    }
+});
 
 
