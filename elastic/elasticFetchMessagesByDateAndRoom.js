@@ -15,7 +15,7 @@ const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 async function fetchMessagesByDateAndRoom(roomId, date) {
   try {
     const { body } = await client.search({
-      index: process.env.INDEX_NAME_MESSAGES,
+      index: global.appConfig.INDEX_NAME_MESSAGES,
       size: 1000, // Adjust size according to expected result volume
       body: {
         query: {

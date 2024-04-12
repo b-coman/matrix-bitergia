@@ -1,10 +1,3 @@
-//config.js
-
-const isDevelopment = process.env.NODE_ENV === 'development';
-
-const appConfig = {
- 
-};
 
 const agents = {
     dailyProcess: `
@@ -47,6 +40,4 @@ const agents = {
     `,
 };
 
-
-
-module.exports = { appConfig, agents }; 
+module.exports = { agents }; 

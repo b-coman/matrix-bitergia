@@ -2,7 +2,7 @@ require('dotenv').config();
 const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
 
 (async () => {
-  const roomId = process.env.MATRIX_PLUTUS_ROOM_ID;
+  const roomId = '!WcwNDMHEuRTiBZZkxf:matrix.org';
   const date = '2024-04-04';
 
   try {

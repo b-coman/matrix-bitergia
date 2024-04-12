@@ -10,7 +10,7 @@ const { fetchMessagesByDateAndRoom } = require('../../elastic/elasticFetchMessag
 const { fetchAllTopics } = require('../../elastic/elasticFetchTopics');
 const { indexDocument } = require('../../middleware/indexDocument');
 const { generateContent } = require('../replacePlaceholders');
-const { agents } = require('../../config/config');
+const { agents } = require('../../config/agentConfig');
 //const { logger } = require('handlebars');
 const logger = require('../../logger');
 
@@ -20,7 +20,6 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
     try {
 
         // 1. get data
-        // here I should call a function to retreive the messages for a date --> I have it somewhere
         const messageObjects = await fetchMessagesByDateAndRoom(roomId, targetDate);
         if (messageObjects.length === 0) {
             logger.warn("No messages to process.");
@@ -72,7 +71,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         logger.info(dailySummaryDocument);
         // IMPORTANT HERE -->> Insert dailySummaryDocument into your Elasticsearch dailySummary index.  
 
-        const dailySummaryIndexName = process.env.INDEX_NAME_DAILY_SUMMARIES;
+        const dailySummaryIndexName = global.appConfig.INDEX_NAME_DAILY_SUMMARIES;
         const dailySummaryDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}`).digest('hex');
 
         console.log('dailySummaryIndexName', dailySummaryIndexName);
@@ -81,7 +80,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         const indexResult = await indexDocument(dailySummaryIndexName, dailySummaryDocument, dailySummaryDocumentId);
         console.log('indexResult', indexResult);
 
-        const dailyTopicsIndexName = process.env.INDEX_NAME_DAILY_TOPICS;
+        const dailyTopicsIndexName = global.appConfig.INDEX_NAME_DAILY_TOPICS;
         for (const topic of jsonString.main_topics) {
             const topicDocument = {
                 date: targetDate,
@@ -102,7 +101,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         }
 
         logger.info(`Completed processing daily messages and topics for date: ${targetDate} and room: ${roomAlias}`);
-        
+
     } catch (error) {
         console.error('An error occurred during the main flow:', error);
     }

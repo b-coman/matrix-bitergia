@@ -1,14 +1,13 @@
 const axios = require('axios');
+const roomMappings = require('../config/roomMappings');
 
 function getDatesBetween(startDate, endDate) {
     const dates = [];
     let currentDate = new Date(startDate);
-
     while (currentDate <= endDate) {
-        dates.push(currentDate.toISOString().split('T')[0]); // Format as "YYYY-MM-DD"
-        currentDate = new Date(currentDate.setDate(currentDate.getDate() + 1)); // Increment the day
+        dates.push(currentDate.toISOString().split('T')[0]);
+        currentDate = new Date(currentDate.setDate(currentDate.getDate() + 1));
     }
-
     return dates;
 }
 
@@ -18,26 +17,27 @@ function delay(ms) {
 
 async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
     const dates = getDatesBetween(new Date(startDate), new Date(endDate));
-    const delayBetweenRequests = 1000; // 1 second delay
+    const delayBetweenRequests = 1000;
 
     for (const date of dates) {
         try {
-            await delay(delayBetweenRequests); // Wait for the specified delay
+            await delay(delayBetweenRequests);
             const response = await axios.post('http://localhost:3000/processDailyMessages', {
-                type: "summary", // Including the "type" field as per the provided payload structure
+                type: "summary",
                 roomAlias: roomAlias,
                 date: date
             });
-
-            console.log(`Success for date ${date}:`, response.data);
+            console.log(`Success for date ${date} in room ${roomAlias}:`, response.data);
         } catch (error) {
-            console.error(`Error for date ${date}:`, error.response ? error.response.data : error.message);
+            console.error(`Error for date ${date} in room ${roomAlias}:`, error.response ? error.response.data : error.message);
         }
     }
 }
 
-// Usage
-const startDate = '2024-02-15'; // Adjust to your start date
-const endDate = new Date().toISOString().split('T')[0]; // Today's date in YYYY-MM-DD format
-const roomAlias = '#intersect-space-admin:matrix.org'; // The specific room alias
-callProcessDailyMessagesRoute(startDate, endDate, roomAlias);
+const startDate = '2024-04-09';
+const endDate = new Date().toISOString().split('T')[0];
+
+for (const roomID in roomMappings) {
+    const roomAlias = roomMappings[roomID];
+    callProcessDailyMessagesRoute(startDate, endDate, roomAlias);
+}

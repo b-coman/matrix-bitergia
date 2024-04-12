@@ -1,0 +1,26 @@
+{
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "date_added": {
+          "type": "date"
+        },
+        "description": {
+          "type": "text"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "topicName": {
+          "type": "keyword"
+        },
+        "status": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+  

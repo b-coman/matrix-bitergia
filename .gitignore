@@ -3,6 +3,7 @@ sourceCode.js
 sourceCode.txt
 .DS_Store
 tests/
+scripts/aggregated_messages.json
 
 # Logs
 logs

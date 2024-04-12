@@ -10,22 +10,21 @@ const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 async function fetchAllTopics() {
   try {
     const { body } = await client.search({
-      index: process.env.INDEX_NAME_TOPICS, // Ensure this environment variable is set to your index name
-      size: 1000, // Adjust based on the maximum number of documents you expect to retrieve
+      index: global.appConfig.INDEX_NAME_TOPICS,
+      size: 1000, 
       body: {
         query: {
           match_all: {} // Matches all documents in the index
         },
-        _source: ['id', 'name', 'description', 'keywords', 'status'] // Fields to include in the response
+        _source: ['id', 'topicName', 'description', 'status'] // Fields to include in the response
       }
     });
 
     // Map the search hits to extract the required information
     const entries = body.hits.hits.map(hit => ({
       id: hit._source.id,
-      name: hit._source.name,
+      name: hit._source.topicName,
       description: hit._source.description,
-      keywords: hit._source.keywords,
       status: hit._source.status
     }));
 

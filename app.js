@@ -1,20 +1,18 @@
 require('dotenv').config();
-//const axios = require('axios');
 const express = require('express');
 const logger = require('./logger');
-const roomMappings = require('./config/roomMappings');
 
-//const { Client } = require('@elastic/elasticsearch');
 const { createIndexFromSchema } = require('./src/createIndex');
 const { processDailyMessages } = require('./src/flows/dailyProcessingFlow');
 const { fetchProcessAndIndexMessages } = require('./src/flows/messageProcessingFlow');
 
+const roomMappings = require('./config/roomMappings');
+const { appConfig } = require('./config/appConfig');
+global.appConfig = appConfig;
 
 const app = express();
 app.use(express.json());
 
-// Initialize the Elasticsearch client --> not needed here I guess
-//const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 
 app.post('/processAllMessages', async (req, res) => {
     const indexName = determineIndexName(req); // Dynamically determine the index
@@ -79,16 +77,17 @@ app.post('/processDailyMessages', async (req, res) => {
 function determineIndexName(req) {
     // Example logic to determine the index name
     // Adjust according to your application's requirements
-    return req.body.type === 'message' ? process.env.INDEX_NAME_MESSAGES :
-        req.body.type === 'summary' ? process.env.INDEX_NAME_DAILY_SUMMARIES :
-            process.env.INDEX_NAME_DAILY_TOPICS;
+    return req.body.type === 'message' ? global.appConfig.INDEX_NAME_MESSAGES :
+        req.body.type === 'summary' ? global.appConfig.INDEX_NAME_DAILY_SUMMARIES :
+        global.appConfig.INDEX_NAME_DAILY_TOPICS;
 }
 
 async function setupElasticsearch() {
     // Setup each index using environment variables for names and schema paths
-    await createIndexFromSchema(process.env.INDEX_NAME_MESSAGES, process.env.SCHEMA_FILE_PATH_MESSAGES);
-    await createIndexFromSchema(process.env.INDEX_NAME_DAILY_SUMMARIES, process.env.SCHEMA_FILE_PATH_SUMMARIES);
-    await createIndexFromSchema(process.env.INDEX_NAME_DAILY_TOPICS, process.env.SCHEMA_FILE_PATH_TOPICS);
+    await createIndexFromSchema(global.appConfig.INDEX_NAME_MESSAGES, global.appConfig.SCHEMA_FILE_PATH_MESSAGES);
+    await createIndexFromSchema(global.appConfig.INDEX_NAME_DAILY_SUMMARIES, global.appConfig.SCHEMA_FILE_PATH_DAILY_SUMMARIES);
+    await createIndexFromSchema(global.appConfig.INDEX_NAME_DAILY_TOPICS, global.appConfig.SCHEMA_FILE_PATH_DAILY_TOPICS);
+    await createIndexFromSchema(global.appConfig.INDEX_NAME_TOPICS, global.appConfig.SCHEMA_FILE_PATH_TOPICS);
 }
 
 async function startServer() {
