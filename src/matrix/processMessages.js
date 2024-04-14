@@ -5,8 +5,8 @@ require('dotenv').config();
 const crypto = require('crypto'); // Import crypto module for hashing
 
 const { fetchMessages } = require('./getMessages');
-const llmUtils = require('../src/llmUtils'); 
-const roomMappings = require('../config/roomMappings');
+const llmUtils = require('../llmUtils'); 
+const roomMappings = require('../../config/roomMappings');
 
 
 

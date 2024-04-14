@@ -1,6 +1,6 @@
 // src/workflows/messageProcessingWorkflow.js
-const { processMessages } = require('../../matrix/processMessages');
-const { indexDocument } = require('../../middleware/indexDocument');
+const { processMessages } = require('../matrix/processMessages');
+const { indexDocument } = require('../middleware/indexDocument');
 
 /**
  * Fetches, processes, and indexes messages from the Matrix for a specific date or all messages if no date is provided.

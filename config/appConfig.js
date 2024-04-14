@@ -10,10 +10,10 @@ const appConfig = {
   INDEX_NAME_DAILY_TOPICS: 'matrix_daily_topics_index',
   INDEX_NAME_TOPICS: 'matrix_topics_index',
 
-  SCHEMA_FILE_PATH_MESSAGES: './elastic/indexes/matrix_messages.json',
-  SCHEMA_FILE_PATH_DAILY_SUMMARIES: './elastic/indexes/matrix_daily_summary.json',
-  SCHEMA_FILE_PATH_DAILY_TOPICS: './elastic/indexes/matrix_daily_topics.json',
-  SCHEMA_FILE_PATH_TOPICS: './elastic/indexes/matrix_topics.json',
+  SCHEMA_FILE_PATH_MESSAGES: './src/elastic/indexes/matrix_messages.json',
+  SCHEMA_FILE_PATH_DAILY_SUMMARIES: './src/elastic/indexes/matrix_daily_summary.json',
+  SCHEMA_FILE_PATH_DAILY_TOPICS: './src/elastic/indexes/matrix_daily_topics.json',
+  SCHEMA_FILE_PATH_TOPICS: './src/elastic/indexes/matrix_topics.json',
  
 };
 

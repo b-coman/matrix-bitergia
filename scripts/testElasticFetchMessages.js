@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
+const { fetchMessagesByDateAndRoom } = require('../src/elastic/elasticFetchMessagesByDateAndRoom');
 
 (async () => {
   const roomId = '!WcwNDMHEuRTiBZZkxf:matrix.org';

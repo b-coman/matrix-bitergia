@@ -3,12 +3,12 @@
 
 require('dotenv').config();
 const crypto = require('crypto'); // Import crypto module for hashing
-const processMessages = require('../../matrix/processMessages');
+const processMessages = require('../matrix/processMessages');
 const llmUtils = require('../llmUtils');
 const { extractJsonFromString, validateLlmResponse } = require('../validationUtils');
-const { fetchMessagesByDateAndRoom } = require('../../elastic/elasticFetchMessagesByDateAndRoom');
-const { fetchAllTopics } = require('../../elastic/elasticFetchTopics');
-const { indexDocument } = require('../../middleware/indexDocument');
+const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
+const { fetchAllTopics } = require('../elastic/elasticFetchTopics');
+const { indexDocument } = require('../middleware/indexDocument');
 const { generateContent } = require('../replacePlaceholders');
 const { agents } = require('../../config/agentConfig');
 //const { logger } = require('handlebars');

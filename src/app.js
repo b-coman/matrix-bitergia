@@ -1,14 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
-const logger = require('./config/logger');
+const logger = require('../config/logger');
 
-const { createIndexFromSchema } = require('./src/createIndex');
-const { processDailyMessages } = require('./src/flows/dailyProcessingFlow');
-const { fetchProcessAndIndexMessages } = require('./src/flows/messageProcessingFlow');
+const { createIndexFromSchema } = require('./createIndex');
+const { processDailyMessages } = require('./flows/dailyProcessingFlow');
+const { fetchProcessAndIndexMessages } = require('./flows/messageProcessingFlow');
 
-const roomMappings = require('./config/roomMappings');
-const { appConfig } = require('./config/appConfig');
+const roomMappings = require('../config/roomMappings');
+const { appConfig } = require('../config/appConfig');
 global.appConfig = appConfig;
 
 const app = express();
@@ -48,7 +48,8 @@ app.post('/processAllMessages', async (req, res) => {
     }
 });
 
-
+//process the messages for any day and room
+// this is the payload structure: {"type": "summary","roomAlias": "#ouroboros-network:matrix.org","date": "2024-04-10"}
 app.post('/processDailyMessages', async (req, res) => {
     const { date } = req.body;
     if (!date) {
@@ -78,6 +79,17 @@ app.post('/processDailyMessages', async (req, res) => {
     } catch (error) {
         console.error('Error processing daily messages:', error);
         res.status(500).json({ success: false, error: 'Failed to process daily messages' });
+    }
+});
+
+app.post('/triggerDailyProcess', async (req, res) => {
+    try {
+        // call processing function
+        await processDailyIndexes();
+        res.status(200).send('Daily process triggered successfully');
+    } catch (error) {
+        console.error('Failed to trigger daily process:', error);
+        res.status(500).send('Error triggering daily process');
     }
 });
 
