@@ -28,16 +28,16 @@
         "message": "😶‍🌫️"
       },
       {
-        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
-        "message": "🙃"
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "👋"
       },
       {
         "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
         "message": "👋"
       },
       {
-        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
-        "message": "👋"
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "🙃"
       }
     ]
   },
@@ -530,6 +530,24 @@
       {
         "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
         "message": "slack isn't public and open"
+      }
+    ]
+  },
+  {
+    "date": "2024-02-29",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "btw let me know if someone wants to be mod/admin on this channel"
+      },
+      {
+        "userID": "be5b5fa08b42adfffabb387192088f43006fd495fb1cfafe9657bf6785e8f620",
+        "message": "First post. _(someone had to do it)_"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "👋"
       }
     ]
   },
@@ -2484,6 +2502,28 @@
     ]
   },
   {
+    "date": "2024-03-19",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
+        "message": "Hi, I have the following PR: I am working on integrating with consensus but probably that's better if you do it, no? I am also wondering if this is enough for you guys to implement it?"
+      },
+      {
+        "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
+        "message": "not sure about the timeline but would be nice to have this soonish, if it could make it 8.10 that would be awesome, otherwise, next release"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Yeah, I think we can take this over, we already thought about how to integrate this ([here]() FTR). When do you need this?"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "8.10 sounds plausible 👍️"
+      }
+    ]
+  },
+  {
     "date": "2024-03-20",
     "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
     "messages": [
@@ -2592,6 +2632,48 @@
       {
         "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
         "message": "Yes"
+      }
+    ]
+  },
+  {
+    "date": "2024-03-20",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
+        "message": "user_id_removed: I realised that we could address the 4815 a bit differently, making it much easier for consensus; see"
+      },
+      {
+        "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
+        "message": "what do you guys think of this ^ ?"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "What is `EffectiveCounters`?"
+      },
+      {
+        "userID": "1c6bd35dadebeff993d975173bcffc3efa63e9774b7ab734e5cde53e764d7d75",
+        "message": "I added the PR here"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "FTR: Plan as just discussed in the networking call: Consensus will allocate a TVar and pass a write callback to network, which they will invoke appropriately when the state changes. In particular, network will inform consensus if the node is configured in such a way that we will never connect to remote boostrap peers, only local root peers (this is the case for block produces eg)."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "your `Bool` can be derived from `EffectiveCounters`, and this will be simpler for you than giving you roles of peers in mini-protocol context."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "* In the end, an `STM m Bool` that indicates whether we are connected to sufficient remote peers would work for us."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "In the end, a `STM m Bool` that indicates whether we are connected to sufficient remote peers would work for us."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "^ we'll need the `TVar`, but other than that it's fine 🙂"
       }
     ]
   },
@@ -2924,6 +3006,20 @@
       {
         "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
         "message": "I was planning on doing that"
+      }
+    ]
+  },
+  {
+    "date": "2024-03-21",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "even better: consensus exposes a callback which does: ``` -- `v :: TVar Bool` is somewere in the -- clousre update :: Bool -> STM () update = \\a -> do a' <- readTVar v when (a /= a') $ writeTVar v a ``` So we don't notify you too often."
+      },
+      {
+        "userID": "1291877d7b732335726527106cf3d40ac76c7dc58887039c5f383b042f6c584b",
+        "message": "yeah that would be perfect!"
       }
     ]
   },
@@ -4420,6 +4516,34 @@
     ]
   },
   {
+    "date": "2024-03-28",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "bolt: Preliminary integration PR here: Integration looks easy, some small things: - The \"third state\" (for eg block producers or other hidden relays) is not yet there. - A `NoThunks` instance for `OnlyLocalOutboundConnections` would be nice. - Is `ConnectedToOnlyLocalOutboundPeers` fine as an initial value, or shall we initialize with `Nothing`?"
+      }
+    ]
+  },
+  {
+    "date": "2024-03-28",
+    "roomId": "!zQfqAfpKFDpTYLIEtV:matrix.org",
+    "messages": [
+      {
+        "userID": "d35905a0b7b0b649da84cf3ecf7bb8dc976a2d3f2393fd65eb915981e50e119e",
+        "message": "Yep that works"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "Jordan Millar: what would you like it to be called? \"API and CLI\"?"
+      },
+      {
+        "userID": "d35905a0b7b0b649da84cf3ecf7bb8dc976a2d3f2393fd65eb915981e50e119e",
+        "message": "Hey guys, can we create an api-cli channel?"
+      }
+    ]
+  },
+  {
     "date": "2024-03-29",
     "roomId": "!tMDCkksEaERFKOWQqp:matrix.org",
     "messages": [
@@ -4934,6 +5058,398 @@
     ]
   },
   {
+    "date": "2024-04-02",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "* Michael Peyton Jones: Ryan Williams was assisting with team structure on github for me in March, we will resync with him on his initial analysis, I think you could include Cardano node- into the project committee level however as it currently sits, node is it's own team strcuture in github, so it might be that we start with enforicng the governance policy from ndoe, to the rest? kevinhammondmatrix just to clarify the ask, you want to repurpose this channel to better cover high level topics associated with node, while breaking out specific items to the component channels?"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "Ryan Williams was assisting with team structure on github for me in March, we will resync with him on his initial analysis, I think you could include Cardano node- into the project committee level however as it currently sits, node is it's own team strcuture in github, so it might be that we start with enforicng the governance policy from ndoe, to the rest? kevinhammondmatrix just to clarify the ask, you want to repurpose this channel to better cover high level topics associated with node, while breaking out specific items to the component channels?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "> <user_id_removed> Am I missing something in Discord that sparked this convo? No - this is just coming out of me wanting a clear remit for the channel, and the fact that the reality does not quite match the theory for `cardano-node`"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Essentially, this just reflects the history of how the node and development processes evolved"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "ok let's get its direct component then first? CLI, ledger, consensus?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I think we should do node last as it's least clear cut"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Exactly. Life is already complicated enough :)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Security gets addressed separately"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Right"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Granted I am all about protecting the safety/security of conversation, but with regard to no existing conversation right now, I am not seeing where others would get lost"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "the governance policy says there should be such people, and that they should have open comms channels; but it's not clear that we really know who those are"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "it's just about making sure that we have our discussions in the right place so things don't get confusing"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "we need to work on helping everyone get clear about this stuff!"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "but it's also okay for now if it's not totally clear, I think"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "who makes decisions about what goes on in that repo?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "e.g. who are its maintainers? do they meet?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I don't think this is about security"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "cc Christian Taylor"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "> <user_id_removed> kevinhammondmatrix: Noting that this conversation is not here for everyone to see, and as you provided all of the \"right\" people are in this channel, there shouldn't be a major concern? There are a few things: 1) the channel will be used by others, so we need to get the remit right; 2) we don't want to continually have to point people at the right channel; 3) I need to know which developers to point at this channel rather than some other channel"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "given that cardano-node is an integration point where we expose stuff to end users, that seems okay. I don't see anything necessarily wrong with having discussion about development of the code in `cardano-node` and discussion of running the node in the same place?"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "kevinhammondmatrix: Noting that this conversation is not here for everyone to see, and as you provided all of the \"right\" people are in this channel, there shouldn't be a major concern?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "We tend to use `cardano-node` as a univesal bucket to raise issues for other repos, Michael Peyton Jones"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "and yes, if it's actually a question about a dependency you might need to send people elsewhere"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "just like in any project when people report a bug or something that's actually in a dependency"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "\"general questions about the node, or questions about the code in cardano-node\"?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "but also includes stuff relating to the code"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "now*"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Not trying to jump in where I do not have a standing, but is this purely a question of format/purpose for this channel?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I'm just trying to make sure the right conversation goes to the right place"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "network is built as part of cardano-node, Michael"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "that's in a different repostiroy"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "`cardano-node` does not include the network"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "(and we have the right people in the channels)"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I feel quite confused"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "API/CLI channel was created last week"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "how did I include network?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Can we clarify what this room is for, please, user_id_removed . I spoke to Jordan Millar and he would like a separate channel for the CLI/API. I think is probably therefore just for general discussions about the node?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "i don't think it's true that there is zero work associated with the `cardano-node` repository?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Yes. It's just that the work will be within Ledger, Consensus, Network, Plutus Core etc"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "(as it says in the room description)"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I mean, the `cardano-node` project exists, no?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "yes"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "> <user_id_removed> Michael Peyton Jones: Ryan Williams was assisting with team structure on github for me in March, we will resync with him on his initial analysis, I think you could include Cardano node- into the project committee level > > however as it currently sits, node is it's own team strcuture in github, so it might be that we start with enforicng the governance policy from ndoe, to the rest? > > kevinhammondmatrix just to clarify the ask, you want to repurpose this channel to better cover high level topics associated with node, while breaking out specific items to the component channels? Hi Christian Taylor , I just want the remit to be completely clear :), but yes I can see this as being the channel to cover high level issues (as we do at the moment with `cardano-node`), with the details covered in the component channels (network etc)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "* I don't see a huge problem with keeping things as they are for the time being (as long as people are aware of the scope for each channel)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "The node repo basically collects the components, but we have a few sub-projects that have been included here (tracer, testnet, chairman etc)"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "happy to larify these, it seems though Michael Peyton Jones i dont edits access to the decriptions inthese channels, wonder fi you do?"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Can I get this wiki PR reviewed? I also opened two issues regarding the wiki itself:"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I don't see a huge problem with keeping things as they are for the time being"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I think we could look at all of plutus, ledger, network, consensus"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "all should be reasonably straightforward"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "If we're going with Michael's suggestion, can we update the header to say: Discussions about the content of the `cardano-node` repository (cardano-tracer, testnet etc) or general use of the node; discussions/questions about the CLI. API, network, ledger or other component should be directed to the appropriate room"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "there is a broader issue, which is that it's not clear that `cardano-node` currently fits tidily into the defiintion of a \"project\" in the governance policy. I think that's kind of an important problem, and I think if we fixed that then things would be clearer"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "I wasn't sure if Kevin was just reviewing this channel description, or if there is/has been discourse that led to the need to specify the purpose of this channel further"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "I guess what I am asking now would be who all is referring contribs to this channel? and who of those contribs would be unaware of how to specify the issue at hand?"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Maybe it is my general lack of experience in this environment, but it seems to be a non-issue atm"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I am anticipating we put a link in the `cardano-node` README, for example"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Am I missing something in Discord that sparked this convo?"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "I don't see a concern with that."
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "?"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Again, not trying to add anything unnecessary, but it seems as if what MPJ is saying is true, this is the general platform and the purpose of having mods would be to direct detailed conversations to the appropriate channels?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "basically the same heuristic as: would it be appropriate to talk about this in an issue on the `cardano-node` repository?"
+      },
+      {
+        "userID": "23850a1cef7b0d7eac59614a527573b19d80bf43b0f3d41e5452aed3b759181a",
+        "message": "Would simply adding the word 'General' at the beginning resolve the concern? Or I am missing a citation from a different channel or area?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I think you're at odds with Michael :) Hence the need for clarification :)"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "which yeah, might include some people asking about running the node or whatever"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "That's exactly what Michael is not saying :)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "That is tracer, submit-api etc, presumably!"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "nope, that's what Kevin is saying, I think"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "He is saying it is for the code in the repo..."
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "how would you describe \"the software development work associated with the 'cardano-node` repository\" then? I think \"the `cardano-node` project is pretty clear, and in accordance with the terminology in the governance policy"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I think it's pretty clear to say \"this channel is for this repository\". that's totally normal and familiar, I don't see why people would expect it to include all dependencies in this case but not any others"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "so you think it's confusing that we have a channel for the ledger project since it depends on plutus?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I think you're interpreting \"cardano-node\" as \"the cardano-node executable\" and I'm saying \"cardano-node the repository\""
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "and links directly to the cardano-nod repository"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "the network is a _dependency_ of the node"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "The heading says \"Cardano node project\""
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Which includes all the dependencies..."
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "The repository includes the build"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "You included network etc. They should be covered in their own rooms. Likewise PRs for the API/CLI should be covered there, rather than here. **Release Feeds** Atom feeds for releases are available at: [) [) You can install an extension on e.g. Chrome or Brave that will allow you to follow these feeds and be notified of new releases [)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Suggested Scope: High-level discussion of the Cardano Node that is not specific to any component (ledger, network, consensus, Plutus Core, DB Sync, API, CLI etc), including releases, features and use"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "like, if someone wants to make a PR to `cardano-node`, they could come here to discuss it"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I'm just trying to clarify what the scope of this room should be"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "how is that different from what I said?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I mean \"the cardano-node repository\" to be clear"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "anything to do with `cardano-node`?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Too broad"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "why?"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-02",
+    "roomId": "!TGUrZYLTaXDjSJuRhQ:matrix.org",
+    "messages": [
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Hello everyone"
+      },
+      {
+        "userID": "d35905a0b7b0b649da84cf3ecf7bb8dc976a2d3f2393fd65eb915981e50e119e",
+        "message": "👋"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-02",
+    "roomId": "!VphtNgpRHzzXEiiDcd:matrix.org",
+    "messages": [
+      {
+        "userID": "357bd74523777b044f976b7278f9c96a5928aefdba2fd4407050e77f431ddcd7",
+        "message": "Hello kevinhammondmatrix and welcome 👋"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Hello everyone"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-02",
+    "roomId": "!zQfqAfpKFDpTYLIEtV:matrix.org",
+    "messages": [
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "once you join I'll make you an admin and you can fiddle with other stuff"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "Jordan Millar:"
+      }
+    ]
+  },
+  {
     "date": "2024-04-03",
     "roomId": "!tMDCkksEaERFKOWQqp:matrix.org",
     "messages": [
@@ -5038,6 +5554,192 @@
       {
         "userID": "010cb272c06fa92fdcfb7699bac7ce3e12a4cc11db9f274b6104e2aaa9aaca29",
         "message": "Iooked closer at this \"Not triggering recompilation upon plugin change\" problem today and here is what I have found: 1. By reading [this paragraph]() I learned that changes in TH splices as well as changes in Plugins are supposed to trigger recompilation because of the change in the fingerprint of an object file. 2. This made me think \"If GHC knows a module depends on a Plugin then it knows to recompile\". How would GHC know that a module M depends on the Plugin? 3. I looked at the [test] module that wasn't recompiled upon a plugin change despite my expectation and there was nothing in it about the plugin, other than `$(PlutusTx.compile)`! 4. It turns out that we do a quite tricky trick: 5. Eureka! The problem is that plugin is added \"dynamically\" via the TH. That's why such a dependency isn't tracked by the GHCs recompilation checker. 6. Fix: I added `{-# OPTIONS_GHC -fplugin=PlutusTx.Plugin #-}` to my spec module and voila! Recompilation started working as expected."
+      }
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "the-coot> Tweag's auditing team is unplugging from [plutus-apps](), because the latter will not be maintained anymore. Instead they are now relying on (the way smaller) [cardano-node-emulator](). Still they are worried about cardano-node-emulator's status too. Do you know if it will be maintained?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Ah, I see I can impersonate the-coot :)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I can even look like him :)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Now we're all @the-coot :)"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "🤦‍♂️"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "At least it's showing my matrix id"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "I am no longer the coot 😁"
+      },
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "🤦‍♀️"
+      },
+      {
+        "userID": "82a443b9afa8bbda1011ce1a72ee3c6f9dde3178ed4fcc48c1a0aada962428d8",
+        "message": ":)"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "> <@the-coot:matrix.org> Another PR for review: I'm not sure the right people are here for that?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "if nothing else, this should be the place to discuss PRs on the `cardano-node` repo"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Jordan Millar and Mateusz Gałażyn are here, which is good enough for me 🙂"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "That was what I was asking Michael Peyton Jones yesterday"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "OK - hopefully they're paying attention :)"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "So what's the purpose of this channel?"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I think it should be the right people"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "so let's invite them"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "I do"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "> <user_id_removed> the-coot> Tweag's auditing team is unplugging from [plutus-apps](), because the latter will not be maintained anymore. Instead they are now relying on (the way smaller) [cardano-node-emulator](). > > Still they are worried about cardano-node-emulator's status too. Do you know if it will be maintained? This is a matter for Intersect"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "* looking into this now, cooridnating with delivery assurance guys to help sort it out, i'm coordinating Clément Hurlin"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "looking into this now, raiding with dleivery assurance guys to help sort it out, i'm cooridnating Clément Hurlin"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "* This is a matter for Intersect. I've checked and noone at IOG is maintaining it"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "* This is a matter for Intersect. I'll see if I can find the right IOG contact"
+      },
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "Thanks 👍️ Any advice on who to reach to at Intersect?"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "coot: might want to call yourself the REAL coot after seeing the above 😆"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "You can hide but you can't escape :)"
+      },
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "Thanks Christian Taylor 👍️"
+      },
+      {
+        "userID": "82a443b9afa8bbda1011ce1a72ee3c6f9dde3178ed4fcc48c1a0aada962428d8",
+        "message": "* I think you would have to convince everyone to change their nicks to names"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "There doesn't seem to be a way to find people's real names here?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "That's a bit of a problem - we could have impersonation, presumably"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "But we do need to get all the right people into the channel"
+      },
+      {
+        "userID": "82a443b9afa8bbda1011ce1a72ee3c6f9dde3178ed4fcc48c1a0aada962428d8",
+        "message": "I think you would have to convince everyone to change nicks to names"
+      },
+      {
+        "userID": "82a443b9afa8bbda1011ce1a72ee3c6f9dde3178ed4fcc48c1a0aada962428d8",
+        "message": "uhm, I've set mine using /myroomnick - is it visible?"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "* I've sent a message on slack"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "Yes, looks like you can't have both"
+      },
+      {
+        "userID": "b5fd67d9b1d1f1953921b12ef3efcc891d9ef897352676ee65b29f852a38a3a2",
+        "message": "I\\'"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Another PR for review:"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Exactly, we would also be completely fine with you providing an `STM AmIConnectectToOnlyLocalRoots` to us, but IIRC we decided that there was no good way for you to give this to us (in the Networking call ~2 weeks ago)."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "I think I got it. It's a callback which writes to state that you maintain."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Probably I just don't understand something."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "amesgen: since bolt will be away for a few weeks I'll take care of it. I don't understand how the callback `daUpdateOnlyLocalConnections :: OnlyLocalOutboundConnections -> STM m ()` ([ref]()) helps at all. Which is something you need to provide but you don't have information to do it. I also don't see why we'd need such a callback. Don't you need `STM AmIConnectectToOnlyLocalRoots` which we construct on our end and make it available for you?"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-03",
+    "roomId": "!zQfqAfpKFDpTYLIEtV:matrix.org",
+    "messages": [
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "FYI Christian Taylor the way that permissions work is that a space is just a \"listing\" of rooms. So having permissions on the space doesn't necessarily give you permissions on the rooms, since you can add anyone's room to your space. So at the moment I have admin on most of the actual rooms. I'll add you!"
       }
     ]
   },
@@ -5230,6 +5932,42 @@
       {
         "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
         "message": "that's a reason"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-04",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "64b0e4b6e3fa5c9408baab392b74ef3f5c9068d4e17f1a768742e9bdee10b6cb",
+        "message": "Definitely looks easy to impersonate, FWIW slack has the same problem"
+      },
+      {
+        "userID": "64b0e4b6e3fa5c9408baab392b74ef3f5c9068d4e17f1a768742e9bdee10b6cb",
+        "message": "You can also easily find the matrix ID (unlike in Slack)"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "you can use the verification feature to verify people individually"
+      },
+      {
+        "userID": "86af087c864a9f8f0302d0215931b8b4bff3460d3ad418d69259dc3360967d51",
+        "message": "but it's person-to-person"
+      },
+      {
+        "userID": "64b0e4b6e3fa5c9408baab392b74ef3f5c9068d4e17f1a768742e9bdee10b6cb",
+        "message": "ss-20240404-084847.png"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-04",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Can I get a review of: ."
       }
     ]
   },
@@ -5728,6 +6466,142 @@
     ]
   },
   {
+    "date": "2024-04-05",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "* Hi Clément Hurlin this will be discussed with the TSC this coming wednesday and will disclose decision taken shortly thereafter :)"
+      },
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "Hi Clément Hurlin this will be discussed with the TSC this coming wednesday and will disloxe decision taken shortly thereafter :)"
+      },
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "Hey Christian Taylor, did you find out more about [cardano-node-emulator]( status?"
+      },
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "Thanks for the update 👍️"
+      },
+      {
+        "userID": "27aa872a4ca3b25adb2db55231566c56ab9a64118630642b4700ee58a904678a",
+        "message": "hi folks, nice to finally have a Matrix presence :D"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-05",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "It might actually require non trivial work, might take a week or so. (See #ouroboros-network:matrix.org if you want more details)."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "CI is passing, one \"required\" check is red but we can just disable that for this PR."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Let me know if you want me to force-push the fix again."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "coot: FYI: You reverted the eval fix I pushed in your latest force push."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "oh no 😕, and I pushed."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "I just did it."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "To be precise, we can replace the `TVar` with a read `STM` action in `PeerSelectionAPI`, but we still need to get the `TVar` through `Arguments` so we can write to it. But at least the `NodeKernel` doesn't need to hold the `TVar`."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Also, as you are passing a `TVar` to us via the diffusion arguments: If more convenient for you, you could do the same (or just a read-only transaction) in [this]() context."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "amesgen: I am blocked on #1041 and #1042. I need reviews. Technically I don't need one for 1042, but that's only because you don't have branch protection rules 😁."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "I know and I want to do that, but we'll do that in a separate PR."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": ""
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Fixed the eval failure (by reverting the hackageNix bump) and also edited the version number in the commit description (0.13.0.0 -> 0.12.1.0)"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "The node might already have everything to implement it, so no `ouroboros-consensus` changes are required."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Would you ideally want to get merged and release today or is Monday fine?"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "Yeah, I have a preliminary integration PR [here](), see [here]() for my feedback based on that."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "I found a bug in the PR, I'll need to fix it then."
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "amesgen: you depend on , isn't it?"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "damianag: this is something for consensus:"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "@coot ⬆️"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "* coot: ⬆️"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-05",
+    "roomId": "!TGUrZYLTaXDjSJuRhQ:matrix.org",
+    "messages": [
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "Bonjour 👋"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-06",
+    "roomId": "!TGUrZYLTaXDjSJuRhQ:matrix.org",
+    "messages": [
+      {
+        "userID": "ca85b8558c3012f54a97e0dc3866ff171bb2b3525160cd60b7a5bcebce5af77b",
+        "message": "* Testing"
+      },
+      {
+        "userID": "ca85b8558c3012f54a97e0dc3866ff171bb2b3525160cd60b7a5bcebce5af77b",
+        "message": "👋"
+      }
+    ]
+  },
+  {
     "date": "2024-04-08",
     "roomId": "!WcwNDMHEuRTiBZZkxf:matrix.org",
     "messages": [
@@ -6024,12 +6898,116 @@
     ]
   },
   {
+    "date": "2024-04-08",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "We decided that we want to release this is as oc-diffusion-0.14, as this respects PVP, even though it is a bit confusing as it contains *fewer* features than oc-diffusion-0.13."
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "CHaP PR for testing:"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "(will do the change)"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "`ouroboros-consensus-cardano-0.14.1` -> `0.14.2` was essentially just using `cardano-git-rev` from `cardano-base` rather than the one from `cardano-node`. Should I adjust `cardano-node-8.9.x`, or can we go with the `cardano-node` version of it?"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "> <user_id_removed> FTR: oc-diffusion-0.14 has been released, so the 8.9.2 train can continue Thanks a lot amesgen"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "I think using oc-cardano-0.14.1 for node 8.9.2 should be the easiest option"
+      },
+      {
+        "userID": "f9b4eac5a495226fe9858edec67509df31b6376011881e11ea5dbb26fdde968d",
+        "message": "FTR: oc-diffusion-0.14 has been released, so the 8.9.2 train can continue"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "amesgen: I need to relax `cardano-git-rev` bounds:"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "* ok, pushed a PR to chap"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "ok, pushed a PR to chat"
+      },
+      {
+        "userID": "7fd19f4a850c4bfcf5df399341cf5aedaf2deaf963c8213ceaf413e70c2921b3",
+        "message": "Thanks amesgen."
+      }
+    ]
+  },
+  {
     "date": "2024-04-09",
     "roomId": "!FyoHGPCEstNxESeqxL:matrix.org",
     "messages": [
       {
         "userID": "c4a378a6aef5cbbbbd722597ba557ef04199182ddae865bd24f4726d4093b306",
         "message": "> <@the-coot:matrix.org> karknu: marcin.wojtowicz is ready for review. I've made some comments re changes to churn"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-09",
+    "roomId": "!VstZVLXUlsWpynoFPF:matrix.org",
+    "messages": [
+      {
+        "userID": "a13db52c6924972e1106383e31cfddd669707b89208b8b5db36f4030a7e99059",
+        "message": "FYI the cardano-node version of cardano-git-rev has been removed on `master`. Ultimately the version from cardano-base should be used everywhere."
+      }
+    ]
+  },
+  {
+    "date": "2024-04-10",
+    "roomId": "!ASrELOSGpcTpsHVdyl:matrix.org",
+    "messages": [
+      {
+        "userID": "c41a8980b077f900d2a0b2d1a612313ec6613550219418ae046782ee5b9554c3",
+        "message": "There's no CIP about this specifically. The issue is that the work deserializing a (reference) script is potentially larger than what the transaction pays for in fees. I've complained months ago that to assign a reasonable value to this parameter we need benchmarks but I don't think there's been any progress on this. If you assume the current value of `minFeeA` to be 'fair', then it should be fine to assume `minFeeRefScriptCoinsPerByte <= minFeeA` since the work that `minFeeA` covers is bigger than what `minFeeRefScriptCoinsPerByte` covers (`minFeeA` also needs to pay for consensus). Or, expressed differently, if benchmarking reveals that `minFeeRefScriptCoinsPerByte` should be bigger than the current value of `minFeeA`, we seriously need to consider raising `minFeeA`."
+      },
+      {
+        "userID": "c41a8980b077f900d2a0b2d1a612313ec6613550219418ae046782ee5b9554c3",
+        "message": "I've got no idea. We sometimes have this issue where something really should be communicated properly to all the people building on Cardano, but I'm pretty far removed from any of that so I don't know if/when that happens. For example there are a bunch of dangers with DRep scripts that everyone who's writing one really has to know, but all I can really do is point that out to others."
+      },
+      {
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "* I have a question about the deprecation of `redeemerPointer` in `cardano-ledger-alonzo-1.7.0.0`: Notably, we have a function that wants to lookup and resolve the spending redeemer for a given `TxIn`: Are we expecting to have users do an `indexOf` on the correct inputs or what is the suggested deprecation path?"
+      },
+      {
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "I have a question about the deprecation of `redeemerPointer` in `cardano-ledger-alonzo-1.7.0.0`: Notably, we have a function that wants to lookup and resolve the spending redeemer for a given `TxIn`: Are expecting to have user case do the `indexOf` computation ourselves or what is the suggested deprecation path?"
+      },
+      {
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "Also bumping into other recent changes due to the new `minFeeRefScriptCoinsPerByte` .. which makes me wonder. Is there a CIP about the Conway era? i.e. is there general agreement on that ref script consumption should be \"taxed\" and by how much?"
+      },
+      {
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "I do understand the rationale. Do you think there is awareness about this \"feature\" coming? For example the consequence of fee calculation in any tx creation framework needing to change."
+      },
+      {
+        "userID": "57f0deee7aec3834d9847cbd52de6f0e73a387656df1e7a30cf75ab855ebadb0",
+        "message": "You could tell that we have been migrating this piece of code from the old ways of having RdmrPtr"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-10",
+    "roomId": "!NiZajSFCekehXSTPzL:matrix.org",
+    "messages": [
+      {
+        "userID": "79ae24bf63b7f29dd3ed12327be36b0999486a9b14bc64170db7e6c0ce277a62",
+        "message": "TSC has been amde aware and will confirm with me shortly"
       }
     ]
   }

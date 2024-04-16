@@ -3,6 +3,8 @@
 
 require('dotenv').config();
 const OpenAI = require('openai');
+const appConfig = require('../config/appConfig');
+
 
 // Initialize OpenAI with your API key
 const openai = new OpenAI({
@@ -12,7 +14,7 @@ const openai = new OpenAI({
 exports.analyzeTextWithLlm = async (messageText) => {
     try {
       const response = await openai.chat.completions.create({
-        model: global.appConfig.LLM_MODEL, // Specify the model
+        model: appConfig.LLM_MODEL, // Specify the model
         messages: [
           { role: "system", content: "You are a helpful assistant and you help me with analyzing messages." },
           { role: "user", content: messageText },

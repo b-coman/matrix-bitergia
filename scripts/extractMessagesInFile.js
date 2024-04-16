@@ -1,9 +1,11 @@
+require('dotenv').config();
 const { Client } = require('@elastic/elasticsearch');
 const fs = require('fs');
-const client = new Client({ node: 'http://localhost:9200' });
-const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
+const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
+const { fetchMessagesByDateAndRoom } = require('../src/elastic/elasticFetchMessagesByDateAndRoom');
 const logger = require('../config/logger');
-const roomMappings = require('../config/roomMappings'); // Adjust the path as necessary
+const appConfig = require('../config/appConfig');
+const roomMappings = require('../config/roomMappings'); 
 
 const generateDateRange = (startDate, endDate) => {
     let dates = [];
@@ -65,5 +67,5 @@ async function saveMessagesToFile(targetDate, roomId, filePath) {
 // Example usage
 const targetDate = undefined; // or specific date '2024-04-05';
 const roomID = undefined; // or specific room ID '!WcwNDMHEuRTiBZZkxf:matrix.org';
-const filePath = './tests/aggregated_messages.json'; 
+const filePath = './aggregated_messages.json'; 
 saveMessagesToFile(targetDate, roomID, filePath).catch(console.error);

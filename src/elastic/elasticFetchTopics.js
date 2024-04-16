@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const appConfig = require('../../config/appConfig');
 const { Client } = require('@elastic/elasticsearch');
 const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 
@@ -10,7 +10,7 @@ const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 async function fetchAllTopics() {
   try {
     const { body } = await client.search({
-      index: global.appConfig.INDEX_NAME_TOPICS,
+      index: appConfig.INDEX_NAME_TOPICS,
       size: 1000, 
       body: {
         query: {

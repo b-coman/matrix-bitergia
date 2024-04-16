@@ -10,6 +10,7 @@ const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesB
 const { fetchAllTopics } = require('../elastic/elasticFetchTopics');
 const { indexDocument } = require('../middleware/indexDocument');
 const { generateContent } = require('../replacePlaceholders');
+const appConfig = require('../../config/appConfig');
 const { agents } = require('../../config/agentConfig');
 //const { logger } = require('handlebars');
 const logger = require('../../config/logger');
@@ -71,7 +72,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         logger.info(dailySummaryDocument);
         // IMPORTANT HERE -->> Insert dailySummaryDocument into your Elasticsearch dailySummary index.  
 
-        const dailySummaryIndexName = global.appConfig.INDEX_NAME_DAILY_SUMMARIES;
+        const dailySummaryIndexName = appConfig.INDEX_NAME_DAILY_SUMMARIES;
         const dailySummaryDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}`).digest('hex');
 
         console.log('dailySummaryIndexName', dailySummaryIndexName);
@@ -80,7 +81,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         const indexResult = await indexDocument(dailySummaryIndexName, dailySummaryDocument, dailySummaryDocumentId);
         console.log('indexResult', indexResult);
 
-        const dailyTopicsIndexName = global.appConfig.INDEX_NAME_DAILY_TOPICS;
+        const dailyTopicsIndexName = appConfig.INDEX_NAME_DAILY_TOPICS;
         for (const topic of jsonString.main_topics) {
             const topicDocument = {
                 date: targetDate,

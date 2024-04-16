@@ -2,7 +2,7 @@
 // description: Fetch messages from Elasticsearch index 'matrix_messages_index' that match a specific date and roomId.
 
 require('dotenv').config();
-
+const appConfig = require('../../config/appConfig');
 const { Client } = require('@elastic/elasticsearch');
 const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 
@@ -15,8 +15,8 @@ const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
 async function fetchMessagesByDateAndRoom(roomId, date) {
   try {
     const { body } = await client.search({
-      index: global.appConfig.INDEX_NAME_MESSAGES,
-      size: 1000, // Adjust size according to expected result volume
+      index: appConfig.INDEX_NAME_MESSAGES,
+      size: 5000, // Adjust size according to expected result volume
       body: {
         query: {
           bool: {

@@ -8,8 +8,10 @@ const { processDailyMessages } = require('./flows/dailyProcessingFlow');
 const { fetchProcessAndIndexMessages } = require('./flows/messageProcessingFlow');
 
 const roomMappings = require('../config/roomMappings');
-const { appConfig } = require('../config/appConfig');
-global.appConfig = appConfig;
+const appConfig = require('../config/appConfig');
+//global.appConfig = appConfig;
+
+//logger.info(appConfig.INDEX_NAME_MESSAGES);
 
 const app = express();
 app.use(helmet()); // Use Helmet to set security headers
@@ -48,6 +50,7 @@ app.post('/processAllMessages', async (req, res) => {
     }
 });
 
+
 //process the messages for any day and room
 // this is the payload structure: {"type": "summary","roomAlias": "#ouroboros-network:matrix.org","date": "2024-04-10"}
 app.post('/processDailyMessages', async (req, res) => {
@@ -82,6 +85,7 @@ app.post('/processDailyMessages', async (req, res) => {
     }
 });
 
+
 app.post('/triggerDailyProcess', async (req, res) => {
     try {
         // call processing function
@@ -97,17 +101,17 @@ app.post('/triggerDailyProcess', async (req, res) => {
 function determineIndexName(req) {
     // Example logic to determine the index name
     // Adjust according to your application's requirements
-    return req.body.type === 'message' ? global.appConfig.INDEX_NAME_MESSAGES :
-        req.body.type === 'summary' ? global.appConfig.INDEX_NAME_DAILY_SUMMARIES :
-        global.appConfig.INDEX_NAME_DAILY_TOPICS;
+    return req.body.type === 'message' ? appConfig.INDEX_NAME_MESSAGES :
+        req.body.type === 'summary' ? appConfig.INDEX_NAME_DAILY_SUMMARIES :
+        appConfig.INDEX_NAME_DAILY_TOPICS;
 }
 
 async function setupElasticsearch() {
     // Setup each index using environment variables for names and schema paths
-    await createIndexFromSchema(global.appConfig.INDEX_NAME_MESSAGES, global.appConfig.SCHEMA_FILE_PATH_MESSAGES);
-    await createIndexFromSchema(global.appConfig.INDEX_NAME_DAILY_SUMMARIES, global.appConfig.SCHEMA_FILE_PATH_DAILY_SUMMARIES);
-    await createIndexFromSchema(global.appConfig.INDEX_NAME_DAILY_TOPICS, global.appConfig.SCHEMA_FILE_PATH_DAILY_TOPICS);
-    await createIndexFromSchema(global.appConfig.INDEX_NAME_TOPICS, global.appConfig.SCHEMA_FILE_PATH_TOPICS);
+    await createIndexFromSchema(appConfig.INDEX_NAME_MESSAGES, appConfig.SCHEMA_FILE_PATH_MESSAGES);
+    await createIndexFromSchema(appConfig.INDEX_NAME_DAILY_SUMMARIES, appConfig.SCHEMA_FILE_PATH_DAILY_SUMMARIES);
+    await createIndexFromSchema(appConfig.INDEX_NAME_DAILY_TOPICS, appConfig.SCHEMA_FILE_PATH_DAILY_TOPICS);
+    await createIndexFromSchema(appConfig.INDEX_NAME_TOPICS, appConfig.SCHEMA_FILE_PATH_TOPICS);
 }
 
 
