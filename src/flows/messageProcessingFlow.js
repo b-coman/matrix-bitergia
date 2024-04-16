@@ -1,13 +1,15 @@
-// src/workflows/messageProcessingWorkflow.js
+// src/flows/messageProcessingWorkflow.js
 const { processMessages } = require('../matrix/processMessages');
 const { indexDocument } = require('../middleware/indexDocument');
+const logger = require('../../config/logger');
+
 
 /**
  * Fetches, processes, and indexes messages from the Matrix for a specific date or all messages if no date is provided.
  * @param {String} indexName - The Elasticsearch index name where messages will be stored.
  * @param {String} [targetDate=null] - Optional. The specific date for which to process messages (in YYYY-MM-DD format).
  */
-async function fetchProcessAndIndexMessages(indexName, roomID, targetDate = null) {
+async function fetchProcessAndIndexMessages(targetDate = null, indexName, roomID, roomAlias) {
     // Fetch and process messages for the given date or all messages if date is null
     const processedMessages = await processMessages(targetDate, roomID);
 
@@ -15,7 +17,7 @@ async function fetchProcessAndIndexMessages(indexName, roomID, targetDate = null
     for (const messageObject of processedMessages) {
         try {
             // Use messageId as the Elasticsearch document ID (_id)
-            console.log(`Indexing document with ID: ${messageObject.messageId}`);
+            logger.info(`Indexing document with ID: ${messageObject.messageId}`);
 
             await indexDocument(indexName, messageObject, messageObject.messageId);
             console.log(`Message ${messageObject.messageId} indexed successfully.`);

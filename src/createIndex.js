@@ -4,6 +4,8 @@ require('dotenv').config();
 const { Client } = require('@elastic/elasticsearch');
 const fs = require('fs').promises;
 const client = new Client({ node: process.env.ELASTICSEARCH_NODE });
+const logger = require('../config/logger');
+
 
 async function createIndexFromSchema(indexName, schemaFilePath) {
     const schemaJson = await fs.readFile(schemaFilePath, 'utf8');
@@ -15,9 +17,9 @@ async function createIndexFromSchema(indexName, schemaFilePath) {
             index: indexName,
             body: schema
         });
-        console.log(`Index ${indexName} created.`);
+        logger.info(`Index ${indexName} created.`);
     } else {
-        console.log(`Index ${indexName} already exists.`);
+        logger.warn(`${indexName} already exists. Index creation skipped.`);
     }
 }
 

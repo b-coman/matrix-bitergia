@@ -28,9 +28,10 @@ async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
         try {
             await delay(delayBetweenRequests);
             const response = await axios.post(`${process.env.API_BASE_URL}/processDailyMessages`, {
-                type: "summary",
-                roomAlias: roomAlias,
-                date: date
+                date: date,
+                messages: "yes",
+                summary: "yes",
+                roomAlias: roomAlias
             });
             console.log(`Success for date ${date} in room ${roomAlias}:`, response.data);
         } catch (error) {

@@ -67,5 +67,5 @@ async function saveMessagesToFile(targetDate, roomId, filePath) {
 // Example usage
 const targetDate = undefined; // or specific date '2024-04-05';
 const roomID = undefined; // or specific room ID '!WcwNDMHEuRTiBZZkxf:matrix.org';
-const filePath = './aggregated_messages.json'; 
+const filePath = './scripts/aggregated_messages.json'; 
 saveMessagesToFile(targetDate, roomID, filePath).catch(console.error);

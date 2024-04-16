@@ -6,7 +6,7 @@ if [ -f .env ]; then
 fi
 
 # Base URL for Elasticsearch
-BASE_URL="${ELASTICSEARCH_NODE_AZURE}/matrix_topics_index/_doc"
+BASE_URL="${ELASTICSEARCH_NODE}/matrix_topics_index/_doc"
 
 # Define the JSON data for each topic
 declare -a topics=(

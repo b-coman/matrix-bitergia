@@ -19,7 +19,8 @@ const logger = require('../../config/logger');
 // Main function orchestrating the flow
 async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
     try {
-
+        logger.info(`Starting processDailyMessages function / date: ${targetDate} / room: ${roomAlias}`);
+        
         // 1. get data
         const messageObjects = await fetchMessagesByDateAndRoom(roomId, targetDate);
         if (messageObjects.length === 0) {
@@ -36,7 +37,6 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
 
 
         // 1.5 get the topics
-
         const topicObjects = await fetchAllTopics();
         if (topicObjects.length === 0) {
             logger.warn("No toipcs present");
@@ -49,13 +49,11 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
 
         // 2. process data with llm --> topics
         const analysisPrompt = await generateContent(isFilePath = false, agents.dailyProcess, { DATE: targetDate, MESSAGES: JSON.stringify(aggregatedMessages, null, 2), TOPICS: JSON.stringify(aggregatedTopics, null, 2) });
-        logger.info("analysisPrompt");
-        logger.info(analysisPrompt);
+        logger.info(`Prompt sent to LLM: ${analysisPrompt}`);
 
         const llmResponseRaw = await llmUtils.analyzeTextWithLlm(analysisPrompt);
         const jsonString = extractJsonFromString(llmResponseRaw);
-        logger.info("jsonString");
-        logger.info(jsonString);
+        logger.info(`LLM Response parsed to JSON: ${jsonString}`);
 
         if (!jsonString) {
             throw new Error('No JSON found in LLM response.');
@@ -70,8 +68,9 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         };
 
         logger.info(dailySummaryDocument);
-        // IMPORTANT HERE -->> Insert dailySummaryDocument into your Elasticsearch dailySummary index.  
 
+
+        // 3. index the dalily Summary documents
         const dailySummaryIndexName = appConfig.INDEX_NAME_DAILY_SUMMARIES;
         const dailySummaryDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}`).digest('hex');
 
@@ -81,6 +80,8 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         const indexResult = await indexDocument(dailySummaryIndexName, dailySummaryDocument, dailySummaryDocumentId);
         console.log('indexResult', indexResult);
 
+
+        // 4. index the daily topics
         const dailyTopicsIndexName = appConfig.INDEX_NAME_DAILY_TOPICS;
         for (const topic of jsonString.main_topics) {
             const topicDocument = {
@@ -97,11 +98,11 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
             const dailyTopicDocumentId = crypto.createHash('md5').update(`${targetDate}:${roomId}:${topic.topicName}`).digest('hex');
 
             const indexResult = await indexDocument(dailyTopicsIndexName, topicDocument, dailyTopicDocumentId);
-            console.log('indexResult', indexResult);
+            //console.log('indexResult', indexResult);
 
         }
 
-        logger.info(`Completed processing daily messages and topics for date: ${targetDate} and room: ${roomAlias}`);
+        logger.warn(`processDailyMessages function completed / daily messages and topics for date: ${targetDate} and room: ${roomAlias}`);
 
     } catch (error) {
         console.error('An error occurred during the main flow:', error);

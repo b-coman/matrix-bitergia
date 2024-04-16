@@ -17,6 +17,9 @@ const app = express();
 app.use(helmet()); // Use Helmet to set security headers
 app.use(express.json({ limit: '100kb' })); // Limit the size of incoming JSON payloads
 
+logger.info('Starting app...');
+logger.info(`Using Elastic node: ${process.env.ELASTICSEARCH_NODE}`);
+
 
 
 // test route
@@ -51,39 +54,57 @@ app.post('/processAllMessages', async (req, res) => {
 });
 
 
-//process the messages for any day and room
+// process the messages for any day and room
 // this is the payload structure: {"type": "summary","roomAlias": "#ouroboros-network:matrix.org","date": "2024-04-10"}
 app.post('/processDailyMessages', async (req, res) => {
-    const { date } = req.body;
-    if (!date) {
-        return res.status(400).json({ success: false, error: 'Date is required for daily message processing.' });
+    const { date, messages, summary, roomAlias } = req.body;
+
+    if (!date || !roomAlias) {
+        return res.status(400).json({ success: false, error: 'Both date and room alias are required.' });
     }
 
-    const indexName = determineIndexName(req); 
-    logger.info(`Processing daily messages for index ${indexName}`);
-
-    const roomAlias = req.body.roomAlias; // Extract room alias from the request body
-    if (!roomAlias) {
-        return res.status(400).json({ success: false, error: 'Room alias is required.' });
-    }
-
-    //extract room ID from room alias using the roomMappings object
     const roomId = Object.keys(roomMappings).find(key => roomMappings[key] === roomAlias);
     if (!roomId) {
         return res.status(400).json({ success: false, error: 'Room ID not found for room alias.' });
     }
-    logger.info(`Room alias ${roomAlias} resolved to room ID ${roomId}`);
 
-    try {
-        await processDailyMessages(date, indexName, roomId, roomAlias); 
-        
-        logger.info(`Successfully processed daily messages for index ${indexName} and date ${date}`);
-        res.json({ success: true, message: "Daily messages processed successfully." });
-    } catch (error) {
-        console.error('Error processing daily messages:', error);
-        res.status(500).json({ success: false, error: 'Failed to process daily messages' });
+    let messageResult = null;
+    let summaryResult = null;
+
+    if (messages === "yes") {
+        try {
+            await fetchProcessAndIndexMessages(date, appConfig.INDEX_NAME_MESSAGES, roomId, roomAlias);
+            messageResult = `Messages processed and indexed successfully for room ${roomAlias} on date ${date}.`;
+            logger.warn(messageResult);
+        } catch (error) {
+            logger.error('Error processing all messages:', error);
+            messageResult = `Failed to process/index new messages for room: ${roomAlias} and date: ${date}`;
+        }
+    }
+
+    if (summary === "yes") {
+        try {
+            await processDailyMessages(date, appConfig.INDEX_NAME_DAILY_SUMMARIES, roomId, roomAlias);
+            summaryResult = `Daily summaries and topics processed successfully for room ${roomAlias} on date ${date}.`;
+            logger.warn(summaryResult);
+        } catch (error) {
+            logger.error('Error processing daily messages:', error);
+            summaryResult = `Failed to process daily messages/topics for room: ${roomAlias} and date: ${date}`;
+        }
+    }
+
+    // Prepare and send a consolidated response
+    const results = [];
+    if (messageResult) results.push(messageResult);
+    if (summaryResult) results.push(summaryResult);
+
+    if (results.length > 0) {
+        res.json({ success: true, messages: results });
+    } else {
+        res.status(500).json({ success: false, error: 'No operations were successfully executed.' });
     }
 });
+
 
 
 app.post('/triggerDailyProcess', async (req, res) => {
@@ -99,8 +120,6 @@ app.post('/triggerDailyProcess', async (req, res) => {
 
 
 function determineIndexName(req) {
-    // Example logic to determine the index name
-    // Adjust according to your application's requirements
     return req.body.type === 'message' ? appConfig.INDEX_NAME_MESSAGES :
         req.body.type === 'summary' ? appConfig.INDEX_NAME_DAILY_SUMMARIES :
         appConfig.INDEX_NAME_DAILY_TOPICS;
@@ -126,7 +145,7 @@ let server; // Server object for graceful shutdown
 async function startServer() {
     await setupElasticsearch();
     const PORT = process.env.PORT || 3000;
-    server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    server = app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
 }
 
 startServer().catch(console.error);
