@@ -9,7 +9,8 @@
         "roomId": { "type": "keyword" },
         "roomAlias": { "type": "keyword" },
         "generalSentiment": { "type": "keyword" },
-        "emergingTopics": { "type": "keyword" }
+        "emergingTopics": { "type": "keyword" },
+        "dayReport": {"type": "text" }
       }
     }
-  }
+}

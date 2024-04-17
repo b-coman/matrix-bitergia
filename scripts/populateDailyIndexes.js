@@ -42,7 +42,7 @@ async function callProcessDailyMessagesRoute(startDate, endDate, roomAlias) {
 
 // Calculate yesterday's date to use as the date range
 const yesterday = new Date();
-yesterday.setDate(yesterday.getDate() - 1);
+yesterday.setDate(yesterday.getDate() - 2);
 const dateString = yesterday.toISOString().split('T')[0];
 
 for (const roomID in roomMappings) {

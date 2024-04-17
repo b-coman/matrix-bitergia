@@ -16,13 +16,11 @@ exports.analyzeTextWithLlm = async (messageText) => {
       const response = await openai.chat.completions.create({
         model: appConfig.LLM_MODEL, // Specify the model
         messages: [
-          { role: "system", content: "You are a helpful assistant and you help me with analyzing messages." },
+          { role: "system", content: "You are a helpful assistant and you help me with analyzing data provided." },
           { role: "user", content: messageText },
         ],
       });
   
-      // Assuming the response structure is consistent with OpenAI's API documentation
-      // Adjust the path to the text content as needed based on actual response structure
       const completionText = response.choices[0].message.content;
       //console.log(completionText);
   
