@@ -1,3 +1,5 @@
+// filename: scripts/testElasticFetchMessages.js
+
 require('dotenv').config();
 const { fetchMessagesByDateAndRoom } = require('../src/elastic/elasticFetchMessagesByDateAndRoom');
 

@@ -1,3 +1,6 @@
+// filename: src/app.js
+// description:
+
 require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
@@ -20,8 +23,6 @@ app.use(express.json({ limit: '100kb' })); // Limit the size of incoming JSON pa
 logger.info('Starting app...');
 logger.info(`Using Elastic node: ${process.env.ELASTICSEARCH_NODE}`);
 
-
-
 // test route
 app.get('/', (req, res) => {
     res.send('Hello, World!');
@@ -31,12 +32,12 @@ app.post('/processAllMessages', async (req, res) => {
     const indexName = determineIndexName(req); // Dynamically determine the index
     logger.info(`Processing all messages for index ${indexName}`);
 
-    const roomAlias = req.body.roomAlias; // Extract room alias from the request body
-    if (!roomAlias) {
-        return res.status(400).json({ success: false, error: 'Room alias is required.' });
+    const { roomAlias, platform } = req.body; // Extract room alias and platform from the request body
+    if (!roomAlias || !platform) {
+        return res.status(400).json({ success: false, error: 'Room alias and platform are required.' });
     }
 
-    //extract room ID from room alias using the roomMappings object
+    // Extract room ID from room alias using the roomMappings object
     const roomId = Object.keys(roomMappings).find(key => roomMappings[key] === roomAlias);
     if (!roomId) {
         return res.status(400).json({ success: false, error: 'Room ID not found for room alias.' });
@@ -45,7 +46,7 @@ app.post('/processAllMessages', async (req, res) => {
 
     try {
         // Fetch, process, and index all messages for the given room
-        await fetchProcessAndIndexMessages(indexName, roomId);
+        await fetchProcessAndIndexMessages(null, indexName, platform, roomId, roomAlias);
         res.json({ success: true, message: "All messages processed and indexed successfully for room: " + roomAlias });
     } catch (error) {
         console.error('Error processing all messages:', error);
@@ -53,14 +54,13 @@ app.post('/processAllMessages', async (req, res) => {
     }
 });
 
-
 // process the messages for any day and room
-// this is the payload structure: {"type": "summary","roomAlias": "#ouroboros-network:matrix.org","date": "2024-04-10"}
+// this is the payload structure: {"type": "summary","roomAlias": "#ouroboros-network:matrix.org","date": "2024-04-10", "platform": "matrix"}
 app.post('/processDailyMessages', async (req, res) => {
-    const { date, messages, summary, roomAlias } = req.body;
+    const { date, messages, summary, roomAlias, platform } = req.body;
 
-    if (!date || !roomAlias) {
-        return res.status(400).json({ success: false, error: 'Both date and room alias are required.' });
+    if (!date || !roomAlias || !platform) {
+        return res.status(400).json({ success: false, error: 'Date, room alias, and platform are required.' });
     }
 
     const roomId = Object.keys(roomMappings).find(key => roomMappings[key] === roomAlias);
@@ -73,7 +73,7 @@ app.post('/processDailyMessages', async (req, res) => {
 
     if (messages === "yes") {
         try {
-            await fetchProcessAndIndexMessages(date, appConfig.INDEX_NAME_MESSAGES, roomId, roomAlias);
+            await fetchProcessAndIndexMessages(date, appConfig.INDEX_NAME_MESSAGES, platform, roomId, roomAlias);
             messageResult = `Messages processed and indexed successfully for room ${roomAlias} on date ${date}.`;
             logger.warn(messageResult);
         } catch (error) {
@@ -84,7 +84,7 @@ app.post('/processDailyMessages', async (req, res) => {
 
     if (summary === "yes") {
         try {
-            await processDailyMessages(date, appConfig.INDEX_NAME_DAILY_SUMMARIES, roomId, roomAlias);
+            await processDailyMessages(date, appConfig.INDEX_NAME_DAILY_SUMMARIES, platform, roomId, roomAlias);
             summaryResult = `Daily summaries and topics processed successfully for room ${roomAlias} on date ${date}.`;
             logger.warn(summaryResult);
         } catch (error) {
@@ -105,8 +105,6 @@ app.post('/processDailyMessages', async (req, res) => {
     }
 });
 
-
-
 app.post('/triggerDailyProcess', async (req, res) => {
     try {
         // call processing function
@@ -117,7 +115,6 @@ app.post('/triggerDailyProcess', async (req, res) => {
         res.status(500).send('Error triggering daily process');
     }
 });
-
 
 function determineIndexName(req) {
     return req.body.type === 'message' ? appConfig.INDEX_NAME_MESSAGES :
@@ -133,13 +130,11 @@ async function setupElasticsearch() {
     await createIndexFromSchema(appConfig.INDEX_NAME_TOPICS, appConfig.SCHEMA_FILE_PATH_TOPICS);
 }
 
-
 // Error handling middleware should be the last piece of middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');
 });
-
 
 let server; // Server object for graceful shutdown
 async function startServer() {
@@ -159,5 +154,3 @@ process.on('SIGTERM', () => {
         });
     }
 });
-
-

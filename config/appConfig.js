@@ -1,4 +1,5 @@
-//appConfig.js
+// filename: config/appConfig.js
+// description:
 
 //const isDevelopment = process.env.NODE_ENV === 'development';
 

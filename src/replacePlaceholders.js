@@ -1,4 +1,5 @@
-// Filename: /src/replacePlaceholders.js
+// filename: src/replacePlaceholders.js
+// description:
 
 const fs = require('fs');
 const path = require('path');

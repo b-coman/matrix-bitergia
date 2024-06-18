@@ -1,5 +1,5 @@
+// filename: src/middleware/indexDocument.js
 // Description: Index a document in Elasticsearch using the official Elasticsearch Node.js client.
-// filename: /middleware/indexDocument.js
 
 const client = require('./esClient'); // Make sure this correctly points to your Elasticsearch client setup
 

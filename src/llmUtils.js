@@ -1,5 +1,5 @@
+// filename: src/llmUtils.js
 // description: Utility functions for interacting with the OpenAI Language Model API
-// filename: /src/llmUtils.js
 
 require('dotenv').config();
 const OpenAI = require('openai');

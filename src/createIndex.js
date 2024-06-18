@@ -1,4 +1,4 @@
-// filename: createIndex.js
+// filename: src/createIndex.js
 
 require('dotenv').config();
 const { Client } = require('@elastic/elasticsearch');

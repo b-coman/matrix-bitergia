@@ -1,3 +1,5 @@
+// filename: config/agentConfig.js
+// description:
 
 const agents = {
     dailyProcess: `

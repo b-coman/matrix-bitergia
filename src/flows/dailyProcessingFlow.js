@@ -1,9 +1,9 @@
-// filename: dailyProcessingWorkflow.js
+// filename: src/flows/dailyProcessingFlow.js
 // description: This file contains the main function orchestrating the daily processing workflow.
 
 require('dotenv').config();
 const crypto = require('crypto'); // Import crypto module for hashing
-const processMessages = require('../matrix/processMessages');
+const processMessages = require('../middleware/processMessages');
 const llmUtils = require('../llmUtils');
 const { extractJsonFromString, validateLlmResponse } = require('../validationUtils');
 const { fetchMessagesByDateAndRoom } = require('../elastic/elasticFetchMessagesByDateAndRoom');
@@ -17,9 +17,9 @@ const logger = require('../../config/logger');
 
 
 // Main function orchestrating the flow
-async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
+async function processDailyMessages(targetDate, indexName, platform, roomId, roomAlias) {
     try {
-        logger.info(`Starting processDailyMessages function / date: ${targetDate} / room: ${roomAlias}`);
+        logger.info(`Starting processDailyMessages function / date: ${targetDate} / room: ${roomAlias} / on platform: ${platform}`);
 
         // 1. get data
         const messageObjects = await fetchMessagesByDateAndRoom(roomId, targetDate);
@@ -63,6 +63,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
 
         const dailySummaryDocument = {
             date: targetDate,
+            platform: platform,
             roomId: roomId,
             roomAlias: roomAlias,
             generalSentiment: jsonString.overall_sentiment.label,
@@ -84,6 +85,7 @@ async function processDailyMessages(targetDate, indexName, roomId, roomAlias) {
         for (const topic of jsonString.main_topics) {
             const topicDocument = {
                 date: targetDate,
+                platform: platform,
                 roomId: roomId,
                 roomAlias: roomAlias,
                 topicName: topic.topicName,

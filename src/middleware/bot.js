@@ -1,3 +1,6 @@
+// filename: src/middleware/bot.js
+// description:
+
 require('dotenv').config();
 const { Client, GatewayIntentBits } = require('discord.js');
 

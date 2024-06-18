@@ -1,12 +1,10 @@
-// Filename: getMessages.js
-// Description: Fetch messages from a Matrix room using the Matrix API, including messages from a specific date.
+// Filename: src/matrix/getMessages.js
+// Description: Fetch messages from a Matrix room using the Matrix 
 
 require('dotenv').config();
 const axios = require('axios');
 
-
 const fetchMessages = async (targetDate = null, roomID) => {
-    //const roomID = encodeURIComponent(roomID);
     const baseURL = `https://matrix.org/_matrix/client/r0/rooms/${encodeURIComponent(roomID)}/messages`;
     const params = { dir: "b", limit: 2000 };
     const headers = { Authorization: `Bearer ${process.env.MATRIX_ACCESS_TOKEN}` };
@@ -22,7 +20,6 @@ const fetchMessages = async (targetDate = null, roomID) => {
     }
     return messages;
 };
-
 
 async function fetchAllMessages(baseURL, params, headers) {
     let allMessages = [];
@@ -40,7 +37,6 @@ async function fetchAllMessages(baseURL, params, headers) {
     return allMessages;
 }
 
-
 // Helper function to generate ISO date strings for date boundaries
 function generateDayBoundaryISOStrings(date) {
     const startDate = new Date(date);
@@ -52,7 +48,5 @@ function generateDayBoundaryISOStrings(date) {
         endOfDayISO: endDate.toISOString(),
     };
 }
-
-
 
 module.exports = { fetchMessages };

@@ -1,4 +1,5 @@
-// filename: logger.js
+// filename: config/logger.js
+// description:
 
 const winston = require('winston');
 require('winston').addColors({ yay: 'magenta', debug: 'yellow'}); // Directly add the custom color for 'yay'

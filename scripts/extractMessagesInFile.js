@@ -1,3 +1,6 @@
+// filename: scripts/extractMessagesInFile.js
+// description:
+
 require('dotenv').config();
 const { Client } = require('@elastic/elasticsearch');
 const fs = require('fs');

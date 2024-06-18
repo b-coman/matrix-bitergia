@@ -1,3 +1,5 @@
+// filename: scripts/testProcessMessages.js
+
 const { fetchProcessAndIndexMessages } = require('../src/workflows/messageProcessingWorkflow');
 
 // Test without a specific date

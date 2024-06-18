@@ -1,4 +1,4 @@
-//filename: /elastic/elasticFetchMessagesByDateAndRoom.js
+// filename: src/elastic/elasticFetchMessagesByDateAndRoom.js
 // description: Fetch messages from Elasticsearch index 'matrix_messages_index' that match a specific date and roomId.
 
 require('dotenv').config();

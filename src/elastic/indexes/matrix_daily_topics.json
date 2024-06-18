@@ -8,6 +8,7 @@
         "date": { "type": "date" },
         "roomId": { "type": "keyword" },
         "roomAlias": { "type": "keyword" },
+        "platform": { "type": "keyword" },
         "topicName": { "type": "keyword" },
         "topicPrevalence": { "type": "integer" },
         "topicSentiment": { "type": "keyword" }

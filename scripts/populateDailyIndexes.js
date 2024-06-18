@@ -1,5 +1,5 @@
-// filename ./scripts/populateDailyIndexes.js
-// description This script is used to populate the daily indexes for the rooms in the roomMappings configuration file. 
+// filename: scripts/populateDailyIndexes.js
+// description: This script is used to populate the daily indexes for the rooms in the roomMappings configuration file. 
 // it runs daily through a cron job
 
 require('dotenv').config();

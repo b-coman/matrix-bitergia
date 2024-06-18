@@ -4,21 +4,12 @@
       "enabled": true
     },
     "properties": {
-      "roomId": {
-        "type": "keyword"
-      },
-      "roomAlias": {
-        "type": "keyword"
-      },
-      "anonymizedUserId": {
-        "type": "keyword"
-      },
-      "messageBody": {
-        "type": "text"
-      },
-      "timestamp": {
-        "type": "date"
-      }
+      "roomId": { "type": "keyword" },
+      "roomAlias": { "type": "keyword" },
+      "platform": { "type": "keyword" },
+      "anonymizedUserId": { "type": "keyword" },
+      "messageBody": { "type": "text" },
+      "timestamp": { "type": "date" }
     }
   },
   "settings": {
